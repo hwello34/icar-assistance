@@ -180,13 +180,13 @@ const HomePage = () => {
 
             {/* Emergency Call Button */}
             <motion.a
-              href="tel:0123456789"
+              href="tel:0781505555"
               className="hidden md:flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Phone className="w-5 h-5" />
-              <span>01 23 45 67 89</span>
+              <span>07 81 50 55 55</span>
             </motion.a>
 
             {/* Mobile Menu Button */}
