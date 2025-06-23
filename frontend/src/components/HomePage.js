@@ -769,10 +769,16 @@ const HomePage = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>24h/24 - 7j/7</li>
+                <li className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4" />
+                  <span>01 23 45 67 89 (24h/24)</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <MessageCircle className="w-4 h-4" />
+                  <span>WhatsApp avec GPS</span>
+                </li>
                 <li>contact@autoexpress.fr</li>
                 <li>Devis gratuit</li>
-                <li>Paiement sécurisé</li>
               </ul>
             </div>
           </div>
