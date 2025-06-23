@@ -741,7 +741,7 @@ const HomePage = () => {
               </p>
               <div className="flex items-center space-x-2 text-gray-400">
                 <Phone className="w-4 h-4" />
-                <span>01 23 45 67 89</span>
+                <span>07 81 50 55 55</span>
               </div>
             </div>
             
