@@ -22,6 +22,64 @@ import {
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
+  const [locationStatus, setLocationStatus] = useState(null);
+  const [currentLocation, setCurrentLocation] = useState(null);
+
+  // Fonction pour obtenir la géolocalisation
+  const getLocation = () => {
+    setLocationStatus('loading');
+    
+    if (!navigator.geolocation) {
+      setLocationStatus('error');
+      alert('La géolocalisation n\'est pas supportée par votre navigateur');
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setCurrentLocation({ lat: latitude, lng: longitude });
+        setLocationStatus('success');
+        
+        // Créer le message WhatsApp avec la localisation
+        const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0A📍 Ma position exacte :%0ALatitude: ${latitude}%0ALongitude: ${longitude}%0A%0A🔗 Lien Google Maps: https://www.google.com/maps?q=${latitude},${longitude}%0A%0AMerci d'intervenir rapidement !`;
+        
+        const whatsappUrl = `https://wa.me/33123456789?text=${message}`;
+        window.open(whatsappUrl, '_blank');
+      },
+      (error) => {
+        setLocationStatus('error');
+        let errorMessage = '';
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            errorMessage = 'Vous avez refusé l\'accès à votre position. Veuillez autoriser la géolocalisation.';
+            break;
+          case error.POSITION_UNAVAILABLE:
+            errorMessage = 'Impossible d\'obtenir votre position actuelle.';
+            break;
+          case error.TIMEOUT:
+            errorMessage = 'La demande de géolocalisation a expiré.';
+            break;
+          default:
+            errorMessage = 'Une erreur inconnue s\'est produite.';
+            break;
+        }
+        alert(errorMessage);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    );
+  };
+
+  // Fonction WhatsApp sans géolocalisation
+  const sendWhatsAppMessage = () => {
+    const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AJe vous communique ma position par message.%0A%0AMerci d'intervenir rapidement !`;
+    const whatsappUrl = `https://wa.me/33123456789?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   const services = [
     {
