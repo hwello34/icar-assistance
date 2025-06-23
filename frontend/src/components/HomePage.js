@@ -212,11 +212,11 @@ const HomePage = () => {
               <a href="#testimonials" className="block text-slate-800 hover:text-blue-600">Témoignages</a>
               <a href="#contact" className="block text-slate-800 hover:text-blue-600">Contact</a>
               <a
-                href="tel:0123456789"
+                href="tel:0781505555"
                 className="flex items-center space-x-2 bg-red-600 text-white px-4 py-3 rounded-full font-semibold w-fit"
               >
                 <Phone className="w-5 h-5" />
-                <span>01 23 45 67 89</span>
+                <span>07 81 50 55 55</span>
               </a>
             </div>
           </motion.div>
