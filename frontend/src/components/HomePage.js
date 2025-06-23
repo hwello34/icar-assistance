@@ -257,6 +257,27 @@ const HomePage = () => {
                   <span>Appel d'urgence</span>
                 </motion.a>
                 
+                <motion.button
+                  onClick={getLocation}
+                  className="inline-flex items-center justify-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  disabled={locationStatus === 'loading'}
+                >
+                  {locationStatus === 'loading' ? (
+                    <>
+                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                      <span>Localisation...</span>
+                    </>
+                  ) : (
+                    <>
+                      <MessageCircle className="w-6 h-6" />
+                      <Navigation className="w-5 h-5" />
+                      <span>WhatsApp + GPS</span>
+                    </>
+                  )}
+                </motion.button>
+                
                 <motion.a
                   href="#services"
                   className="inline-flex items-center justify-center space-x-3 bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold backdrop-blur-sm border border-white/20 transition-all duration-300"
