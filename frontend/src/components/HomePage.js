@@ -44,7 +44,7 @@ const HomePage = () => {
         // Créer le message WhatsApp avec la localisation
         const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0A📍 Ma position exacte :%0ALatitude: ${latitude}%0ALongitude: ${longitude}%0A%0A🔗 Lien Google Maps: https://www.google.com/maps?q=${latitude},${longitude}%0A%0AMerci d'intervenir rapidement !`;
         
-        const whatsappUrl = `https://wa.me/33123456789?text=${message}`;
+        const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
         window.open(whatsappUrl, '_blank');
       },
       (error) => {
