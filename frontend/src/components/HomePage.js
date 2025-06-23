@@ -138,16 +138,20 @@ const HomePage = () => {
       answer: "Oui, nous assurons un service d'urgence 24h/24 et 7j/7 pour tous vos besoins de dépannage automobile et moto."
     },
     {
-      question: "Quels sont vos délais d'intervention ?",
-      answer: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation en Île-de-France."
+      question: "Comment fonctionne la géolocalisation WhatsApp ?",
+      answer: "Cliquez sur le bouton 'WhatsApp + GPS', autorisez la géolocalisation, et votre position exacte sera automatiquement envoyée via WhatsApp avec un lien Google Maps pour nous permettre de vous localiser instantanément."
     },
     {
-      question: "Acceptez-vous les paiements par carte ?",
-      answer: "Oui, nous acceptons tous les modes de paiement : espèces, carte bancaire, chèque, et paiement par assurance."
+      question: "Quels sont vos délais d'intervention ?",
+      answer: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation en Île-de-France. Avec la géolocalisation, nous pouvons vous trouver encore plus rapidement."
     },
     {
       question: "Vos tarifs sont-ils transparents ?",
       answer: "Absolument ! Nous vous communiquons un devis clair avant toute intervention. Pas de surprises, pas de frais cachés."
+    },
+    {
+      question: "Mes données de localisation sont-elles sécurisées ?",
+      answer: "Oui, votre position GPS est partagée uniquement avec AutoExpress via WhatsApp pour le dépannage. Nous ne stockons pas vos données de localisation et les utilisons uniquement pour l'intervention demandée."
     }
   ];
 
