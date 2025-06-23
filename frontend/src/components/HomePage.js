@@ -162,12 +162,24 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <motion.div 
-              className="text-2xl font-bold text-white"
+              className="flex items-center"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-blue-400">Auto</span>Express
+              <img 
+                src="https://i.imgur.com/YourLogoURL.png"
+                alt="AutoExpress - Dépannage 24h/24"
+                className="h-16 w-auto"
+                onError={(e) => {
+                  // Fallback en cas d'erreur de chargement
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'block';
+                }}
+              />
+              <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
+                <span className="text-blue-400">Auto</span>Express
+              </div>
             </motion.div>
             
             {/* Desktop Menu */}
