@@ -294,6 +294,10 @@ const HomePage = () => {
                   <span>Intervention sous 30min</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-300">
+                  <Navigation className="w-5 h-5 text-green-400" />
+                  <span>Localisation GPS</span>
+                </div>
+                <div className="flex items-center space-x-2 text-gray-300">
                   <Shield className="w-5 h-5 text-blue-400" />
                   <span>Garantie satisfaction</span>
                 </div>
