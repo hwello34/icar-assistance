@@ -671,13 +671,13 @@ const HomePage = () => {
             
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-12">
               <motion.a
-                href="tel:0123456789"
+                href="tel:0781505555"
                 className="inline-flex items-center space-x-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Phone className="w-6 h-6" />
-                <span>01 23 45 67 89</span>
+                <span>07 81 50 55 55</span>
               </motion.a>
 
               <motion.button
