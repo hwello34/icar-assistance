@@ -771,7 +771,7 @@ const HomePage = () => {
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
-                  <span>01 23 45 67 89 (24h/24)</span>
+                  <span>07 81 50 55 55 (24h/24)</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <MessageCircle className="w-4 h-4" />
