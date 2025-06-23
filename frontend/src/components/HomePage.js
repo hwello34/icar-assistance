@@ -13,7 +13,10 @@ import {
   Star,
   ChevronDown,
   Menu,
-  X
+  X,
+  MessageCircle,
+  Navigation,
+  AlertCircle
 } from "lucide-react";
 
 const HomePage = () => {
