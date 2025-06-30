@@ -86,68 +86,72 @@ const HomePage = () => {
       icon: <Car className="w-8 h-8" />,
       title: "Dépannage Automobile",
       description: "Intervention rapide pour tous types de pannes auto",
-      features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"]
+      features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"],
+      image: "https://images.pexels.com/photos/784139/pexels-photo-784139.jpeg"
     },
     {
       icon: <Truck className="w-8 h-8" />,
-      title: "Dépannage Moto & Utilitaire",
-      description: "Spécialistes des deux-roues et véhicules utilitaires",
-      features: ["Motos et scooters", "Camionnettes", "Véhicules professionnels"]
+      title: "Remorquage Véhicules",
+      description: "Service de remorquage professionnel 24h/24",
+      features: ["Dépanneuses équipées", "Transport sécurisé", "Tous types de véhicules"],
+      image: "https://images.pexels.com/photos/7997458/pexels-photo-7997458.jpeg"
     },
     {
       icon: <Battery className="w-8 h-8" />,
-      title: "Remplacement Batterie",
-      description: "Service batterie disponible 24h/24",
-      features: ["Batteries de qualité", "Installation immédiate", "Garantie constructeur"]
+      title: "Dépannage Batterie",
+      description: "Démarrage et remplacement batterie",
+      features: ["Démarrage d'urgence", "Remplacement sur place", "Batteries de qualité"],
+      image: "https://images.pexels.com/photos/7562123/pexels-photo-7562123.jpeg"
     },
     {
       icon: <Settings className="w-8 h-8" />,
       title: "Réparation Crevaison",
       description: "Réparation et remplacement de pneus",
-      features: ["Réparation rapide", "Changement de roue", "Équilibrage inclus"]
+      features: ["Réparation rapide", "Changement de roue", "Roue de secours"],
+      image: "https://images.unsplash.com/photo-1588987910398-b0977d2d578d"
     }
   ];
 
   const testimonials = [
     {
       name: "Marie Dubois",
-      location: "Paris 15ème",
-      text: "Service impeccable ! Ils sont arrivés en 20 minutes et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
+      location: "Montpellier Centre",
+      text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1649769069590-268b0b994462?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxtZWNoYW5pY3xlbnwwfHx8Ymx1ZXwxNzUwNjQ4MjQzfDA&ixlib=rb-4.1.0&q=85"
+      image: "https://images.unsplash.com/photo-1647934464726-25c3b2d53a4b"
     },
     {
       name: "Jean Martinez",
-      location: "Versailles",
-      text: "Professionnels et réactifs. Ma moto est tombée en panne sur l'autoroute, ils ont été là en un temps record.",
+      location: "Castelnau-le-Lez",
+      text: "Ma moto est tombée en panne sur la rocade. Professionnels et réactifs, ils ont été là en un temps record avec une dépanneuse adaptée.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1649768870222-17848797d6b4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxtZWNoYW5pY3xlbnwwfHx8Ymx1ZXwxNzUwNjQ4MjQzfDA&ixlib=rb-4.1.0&q=85"
+      image: "https://images.unsplash.com/photo-1563895439929-873e667d3279"
     },
     {
       name: "Sophie Laurent",
-      location: "Saint-Germain",
-      text: "Tarifs transparents et service de qualité. Ils ont changé ma batterie en quelques minutes seulement.",
+      location: "Lattes",
+      text: "Batterie à plat devant Odysseum. Tarifs transparents et service de qualité. Ils ont changé ma batterie en quelques minutes seulement.",
       rating: 5,
-      image: "https://images.pexels.com/photos/7688590/pexels-photo-7688590.jpeg"
+      image: "https://images.unsplash.com/photo-1537149436249-b065c9f0950e"
     }
   ];
 
   const faqs = [
     {
-      question: "Intervenez-vous 24h/24 et 7j/7 ?",
-      answer: "Oui, nous assurons un service d'urgence 24h/24 et 7j/7 pour tous vos besoins de dépannage automobile et moto."
+      question: "Intervenez-vous 24h/24 et 7j/7 sur Montpellier ?",
+      answer: "Oui, nous assurons un service d'urgence 24h/24 et 7j/7 pour tous vos besoins de dépannage automobile et moto sur Montpellier et sa métropole."
     },
     {
       question: "Comment fonctionne la géolocalisation WhatsApp ?",
       answer: "Cliquez sur le bouton 'WhatsApp + GPS', autorisez la géolocalisation, et votre position exacte sera automatiquement envoyée via WhatsApp avec un lien Google Maps pour nous permettre de vous localiser instantanément."
     },
     {
-      question: "Quels sont vos délais d'intervention ?",
-      answer: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation en Île-de-France. Avec la géolocalisation, nous pouvons vous trouver encore plus rapidement."
+      question: "Quels sont vos délais d'intervention sur Montpellier ?",
+      answer: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation sur Montpellier Métropole. Avec la géolocalisation, nous pouvons vous trouver encore plus rapidement."
     },
     {
-      question: "Vos tarifs sont-ils transparents ?",
-      answer: "Absolument ! Nous vous communiquons un devis clair avant toute intervention. Pas de surprises, pas de frais cachés."
+      question: "Couvrez-vous toute la métropole de Montpellier ?",
+      answer: "Oui, nous intervenons sur Montpellier et toutes les communes de la métropole : Castelnau-le-Lez, Lattes, Pérols, Saint-Jean-de-Védas, Juvignac, et bien d'autres."
     },
     {
       question: "Mes données de localisation sont-elles sécurisées ?",
@@ -255,12 +259,12 @@ const HomePage = () => {
                 Dépannage 
                 <span className="text-blue-400"> Express</span>
                 <br />
-                <span className="text-3xl lg:text-4xl">en Île-de-France</span>
+                <span className="text-3xl lg:text-4xl">à Montpellier</span>
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
-                Nos experts interviennent rapidement partout en Île-de-France.
+                Nos experts interviennent rapidement partout sur Montpellier Métropole.
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -329,8 +333,8 @@ const HomePage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/7562123/pexels-photo-7562123.jpeg"
-                  alt="Dépannage automobile professionnel"
+                  src="https://images.unsplash.com/photo-1652081848323-5f425c65c2c7"
+                  alt="Dépanneuse AutoExpress en intervention"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
@@ -361,7 +365,7 @@ const HomePage = () => {
             
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
               Partagez instantanément votre localisation GPS précise via WhatsApp. 
-              Nos équipes vous localisent en quelques secondes pour une intervention ultra-rapide !
+              Nos équipes vous localisent en quelques secondes partout sur Montpellier !
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -446,7 +450,7 @@ const HomePage = () => {
               Nos Services <span className="text-blue-400">Experts</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Dépannage automobile, moto et utilitaire avec des professionnels qualifiés
+              Dépannage automobile, moto et utilitaire avec des professionnels qualifiés sur Montpellier
             </p>
           </motion.div>
 
@@ -457,21 +461,30 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300"
+                className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300"
               >
-                <div className="text-blue-400 mb-6">
-                  {service.icon}
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
-                <p className="text-gray-300 mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center space-x-2 text-sm text-gray-400">
-                      <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="p-6">
+                  <div className="text-blue-400 mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
+                  <p className="text-gray-300 mb-6">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center space-x-2 text-sm text-gray-400">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -499,7 +512,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Rapidité d'intervention</h3>
-                    <p className="text-gray-300">Nos équipes interviennent dans les 30 minutes suivant votre appel.</p>
+                    <p className="text-gray-300">Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.</p>
                   </div>
                 </div>
 
@@ -509,7 +522,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Expertise technique</h3>
-                    <p className="text-gray-300">Techniciens certifiés avec plus de 10 ans d'expérience.</p>
+                    <p className="text-gray-300">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
                   </div>
                 </div>
 
@@ -528,8 +541,8 @@ const HomePage = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Couverture Île-de-France</h3>
-                    <p className="text-gray-300">Service disponible dans tous les départements franciliens.</p>
+                    <h3 className="text-xl font-bold text-white mb-2">Couverture Montpellier Métropole</h3>
+                    <p className="text-gray-300">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
                   </div>
                 </div>
               </div>
@@ -543,23 +556,23 @@ const HomePage = () => {
             >
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1652081848323-5f425c65c2c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxyb2Fkc2lkZSUyMGFzc2lzdGFuY2V8ZW58MHx8fGJsdWV8MTc1MDY0ODIyMXww&ixlib=rb-4.1.0&q=85"
-                  alt="Véhicule de dépannage"
+                  src="https://images.pexels.com/photos/7997458/pexels-photo-7997458.jpeg"
+                  alt="Dépanneuse AutoExpress"
                   className="rounded-xl h-48 object-cover"
                 />
                 <img
-                  src="https://images.pexels.com/photos/8986147/pexels-photo-8986147.jpeg"
+                  src="https://images.unsplash.com/photo-1588987910398-b0977d2d578d"
                   alt="Réparation de pneu"
                   className="rounded-xl h-48 object-cover mt-8"
                 />
                 <img
-                  src="https://images.pexels.com/photos/696411/pexels-photo-696411.jpeg"
-                  alt="Mécanicien professionnel"
+                  src="https://images.pexels.com/photos/7562123/pexels-photo-7562123.jpeg"
+                  alt="Assistance routière"
                   className="rounded-xl h-48 object-cover -mt-8"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1612732789926-d81e503d10f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHx0aXJlJTIwcmVwYWlyfGVufDB8fHxibHVlfDE3NTA2NDgyNTJ8MA&ixlib=rb-4.1.0&q=85"
-                  alt="Équipement professionnel"
+                  src="https://images.unsplash.com/photo-1612732789926-d81e503d10f9"
+                  alt="Service automobile professionnel"
                   className="rounded-xl h-48 object-cover"
                 />
               </div>
@@ -581,7 +594,7 @@ const HomePage = () => {
               Ils Nous Font <span className="text-blue-400">Confiance</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Plus de 10 000 clients satisfaits en Île-de-France
+              Plus de 5 000 clients satisfaits sur Montpellier Métropole
             </p>
           </motion.div>
 
@@ -679,7 +692,7 @@ const HomePage = () => {
               Une Panne ? Appelez-Nous !
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Service d'urgence disponible 24h/24 - Intervention rapide en Île-de-France
+              Service d'urgence disponible 24h/24 - Intervention rapide sur Montpellier Métropole
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-12">
@@ -729,7 +742,7 @@ const HomePage = () => {
               <div>
                 <MapPin className="w-8 h-8 mx-auto mb-4 text-blue-300" />
                 <h3 className="font-semibold mb-2">Zone d'intervention</h3>
-                <p>Toute l'Île-de-France</p>
+                <p>Montpellier Métropole</p>
               </div>
               <div>
                 <Shield className="w-8 h-8 mx-auto mb-4 text-blue-300" />
@@ -745,7 +758,6 @@ const HomePage = () => {
       <footer className="bg-slate-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
-            <div>
             <div className="flex items-center">
               <img 
                 src="https://i.imgur.com/2JRDbj0.png"
@@ -768,21 +780,20 @@ const HomePage = () => {
                 <span className="text-blue-400">Auto</span>Express
               </div>
               <div className="text-gray-400">
-                <p className="text-sm">Votre spécialiste du dépannage automobile, moto et utilitaire en Île-de-France.</p>
+                <p className="text-sm">Votre spécialiste du dépannage automobile, moto et utilitaire sur Montpellier.</p>
                 <div className="flex items-center space-x-2 mt-2">
                   <Phone className="w-4 h-4" />
                   <span>07 81 50 55 55</span>
                 </div>
               </div>
             </div>
-            </div>
             
             <div>
               <h3 className="text-white font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Dépannage Auto</li>
+                <li>Remorquage</li>
                 <li>Dépannage Moto</li>
-                <li>Véhicules Utilitaires</li>
                 <li>Remplacement Batterie</li>
                 <li>Réparation Crevaison</li>
               </ul>
@@ -791,10 +802,11 @@ const HomePage = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Zones</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Paris et Petite Couronne</li>
-                <li>Grande Couronne</li>
-                <li>Autoroutes A1, A4, A6</li>
-                <li>Rocades franciliennes</li>
+                <li>Montpellier Centre</li>
+                <li>Castelnau-le-Lez</li>
+                <li>Lattes - Pérols</li>
+                <li>Saint-Jean-de-Védas</li>
+                <li>Juvignac - Grabels</li>
               </ul>
             </div>
             
@@ -816,7 +828,7 @@ const HomePage = () => {
           </div>
           
           <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 AutoExpress. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
+            <p>&copy; 2025 AutoExpress Montpellier. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
           </div>
         </div>
       </footer>
