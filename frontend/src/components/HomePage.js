@@ -752,16 +752,35 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">
+            <div className="flex items-center">
+              <img 
+                src="https://i.imgur.com/2JRDbj0.png"
+                alt="AutoExpress Logo"
+                className="h-16 w-auto mr-4"
+                onError={(e) => {
+                  // Essaie avec différents formats
+                  if (e.target.src.includes('.png')) {
+                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpg';
+                  } else if (e.target.src.includes('.jpg')) {
+                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpeg';
+                  } else {
+                    // Fallback vers le texte
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }
+                }}
+              />
+              <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
                 <span className="text-blue-400">Auto</span>Express
               </div>
-              <p className="text-gray-400 mb-4">
-                Votre spécialiste du dépannage automobile, moto et utilitaire en Île-de-France.
-              </p>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Phone className="w-4 h-4" />
-                <span>07 81 50 55 55</span>
+              <div className="text-gray-400">
+                <p className="text-sm">Votre spécialiste du dépannage automobile, moto et utilitaire en Île-de-France.</p>
+                <div className="flex items-center space-x-2 mt-2">
+                  <Phone className="w-4 h-4" />
+                  <span>07 81 50 55 55</span>
+                </div>
               </div>
+            </div>
             </div>
             
             <div>
