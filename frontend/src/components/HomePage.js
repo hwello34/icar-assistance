@@ -168,13 +168,20 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://i.imgur.com/YourLogoURL.png"
+                src="https://i.imgur.com/2JRDbj0.png"
                 alt="AutoExpress - Dépannage 24h/24"
-                className="h-16 w-auto"
+                className="h-14 w-auto mr-2"
                 onError={(e) => {
-                  // Fallback en cas d'erreur de chargement
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'block';
+                  // Essaie avec .jpg si .png ne fonctionne pas
+                  if (e.target.src.includes('.png')) {
+                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpg';
+                  } else if (e.target.src.includes('.jpg')) {
+                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpeg';
+                  } else {
+                    // Fallback vers le texte
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'block';
+                  }
                 }}
               />
               <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
