@@ -760,23 +760,14 @@ const HomePage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="flex items-center">
               <img 
-                src="https://i.imgur.com/2JRDbj0.png"
+                src="https://i.imgur.com/YfI4JO3.png"
                 alt="AutoExpress Logo"
                 className="h-16 w-auto mr-4"
                 onError={(e) => {
-                  console.log('Tentative footer:', e.target.src);
-                  // Essaie avec différents formats
-                  if (e.target.src.includes('2JRDbj0.png')) {
-                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpg';
-                  } else if (e.target.src.includes('2JRDbj0.jpg')) {
-                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpeg';
-                  } else if (e.target.src.includes('2JRDbj0.jpeg')) {
-                    e.target.src = 'https://imgur.com/2JRDbj0.png';
-                  } else {
-                    // Fallback vers le texte
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }
+                  console.log('Erreur footer logo:', e.target.src);
+                  // Fallback vers le texte
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
                 }}
               />
               <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
