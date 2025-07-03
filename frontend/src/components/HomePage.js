@@ -773,11 +773,14 @@ const HomePage = () => {
                 alt="AutoExpress Logo"
                 className="h-16 w-auto mr-4"
                 onError={(e) => {
+                  console.log('Tentative footer:', e.target.src);
                   // Essaie avec différents formats
-                  if (e.target.src.includes('.png')) {
+                  if (e.target.src.includes('2JRDbj0.png')) {
                     e.target.src = 'https://i.imgur.com/2JRDbj0.jpg';
-                  } else if (e.target.src.includes('.jpg')) {
+                  } else if (e.target.src.includes('2JRDbj0.jpg')) {
                     e.target.src = 'https://i.imgur.com/2JRDbj0.jpeg';
+                  } else if (e.target.src.includes('2JRDbj0.jpeg')) {
+                    e.target.src = 'https://imgur.com/2JRDbj0.png';
                   } else {
                     // Fallback vers le texte
                     e.target.style.display = 'none';
