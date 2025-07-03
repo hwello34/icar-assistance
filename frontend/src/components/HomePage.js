@@ -172,23 +172,14 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://i.imgur.com/2JRDbj0.png"
+                src="https://i.imgur.com/YfI4JO3.png"
                 alt="AutoExpress - Dépannage 24h/24"
                 className="h-14 w-auto mr-2"
                 onError={(e) => {
-                  console.log('Tentative de chargement:', e.target.src);
-                  // Essaie avec différents formats
-                  if (e.target.src.includes('2JRDbj0.png')) {
-                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpg';
-                  } else if (e.target.src.includes('2JRDbj0.jpg')) {
-                    e.target.src = 'https://i.imgur.com/2JRDbj0.jpeg';
-                  } else if (e.target.src.includes('2JRDbj0.jpeg')) {
-                    e.target.src = 'https://imgur.com/2JRDbj0.png';
-                  } else {
-                    // Affiche le texte de fallback
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'block';
-                  }
+                  console.log('Erreur de chargement logo:', e.target.src);
+                  // Fallback vers le texte si l'image ne se charge pas
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'block';
                 }}
               />
               <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
