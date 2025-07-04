@@ -315,7 +315,7 @@ const HomePage = () => {
                 }}
               />
               <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
-                <span className="text-blue-400">Auto</span>Express
+                <span className="text-[#1693f1]">Auto</span>Express
               </div>
             </motion.div>
             
