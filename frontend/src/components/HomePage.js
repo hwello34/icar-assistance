@@ -1390,7 +1390,7 @@ const HomePage = () => {
                 }}
               />
               <div className="text-2xl font-bold text-white" style={{display: 'none'}}>
-                <span className="text-blue-400">Auto</span>Express
+                <span className="text-[#1693f1]">Auto</span>Express
               </div>
               <div className="text-gray-400">
                 <p className="text-sm">Votre spécialiste du dépannage automobile, moto et utilitaire sur Montpellier.</p>
