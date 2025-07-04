@@ -872,7 +872,7 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Questions <span className="text-blue-400">Fréquentes</span>
+              Questions <span className="text-[#1693f1]">Fréquentes</span>
             </h2>
           </motion.div>
 
