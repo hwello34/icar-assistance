@@ -471,7 +471,7 @@ const HomePage = () => {
                   alt="Dépanneuse AutoExpress en intervention"
                   className="w-full h-[500px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1693f1]/50 to-transparent"></div>
               </div>
             </motion.div>
           </div>
