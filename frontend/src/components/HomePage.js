@@ -331,7 +331,7 @@ const HomePage = () => {
             {/* Emergency Call Button */}
             <motion.a
               href="tel:0781505555"
-              className="hidden md:flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+              className="hidden md:flex items-center space-x-2 bg-[#c9473e] hover:bg-[#a73d35] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
