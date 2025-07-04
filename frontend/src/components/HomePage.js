@@ -940,11 +940,12 @@ const HomePage = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Dépannage Auto</li>
-                <li>Remorquage</li>
-                <li>Dépannage Moto</li>
-                <li>Remplacement Batterie</li>
-                <li>Réparation Crevaison</li>
+                <li>Dépannage Auto/Moto</li>
+                <li>Remorquage Spécialisé</li>
+                <li>Transport Longue Distance</li>
+                <li>Serrurerie Automobile</li>
+                <li>Enlèvement Épave</li>
+                <li>Service Pneus</li>
               </ul>
             </div>
             
