@@ -85,7 +85,7 @@ const HomePage = () => {
     {
       icon: <Car className="w-8 h-8" />,
       title: "Dépannage Automobile",
-      description: "Intervention rapide pour tous types de pannes auto",
+      description: "Intervention rapide tous véhicules légers",
       features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"],
       image: "https://images.pexels.com/photos/784139/pexels-photo-784139.jpeg"
     },
@@ -105,10 +105,82 @@ const HomePage = () => {
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Réparation Crevaison",
-      description: "Réparation et remplacement de pneus",
-      features: ["Réparation rapide", "Changement de roue", "Roue de secours"],
+      title: "Service Pneus",
+      description: "Intervention pneus route et domicile",
+      features: ["Démontage/montage", "Roue de secours", "Réparation crevaison"],
       image: "https://images.unsplash.com/photo-1588987910398-b0977d2d578d"
+    }
+  ];
+
+  const specializedServices = [
+    {
+      category: "Dépannage Spécialisé",
+      services: [
+        {
+          title: "Parking Sous-Sol & Barrières",
+          description: "Dépannage parking avec barrière < 2m",
+          icon: "🅿️",
+          image: "https://images.unsplash.com/photo-1577307151681-6583439eab92"
+        },
+        {
+          title: "Véhicules Utilitaires",
+          description: "Fourgon, benne, camping-car, caravane, agricole, BTP",
+          icon: "🚛",
+          image: "https://images.unsplash.com/photo-1718723570631-02456bcadbe8"
+        },
+        {
+          title: "Transport Moto/Scooter",
+          description: "Dépannage et transport deux-roues",
+          icon: "🏍️",
+          image: "https://images.pexels.com/photos/564094/pexels-photo-564094.jpeg"
+        }
+      ]
+    },
+    {
+      category: "Services Techniques",
+      services: [
+        {
+          title: "Serrurerie Auto",
+          description: "Ouverture portière, reproduction clé auto",
+          icon: "🔑",
+          image: "https://images.unsplash.com/photo-1529261233619-6afa28f5da3d"
+        },
+        {
+          title: "Sortie de Fourrière",
+          description: "Récupération véhicule en fourrière",
+          icon: "🏢",
+          image: "https://images.unsplash.com/photo-1652081848323-5f425c65c2c7"
+        },
+        {
+          title: "Sortie de Fossé/Ravin",
+          description: "Récupération véhicule accidenté",
+          icon: "🆘",
+          image: "https://images.unsplash.com/photo-1709836882177-1f2c7d901ab9"
+        }
+      ]
+    },
+    {
+      category: "Transport & Enlèvement",
+      services: [
+        {
+          title: "Enlèvement Épave",
+          description: "Service enlèvement véhicule hors d'usage",
+          icon: "♻️",
+          image: "https://images.unsplash.com/photo-1709606641879-652618742ca9"
+        },
+        {
+          title: "Transport Port/Bateau",
+          description: "Transport et embarquement véhicule",
+          icon: "⚓",
+          image: "https://images.unsplash.com/photo-1583279545680-5a8b3eec3102"
+        },
+        {
+          title: "Transport Longue Distance",
+          description: "Transport toute distance France/Europe",
+          icon: "🌍",
+          image: "https://images.unsplash.com/photo-1655916535424-b724744158fb"
+        }
+      ]
     }
   ];
 
