@@ -286,9 +286,9 @@ const HomePage = () => {
       answer: "Nous dépannons tous types de véhicules : voitures, motos, scooters, véhicules utilitaires, fourgons, bennes, camping-cars, caravanes, véhicules agricoles et BTP. Nous intervenons même dans les parkings sous-sol avec barrières basses."
     },
     {
-      question: "Mes données de localisation sont-elles sécurisées ?",
-      answer: "Oui, votre position GPS est partagée uniquement avec AutoExpress via WhatsApp pour le dépannage. Nous ne stockons pas vos données de localisation et les utilisons uniquement pour l'intervention demandée."
-    }
+      question: "Comment laisser un avis sur nos services ?",
+      answer: "Vous pouvez laisser un avis en scannant le QR code dans la section témoignages de notre site, ou directement via notre page Google Business. Votre retour nous aide à améliorer continuellement nos services de dépannage."
+    },
   ];
 
   return (
