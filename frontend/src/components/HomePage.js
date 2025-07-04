@@ -761,7 +761,7 @@ const HomePage = () => {
           >
             <div className="max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold text-white mb-6">
-                Vous Aussi, Partagez Votre <span className="text-blue-400">Expérience</span> !
+                Vous Aussi, Partagez Votre <span className="text-[#1693f1]">Expérience</span> !
               </h3>
               
               <p className="text-xl text-gray-300 mb-8">
