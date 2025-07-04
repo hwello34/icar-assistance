@@ -1122,7 +1122,7 @@ const HomePage = () => {
                 {/* Informations Transport */}
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10">
                   <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
-                    <MapPin className="w-6 h-6 mr-3 text-blue-400" />
+                    <MapPin className="w-6 h-6 mr-3 text-[#1693f1]" />
                     Informations de Transport
                   </h3>
                   
