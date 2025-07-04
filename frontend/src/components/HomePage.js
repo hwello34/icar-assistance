@@ -541,7 +541,7 @@ const HomePage = () => {
                 transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
               >
                 <h3 className="text-3xl font-bold text-white mb-8 text-center">
-                  <span className="text-blue-400">{category.category}</span>
+                  <span className="text-[#1693f1]">{category.category}</span>
                 </h3>
                 
                 <div className="grid md:grid-cols-3 gap-8">
