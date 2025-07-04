@@ -820,7 +820,7 @@ const HomePage = () => {
                       href="https://g.page/r/YourGoogleReviewsLink/review"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                      className="inline-flex items-center space-x-3 bg-[#1693f1] hover:bg-[#1478d1] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
