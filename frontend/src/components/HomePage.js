@@ -1196,7 +1196,7 @@ const HomePage = () => {
                         value={quoteForm.phone}
                         onChange={handleQuoteFormChange}
                         placeholder="06 XX XX XX XX"
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-[#1693f1] focus:outline-none transition-colors"
                         required
                       />
                     </div>
