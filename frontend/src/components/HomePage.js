@@ -973,6 +973,285 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Quote Form Modal */}
+      {showQuoteForm && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <div className="flex min-h-screen items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+              onClick={() => setShowQuoteForm(false)}
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative bg-slate-900 rounded-2xl p-8 w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-blue-400/30"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-3xl font-bold text-white">
+                  Demande de <span className="text-blue-400">Devis Gratuit</span>
+                </h2>
+                <button
+                  onClick={() => setShowQuoteForm(false)}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <X className="w-8 h-8" />
+                </button>
+              </div>
+
+              <form onSubmit={handleQuoteSubmit} className="space-y-8">
+                {/* Informations Véhicule */}
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
+                    <Car className="w-6 h-6 mr-3 text-blue-400" />
+                    Informations du Véhicule
+                  </h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-gray-300 mb-2">Type de véhicule *</label>
+                      <input
+                        type="text"
+                        name="vehicleType"
+                        value={quoteForm.vehicleType}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Ex: Voiture, Moto, Utilitaire..."
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Marque *</label>
+                      <input
+                        type="text"
+                        name="brand"
+                        value={quoteForm.brand}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Ex: Peugeot, Renault, BMW..."
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Modèle *</label>
+                      <input
+                        type="text"
+                        name="model"
+                        value={quoteForm.model}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Ex: 308, Clio, X3..."
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Plaque d'immatriculation</label>
+                      <input
+                        type="text"
+                        name="licensePlate"
+                        value={quoteForm.licensePlate}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Ex: AB-123-CD"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">4 roues motrices ?</label>
+                      <select
+                        name="fourWheelDrive"
+                        value={quoteForm.fourWheelDrive}
+                        onChange={handleQuoteFormChange}
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
+                      >
+                        <option value="">Sélectionner</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Boîte de vitesse</label>
+                      <select
+                        name="gearbox"
+                        value={quoteForm.gearbox}
+                        onChange={handleQuoteFormChange}
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
+                      >
+                        <option value="">Sélectionner</option>
+                        <option value="Manuelle">Manuelle</option>
+                        <option value="Automatique">Automatique</option>
+                      </select>
+                    </div>
+                    
+                    <div className="md:col-span-2">
+                      <label className="block text-gray-300 mb-2">État du véhicule</label>
+                      <select
+                        name="breakdown"
+                        value={quoteForm.breakdown}
+                        onChange={handleQuoteFormChange}
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
+                      >
+                        <option value="">Sélectionner</option>
+                        <option value="Démarre">Démarre</option>
+                        <option value="Ne démarre pas">Ne démarre pas</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Informations Transport */}
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
+                    <MapPin className="w-6 h-6 mr-3 text-blue-400" />
+                    Informations de Transport
+                  </h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-gray-300 mb-2">Adresse d'enlèvement *</label>
+                      <textarea
+                        name="pickupAddress"
+                        value={quoteForm.pickupAddress}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Adresse complète d'enlèvement"
+                        rows="3"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Lieu de dépôt *</label>
+                      <textarea
+                        name="dropoffLocation"
+                        value={quoteForm.dropoffLocation}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Adresse de destination"
+                        rows="3"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="md:col-span-2">
+                      <label className="block text-gray-300 mb-2">Date d'enlèvement souhaitée</label>
+                      <input
+                        type="text"
+                        name="pickupDate"
+                        value={quoteForm.pickupDate}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Ex: Aujourd'hui, Demain, 15/01/2025..."
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Informations Contact */}
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
+                    <Phone className="w-6 h-6 mr-3 text-blue-400" />
+                    Vos Coordonnées
+                  </h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-gray-300 mb-2">Prénom *</label>
+                      <input
+                        type="text"
+                        name="firstName"
+                        value={quoteForm.firstName}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Votre prénom"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Nom *</label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        value={quoteForm.lastName}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Votre nom"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Téléphone *</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={quoteForm.phone}
+                        onChange={handleQuoteFormChange}
+                        placeholder="06 XX XX XX XX"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-gray-300 mb-2">Email *</label>
+                      <input
+                        type="email"
+                        name="email"
+                        value={quoteForm.email}
+                        onChange={handleQuoteFormChange}
+                        placeholder="votre@email.com"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="md:col-span-2">
+                      <label className="block text-gray-300 mb-2">Précisions supplémentaires</label>
+                      <textarea
+                        name="details"
+                        value={quoteForm.details}
+                        onChange={handleQuoteFormChange}
+                        placeholder="Informations complémentaires sur votre demande..."
+                        rows="4"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-4">
+                  <button
+                    type="button"
+                    onClick={() => setShowQuoteForm(false)}
+                    className="px-8 py-3 bg-gray-600 hover:bg-gray-700 text-white rounded-lg font-semibold transition-colors"
+                  >
+                    Annuler
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    <span>Envoyer via WhatsApp</span>
+                  </button>
+                </div>
+              </form>
+            </motion.div>
+          </div>
+        </div>
+      )}
+
+      {/* Devis Section */}
+      <section id="quote" className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+
       {/* Footer */}
       <footer className="bg-slate-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
