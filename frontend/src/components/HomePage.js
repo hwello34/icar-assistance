@@ -1060,7 +1060,7 @@ const HomePage = () => {
                     </div>
                     
                     <div>
-                      <label className="block text-gray-300 mb-2">4 roues motrices ?</label>
+                      <label className="block text-gray-300 mb-2">Roues du véhicule</label>
                       <select
                         name="fourWheelDrive"
                         value={quoteForm.fourWheelDrive}
@@ -1068,8 +1068,8 @@ const HomePage = () => {
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
                       >
                         <option value="">Sélectionner</option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
+                        <option value="Roue libre">Roue libre</option>
+                        <option value="Roue bloquée">Roue bloquée</option>
                       </select>
                     </div>
                     
