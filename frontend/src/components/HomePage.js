@@ -1004,7 +1004,7 @@ const HomePage = () => {
             >
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl font-bold text-white">
-                  Demande de <span className="text-blue-400">Devis Gratuit</span>
+                  Demande de <span className="text-[#1693f1]">Devis Gratuit</span>
                 </h2>
                 <button
                   onClick={() => setShowQuoteForm(false)}
