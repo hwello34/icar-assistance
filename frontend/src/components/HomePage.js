@@ -222,8 +222,8 @@ const HomePage = () => {
       answer: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation sur Montpellier Métropole. Avec la géolocalisation, nous pouvons vous trouver encore plus rapidement."
     },
     {
-      question: "Couvrez-vous toute la métropole de Montpellier ?",
-      answer: "Oui, nous intervenons sur Montpellier et toutes les communes de la métropole : Castelnau-le-Lez, Lattes, Pérols, Saint-Jean-de-Védas, Juvignac, et bien d'autres."
+      question: "Quels types de véhicules pouvez-vous dépanner ?",
+      answer: "Nous dépannons tous types de véhicules : voitures, motos, scooters, véhicules utilitaires, fourgons, bennes, camping-cars, caravanes, véhicules agricoles et BTP. Nous intervenons même dans les parkings sous-sol avec barrières basses."
     },
     {
       question: "Mes données de localisation sont-elles sécurisées ?",
