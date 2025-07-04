@@ -1172,6 +1172,99 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Géolocalisation Section */}
+      <section className="py-20 bg-gradient-to-r from-green-600 to-green-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <div className="flex justify-center mb-6">
+              <div className="bg-white/20 p-6 rounded-full">
+                <MessageCircle className="w-16 h-16 text-white" />
+              </div>
+            </div>
+            
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Envoyez Votre Position via <span className="text-green-200">WhatsApp</span>
+            </h2>
+            
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+              Partagez instantanément votre localisation GPS précise via WhatsApp. 
+              Nos équipes vous localisent en quelques secondes partout sur Montpellier !
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">1</span>
+                </div>
+                <h3 className="text-white font-bold text-lg mb-2">Cliquez sur le bouton</h3>
+                <p className="text-green-100 text-sm">Autorisez la géolocalisation sur votre téléphone</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <h3 className="text-white font-bold text-lg mb-2">Position automatique</h3>
+                <p className="text-green-100 text-sm">Votre position GPS est ajoutée automatiquement</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <h3 className="text-white font-bold text-lg mb-2">Envoi instantané</h3>
+                <p className="text-green-100 text-sm">Votre demande arrive directement chez nous</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <motion.button
+                onClick={getLocation}
+                className="inline-flex items-center space-x-3 bg-white hover:bg-gray-100 text-green-700 px-8 py-4 rounded-full text-xl font-bold transition-all duration-300 shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                disabled={locationStatus === 'loading'}
+              >
+                {locationStatus === 'loading' ? (
+                  <>
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-green-700"></div>
+                    <span>Localisation en cours...</span>
+                  </>
+                ) : (
+                  <>
+                    <MessageCircle className="w-6 h-6" />
+                    <Navigation className="w-6 h-6" />
+                    <span>Envoyer ma position</span>
+                  </>
+                )}
+              </motion.button>
+              
+              <motion.button
+                onClick={sendWhatsAppMessage}
+                className="inline-flex items-center space-x-3 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold backdrop-blur-sm border border-white/30 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>WhatsApp sans GPS</span>
+              </motion.button>
+            </div>
+
+            <div className="mt-8 flex items-center justify-center space-x-2 text-green-100">
+              <AlertCircle className="w-5 h-5" />
+              <span className="text-sm">
+                Votre position est partagée uniquement avec AutoExpress pour le dépannage
+              </span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-slate-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
