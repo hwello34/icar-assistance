@@ -516,8 +516,8 @@ const HomePage = () => {
                   <div className="text-[#1693f1] mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
-                  <p className="text-gray-300 mb-6">{service.description}</p>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">{service.title}</h3>
+                  <p className="text-slate-600 mb-6">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center space-x-2 text-sm text-gray-400">
