@@ -36,8 +36,7 @@ const HomePage = () => {
     pickupAddress: '',
     dropoffLocation: '',
     pickupDate: '',
-    firstName: '',
-    lastName: '',
+    fullName: '',
     phone: '',
     email: '',
     details: ''
