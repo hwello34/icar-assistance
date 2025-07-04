@@ -520,7 +520,7 @@ const HomePage = () => {
                   <p className="text-slate-600 mb-6">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center space-x-2 text-sm text-gray-400">
+                      <li key={idx} className="flex items-center space-x-2 text-sm text-slate-500">
                         <div className="w-1.5 h-1.5 bg-[#1693f1] rounded-full"></div>
                         <span>{feature}</span>
                       </li>
