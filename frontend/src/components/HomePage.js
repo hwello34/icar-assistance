@@ -795,7 +795,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-[#1693f1] rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white font-bold">2</span>
                       </div>
                       <div>
