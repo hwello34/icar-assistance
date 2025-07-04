@@ -567,7 +567,7 @@ const HomePage = () => {
                         <h4 className="text-xl font-bold text-white mb-3">{service.title}</h4>
                         <p className="text-gray-300 leading-relaxed">{service.description}</p>
                         <div className="mt-4 pt-4 border-t border-white/10">
-                          <span className="text-blue-400 text-sm font-semibold">Service disponible 24h/24</span>
+                          <span className="text-[#1693f1] text-sm font-semibold">Service disponible 24h/24</span>
                         </div>
                       </div>
                     </motion.div>
