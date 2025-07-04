@@ -1258,7 +1258,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Demandez Votre <span className="text-blue-200">Devis Gratuit</span>
+              Demandez Votre <span className="text-white/90">Devis Gratuit</span>
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Obtenez rapidement un devis personnalisé pour votre dépannage ou transport
