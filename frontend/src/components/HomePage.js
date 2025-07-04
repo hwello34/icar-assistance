@@ -722,7 +722,7 @@ const HomePage = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -751,6 +751,114 @@ const HomePage = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* QR Code Section pour les avis */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-gradient-to-r from-blue-600/20 to-blue-800/20 rounded-2xl p-12 border border-blue-400/30 text-center"
+          >
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-3xl font-bold text-white mb-6">
+                Vous Aussi, Partagez Votre <span className="text-blue-400">Expérience</span> !
+              </h3>
+              
+              <p className="text-xl text-gray-300 mb-8">
+                Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec AutoExpress.
+              </p>
+
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+                {/* QR Code */}
+                <div className="flex flex-col items-center">
+                  <div className="bg-white p-6 rounded-2xl shadow-2xl mb-4">
+                    <img
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://g.page/r/YourGoogleReviewsLink/review"
+                      alt="QR Code pour laisser un avis"
+                      className="w-48 h-48"
+                    />
+                  </div>
+                  <p className="text-blue-200 font-semibold">Scannez avec votre téléphone</p>
+                </div>
+
+                {/* Instructions */}
+                <div className="flex-1 text-left">
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold">1</span>
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Scannez le QR Code</h4>
+                        <p className="text-gray-300">Utilisez l'appareil photo de votre téléphone pour scanner le code</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold">2</span>
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Évaluez notre service</h4>
+                        <p className="text-gray-300">Donnez votre note et rédigez votre commentaire</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold">3</span>
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Publiez votre avis</h4>
+                        <p className="text-gray-300">Votre retour nous aide à améliorer nos services</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <motion.a
+                      href="https://g.page/r/YourGoogleReviewsLink/review"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Star className="w-5 h-5" />
+                      <span>Laisser un avis Google</span>
+                    </motion.a>
+                    
+                    <motion.a
+                      href="tel:0781505555"
+                      className="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Phone className="w-5 h-5" />
+                      <span>Nous contacter</span>
+                    </motion.a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <div className="flex flex-wrap justify-center items-center space-x-8 text-blue-200">
+                  <div className="flex items-center space-x-2">
+                    <Star className="w-5 h-5 text-yellow-400" />
+                    <span>Note moyenne : 4.9/5</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span>📱</span>
+                    <span>Avis en 30 secondes</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span>🔒</span>
+                    <span>100% sécurisé</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
