@@ -513,7 +513,7 @@ const HomePage = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-blue-400 mb-4">
+                  <div className="text-[#1693f1] mb-4">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
