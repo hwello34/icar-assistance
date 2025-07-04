@@ -593,7 +593,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <motion.a
                 href="tel:0781505555"
-                className="inline-flex items-center space-x-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
+                className="inline-flex items-center space-x-3 bg-[#c9473e] hover:bg-[#a73d35] text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
