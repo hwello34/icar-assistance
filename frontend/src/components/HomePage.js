@@ -1273,7 +1273,7 @@ const HomePage = () => {
               <span>Obtenir mon devis</span>
             </motion.button>
             
-            <p className="text-blue-200 mt-4 text-sm">
+            <p className="text-white/90 mt-4 text-sm">
               ✅ Devis gratuit et sans engagement
             </p>
           </motion.div>
