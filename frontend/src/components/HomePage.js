@@ -624,7 +624,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-8">
                 Pourquoi Choisir 
                 <span className="text-[#1693f1]"> AutoExpress</span> ?
               </h2>
