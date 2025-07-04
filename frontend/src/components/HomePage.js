@@ -655,8 +655,8 @@ const HomePage = () => {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Tarifs transparents</h3>
-                    <p className="text-gray-300">Devis gratuit et sans engagement. Pas de frais cachés.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Tarifs transparents</h3>
+                    <p className="text-slate-600">Devis gratuit et sans engagement. Pas de frais cachés.</p>
                   </div>
                 </div>
 
