@@ -1260,7 +1260,7 @@ const HomePage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Demandez Votre <span className="text-white/90">Devis Gratuit</span>
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Obtenez rapidement un devis personnalisé pour votre dépannage ou transport
             </p>
             
