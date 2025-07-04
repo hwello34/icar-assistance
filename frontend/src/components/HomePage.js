@@ -24,6 +24,68 @@ const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [locationStatus, setLocationStatus] = useState(null);
   const [currentLocation, setCurrentLocation] = useState(null);
+  const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [quoteForm, setQuoteForm] = useState({
+    vehicleType: '',
+    model: '',
+    brand: '',
+    licensePlate: '',
+    fourWheelDrive: '',
+    breakdown: '',
+    gearbox: '',
+    pickupAddress: '',
+    dropoffLocation: '',
+    pickupDate: '',
+    firstName: '',
+    lastName: '',
+    phone: '',
+    email: '',
+    details: ''
+  });
+
+  const handleQuoteFormChange = (e) => {
+    const { name, value } = e.target;
+    setQuoteForm(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleQuoteSubmit = (e) => {
+    e.preventDefault();
+    // Créer le message WhatsApp avec toutes les informations
+    const message = `🚗 DEMANDE DE DEVIS AUTOEXPRESS 🚗%0A%0A` +
+      `👤 CONTACT:%0A` +
+      `Nom: ${quoteForm.lastName}%0A` +
+      `Prénom: ${quoteForm.firstName}%0A` +
+      `Téléphone: ${quoteForm.phone}%0A` +
+      `Email: ${quoteForm.email}%0A%0A` +
+      `🚙 VÉHICULE:%0A` +
+      `Type: ${quoteForm.vehicleType}%0A` +
+      `Marque: ${quoteForm.brand}%0A` +
+      `Modèle: ${quoteForm.model}%0A` +
+      `Plaque: ${quoteForm.licensePlate}%0A` +
+      `4 roues motrices: ${quoteForm.fourWheelDrive}%0A` +
+      `Boîte de vitesse: ${quoteForm.gearbox}%0A` +
+      `État: ${quoteForm.breakdown}%0A%0A` +
+      `📍 TRANSPORT:%0A` +
+      `Enlèvement: ${quoteForm.pickupAddress}%0A` +
+      `Dépôt: ${quoteForm.dropoffLocation}%0A` +
+      `Date: ${quoteForm.pickupDate}%0A%0A` +
+      `📝 PRÉCISIONS:%0A${quoteForm.details}%0A%0A` +
+      `Merci de me faire parvenir votre devis !`;
+    
+    const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+    
+    // Réinitialiser le formulaire
+    setQuoteForm({
+      vehicleType: '', model: '', brand: '', licensePlate: '', fourWheelDrive: '',
+      breakdown: '', gearbox: '', pickupAddress: '', dropoffLocation: '', pickupDate: '',
+      firstName: '', lastName: '', phone: '', email: '', details: ''
+    });
+    setShowQuoteForm(false);
+  };
 
   // Fonction pour obtenir la géolocalisation
   const getLocation = () => {
