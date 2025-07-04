@@ -584,10 +584,10 @@ const HomePage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mt-16 bg-gradient-to-r from-[#87a2b8]/20 to-[#1693f1]/20 rounded-2xl p-12 border border-[#1693f1]/30 shadow-lg"
           >
-            <h3 className="text-3xl font-bold text-white mb-6">
+            <h3 className="text-3xl font-bold text-slate-800 mb-6">
               Besoin d'un Service Spécialisé ?
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
               Quelle que soit votre situation de dépannage sur Montpellier, nos experts ont la solution.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
