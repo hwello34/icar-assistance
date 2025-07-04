@@ -729,7 +729,7 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20"
+                className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#87a2b8]/20 hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
