@@ -665,8 +665,8 @@ const HomePage = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Couverture Montpellier Métropole</h3>
-                    <p className="text-gray-300">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Couverture Montpellier Métropole</h3>
+                    <p className="text-slate-600">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
                   </div>
                 </div>
               </div>
