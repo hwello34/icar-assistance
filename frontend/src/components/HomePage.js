@@ -1067,9 +1067,9 @@ const HomePage = () => {
                         onChange={handleQuoteFormChange}
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
                       >
-                        <option value="">Sélectionner</option>
-                        <option value="Roue libre">Roue libre</option>
-                        <option value="Roue bloquée">Roue bloquée</option>
+                        <option value="" style={{color: 'black'}}>Sélectionner</option>
+                        <option value="Roue libre" style={{color: 'black'}}>Roue libre</option>
+                        <option value="Roue bloquée" style={{color: 'black'}}>Roue bloquée</option>
                       </select>
                     </div>
                     
