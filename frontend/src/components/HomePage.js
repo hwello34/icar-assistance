@@ -645,8 +645,8 @@ const HomePage = () => {
                     <Wrench className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Expertise technique</h3>
-                    <p className="text-gray-300">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Expertise technique</h3>
+                    <p className="text-slate-600">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
                   </div>
                 </div>
 
