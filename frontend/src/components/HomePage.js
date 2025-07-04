@@ -360,6 +360,7 @@ const HomePage = () => {
           >
             <div className="px-4 py-6 space-y-4">
               <a href="#services" className="block text-slate-800 hover:text-blue-600">Services</a>
+              <a href="#quote" className="block text-slate-800 hover:text-blue-600">Devis</a>
               <a href="#about" className="block text-slate-800 hover:text-blue-600">À propos</a>
               <a href="#testimonials" className="block text-slate-800 hover:text-blue-600">Témoignages</a>
               <a href="#contact" className="block text-slate-800 hover:text-blue-600">Contact</a>
