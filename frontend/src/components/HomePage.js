@@ -376,7 +376,7 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <section className="relative pt-20 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1693f1]/10 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
