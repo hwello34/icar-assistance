@@ -1159,27 +1159,14 @@ const HomePage = () => {
                   </h3>
                   
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-gray-300 mb-2">Prénom *</label>
+                    <div className="md:col-span-2">
+                      <label className="block text-gray-300 mb-2">Nom Prénom *</label>
                       <input
                         type="text"
-                        name="firstName"
-                        value={quoteForm.firstName}
+                        name="fullName"
+                        value={quoteForm.fullName}
                         onChange={handleQuoteFormChange}
-                        placeholder="Votre prénom"
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-gray-300 mb-2">Nom *</label>
-                      <input
-                        type="text"
-                        name="lastName"
-                        value={quoteForm.lastName}
-                        onChange={handleQuoteFormChange}
-                        placeholder="Votre nom"
+                        placeholder="Votre nom et prénom complets"
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
                         required
                       />
