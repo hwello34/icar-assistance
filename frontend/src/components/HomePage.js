@@ -384,14 +384,14 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-red-600/20 text-red-400 px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center space-x-2 bg-[#c9473e]/20 text-[#c9473e] px-4 py-2 rounded-full mb-6">
                 <Clock className="w-4 h-4" />
                 <span className="text-sm font-medium">Service d'urgence 24h/24</span>
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Dépannage 
-                <span className="text-blue-400"> Express</span>
+                <span className="text-[#1693f1]"> Express</span>
                 <br />
                 <span className="text-3xl lg:text-4xl">à Montpellier</span>
               </h1>
