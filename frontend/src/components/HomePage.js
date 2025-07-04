@@ -1251,6 +1251,34 @@ const HomePage = () => {
 
       {/* Devis Section */}
       <section id="quote" className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Demandez Votre <span className="text-blue-200">Devis Gratuit</span>
+            </h2>
+            <p className="text-xl text-blue-100 mb-8">
+              Obtenez rapidement un devis personnalisé pour votre dépannage ou transport
+            </p>
+            
+            <motion.button
+              onClick={() => setShowQuoteForm(true)}
+              className="inline-flex items-center space-x-3 bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-full text-xl font-bold transition-all duration-300 shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span>Obtenir mon devis</span>
+            </motion.button>
+            
+            <p className="text-blue-200 mt-4 text-sm">
+              ✅ Devis gratuit et sans engagement
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-slate-900 py-12">
