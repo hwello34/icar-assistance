@@ -1222,7 +1222,7 @@ const HomePage = () => {
                         onChange={handleQuoteFormChange}
                         placeholder="Informations complémentaires sur votre demande..."
                         rows="4"
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-[#1693f1] focus:outline-none transition-colors resize-none"
                       />
                     </div>
                   </div>
