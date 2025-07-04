@@ -321,11 +321,11 @@ const HomePage = () => {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="#services" className="text-white hover:text-blue-400 transition-colors">Services</a>
-              <a href="#quote" className="text-white hover:text-blue-400 transition-colors">Devis</a>
-              <a href="#about" className="text-white hover:text-blue-400 transition-colors">À propos</a>
-              <a href="#testimonials" className="text-white hover:text-blue-400 transition-colors">Témoignages</a>
-              <a href="#contact" className="text-white hover:text-blue-400 transition-colors">Contact</a>
+              <a href="#services" className="text-white hover:text-[#1693f1] transition-colors">Services</a>
+              <a href="#quote" className="text-white hover:text-[#1693f1] transition-colors">Devis</a>
+              <a href="#about" className="text-white hover:text-[#1693f1] transition-colors">À propos</a>
+              <a href="#testimonials" className="text-white hover:text-[#1693f1] transition-colors">Témoignages</a>
+              <a href="#contact" className="text-white hover:text-[#1693f1] transition-colors">Contact</a>
             </div>
 
             {/* Emergency Call Button */}
