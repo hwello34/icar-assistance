@@ -913,7 +913,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+      <section id="contact" className="py-20 bg-gradient-to-r from-[#1693f1] to-[#87a2b8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
