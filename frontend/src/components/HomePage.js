@@ -1018,7 +1018,7 @@ const HomePage = () => {
                 {/* Informations Véhicule */}
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10">
                   <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
-                    <Car className="w-6 h-6 mr-3 text-blue-400" />
+                    <Car className="w-6 h-6 mr-3 text-[#1693f1]" />
                     Informations du Véhicule
                   </h3>
                   
