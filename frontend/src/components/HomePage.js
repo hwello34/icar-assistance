@@ -1081,7 +1081,7 @@ const HomePage = () => {
                         name="fourWheelDrive"
                         value={quoteForm.fourWheelDrive}
                         onChange={handleQuoteFormChange}
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-blue-400 focus:outline-none transition-colors"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-[#1693f1] focus:outline-none transition-colors"
                       >
                         <option value="" style={{color: 'black'}}>Sélectionner</option>
                         <option value="Roue libre" style={{color: 'black'}}>Roue libre</option>
