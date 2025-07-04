@@ -540,7 +540,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
               >
-                <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                <h3 className="text-3xl font-bold text-slate-800 mb-8 text-center">
                   <span className="text-[#1693f1]">{category.category}</span>
                 </h3>
                 
