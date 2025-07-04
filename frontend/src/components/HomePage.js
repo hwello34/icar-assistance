@@ -582,7 +582,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mt-16 bg-gradient-to-r from-[#1693f1]/20 to-[#87a2b8]/20 rounded-2xl p-12 border border-[#1693f1]/30"
+            className="text-center mt-16 bg-gradient-to-r from-[#87a2b8]/20 to-[#1693f1]/20 rounded-2xl p-12 border border-[#1693f1]/30 shadow-lg"
           >
             <h3 className="text-3xl font-bold text-white mb-6">
               Besoin d'un Service Spécialisé ?
