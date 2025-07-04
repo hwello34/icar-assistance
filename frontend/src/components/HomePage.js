@@ -389,14 +389,14 @@ const HomePage = () => {
                 <span className="text-sm font-medium">Service d'urgence 24h/24</span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
                 Dépannage 
                 <span className="text-[#1693f1]"> Express</span>
                 <br />
-                <span className="text-3xl lg:text-4xl">à Montpellier</span>
+                <span className="text-3xl lg:text-4xl text-[#87a2b8]">à Montpellier</span>
               </h1>
               
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-slate-700 mb-8 leading-relaxed">
                 Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
                 Nos experts interviennent rapidement partout sur Montpellier Métropole.
               </p>
