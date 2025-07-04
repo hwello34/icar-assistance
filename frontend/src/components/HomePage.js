@@ -891,7 +891,7 @@ const HomePage = () => {
                 >
                   <span className="text-white font-semibold text-lg">{faq.question}</span>
                   <ChevronDown 
-                    className={`w-5 h-5 text-blue-400 transition-transform ${
+                    className={`w-5 h-5 text-[#1693f1] transition-transform ${
                       openFaq === index ? 'rotate-180' : ''
                     }`} 
                   />
