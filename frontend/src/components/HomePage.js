@@ -522,11 +522,12 @@ const HomePage = () => {
               Nos Services <span className="text-blue-400">Experts</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Dépannage automobile, moto et utilitaire avec des professionnels qualifiés sur Montpellier
+              Dépannage automobile, transport et services techniques complets sur Montpellier
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Services Principaux */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -560,6 +561,88 @@ const HomePage = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Services Spécialisés */}
+          <div className="space-y-16">
+            {specializedServices.map((category, categoryIndex) => (
+              <motion.div
+                key={categoryIndex}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
+              >
+                <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                  <span className="text-blue-400">{category.category}</span>
+                </h3>
+                
+                <div className="grid md:grid-cols-3 gap-8">
+                  {category.services.map((service, serviceIndex) => (
+                    <motion.div
+                      key={serviceIndex}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, delay: serviceIndex * 0.1 }}
+                      className="bg-gradient-to-br from-blue-900/30 to-slate-900/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-blue-400/20 hover:border-blue-400/40 transition-all duration-300 group"
+                    >
+                      <div className="h-48 overflow-hidden relative">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute top-4 left-4 text-4xl bg-white/90 rounded-full p-3 backdrop-blur-sm">
+                          {service.icon}
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h4 className="text-xl font-bold text-white mb-3">{service.title}</h4>
+                        <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                        <div className="mt-4 pt-4 border-t border-white/10">
+                          <span className="text-blue-400 text-sm font-semibold">Service disponible 24h/24</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Call to Action Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mt-16 bg-gradient-to-r from-blue-600/20 to-blue-800/20 rounded-2xl p-12 border border-blue-400/30"
+          >
+            <h3 className="text-3xl font-bold text-white mb-6">
+              Besoin d'un Service Spécialisé ?
+            </h3>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Quelle que soit votre situation de dépannage sur Montpellier, nos experts ont la solution.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <motion.a
+                href="tel:0781505555"
+                className="inline-flex items-center space-x-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Phone className="w-6 h-6" />
+                <span>Devis Immédiat</span>
+              </motion.a>
+              <motion.button
+                onClick={getLocation}
+                className="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <MessageCircle className="w-6 h-6" />
+                <Navigation className="w-5 h-5" />
+                <span>Localisation GPS</span>
+              </motion.button>
+            </div>
+          </motion.div>
         </div>
       </section>
 
