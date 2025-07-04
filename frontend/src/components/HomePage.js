@@ -714,10 +714,10 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Ils Nous Font <span className="text-[#1693f1]">Confiance</span>
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-slate-600">
               Plus de 5 000 clients satisfaits sur Montpellier Métropole
             </p>
           </motion.div>
