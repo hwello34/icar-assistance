@@ -55,8 +55,7 @@ const HomePage = () => {
     // Créer le message WhatsApp avec toutes les informations
     const message = `🚗 DEMANDE DE DEVIS AUTOEXPRESS 🚗%0A%0A` +
       `👤 CONTACT:%0A` +
-      `Nom: ${quoteForm.lastName}%0A` +
-      `Prénom: ${quoteForm.firstName}%0A` +
+      `Nom Prénom: ${quoteForm.fullName}%0A` +
       `Téléphone: ${quoteForm.phone}%0A` +
       `Email: ${quoteForm.email}%0A%0A` +
       `🚙 VÉHICULE:%0A` +
@@ -64,7 +63,7 @@ const HomePage = () => {
       `Marque: ${quoteForm.brand}%0A` +
       `Modèle: ${quoteForm.model}%0A` +
       `Plaque: ${quoteForm.licensePlate}%0A` +
-      `4 roues motrices: ${quoteForm.fourWheelDrive}%0A` +
+      `Roues: ${quoteForm.fourWheelDrive}%0A` +
       `Boîte de vitesse: ${quoteForm.gearbox}%0A` +
       `État: ${quoteForm.breakdown}%0A%0A` +
       `📍 TRANSPORT:%0A` +
@@ -81,7 +80,7 @@ const HomePage = () => {
     setQuoteForm({
       vehicleType: '', model: '', brand: '', licensePlate: '', fourWheelDrive: '',
       breakdown: '', gearbox: '', pickupAddress: '', dropoffLocation: '', pickupDate: '',
-      firstName: '', lastName: '', phone: '', email: '', details: ''
+      fullName: '', phone: '', email: '', details: ''
     });
     setShowQuoteForm(false);
   };
