@@ -965,19 +965,19 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-8 text-blue-100">
+            <div className="grid sm:grid-cols-3 gap-8 text-white/90">
               <div>
-                <Clock className="w-8 h-8 mx-auto mb-4 text-blue-300" />
+                <Clock className="w-8 h-8 mx-auto mb-4 text-white" />
                 <h3 className="font-semibold mb-2">Disponibilité</h3>
                 <p>24h/24 - 7j/7</p>
               </div>
               <div>
-                <MapPin className="w-8 h-8 mx-auto mb-4 text-blue-300" />
+                <MapPin className="w-8 h-8 mx-auto mb-4 text-white" />
                 <h3 className="font-semibold mb-2">Zone d'intervention</h3>
                 <p>Montpellier Métropole</p>
               </div>
               <div>
-                <Shield className="w-8 h-8 mx-auto mb-4 text-blue-300" />
+                <Shield className="w-8 h-8 mx-auto mb-4 text-white" />
                 <h3 className="font-semibold mb-2">Garantie</h3>
                 <p>Satisfaction client</p>
               </div>
