@@ -487,10 +487,10 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Nos Services <span className="text-[#1693f1]">Experts</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Dépannage automobile, transport et services techniques complets sur Montpellier
             </p>
           </motion.div>
