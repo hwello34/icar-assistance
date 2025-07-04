@@ -352,7 +352,7 @@ const HomePage = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <motion.div 
-            className="md:hidden bg-white/95 backdrop-blur-md"
+            className="md:hidden bg-white/95 backdrop-blur-md border-b border-[#87a2b8]/30"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
           >
