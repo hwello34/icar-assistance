@@ -626,7 +626,7 @@ const HomePage = () => {
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
                 Pourquoi Choisir 
-                <span className="text-blue-400"> AutoExpress</span> ?
+                <span className="text-[#1693f1]"> AutoExpress</span> ?
               </h2>
               
               <div className="space-y-8">
