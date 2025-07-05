@@ -589,7 +589,7 @@ const HomePage = () => {
             <h3 className="text-3xl font-bold text-slate-800 mb-6">
               Besoin d'un Service Spécialisé ?
             </h3>
-            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-800 mb-8 max-w-2xl mx-auto">
               Quelle que soit votre situation de dépannage sur Montpellier, nos experts ont la solution.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
