@@ -891,7 +891,7 @@ const HomePage = () => {
                   className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                 >
-                  <span className="text-white font-semibold text-lg">{faq.question}</span>
+                  <span className="text-slate-800 font-semibold text-lg">{faq.question}</span>
                   <ChevronDown 
                     className={`w-5 h-5 text-[#1693f1] transition-transform ${
                       openFaq === index ? 'rotate-180' : ''
