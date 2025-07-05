@@ -398,7 +398,7 @@ const HomePage = () => {
                 Pour un dépannage sans stress, appelez AutoExpress !
               </h2>
               
-              <p className="text-xl text-slate-700 mb-8 leading-relaxed">
+              <p className="text-xl text-slate-800 mb-8 leading-relaxed">
                 Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
                 Nos experts interviennent rapidement partout sur Montpellier Métropole pour un service de dépannage professionnel et sans tracas.
               </p>
