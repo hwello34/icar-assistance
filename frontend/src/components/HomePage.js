@@ -1260,10 +1260,10 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Demandez Votre <span className="text-white/90">Devis Gratuit</span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+              Demandez Votre <span className="text-[#1693f1]">Devis Gratuit</span>
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-slate-800 mb-8">
               Obtenez rapidement un devis personnalisé pour votre dépannage ou transport
             </p>
             
