@@ -390,11 +390,13 @@ const HomePage = () => {
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
-                Dépannage 
+                Auto
                 <span className="text-[#1693f1]"> Express</span>
-                <br />
-                <span className="text-3xl lg:text-4xl text-[#87a2b8]">à Montpellier</span>
               </h1>
+              
+              <h2 className="text-2xl lg:text-3xl font-semibold text-[#87a2b8] mb-8 leading-relaxed">
+                Pour un dépannage sans stress, appelez AutoExpress !
+              </h2>
               
               <p className="text-xl text-slate-700 mb-8 leading-relaxed">
                 Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
