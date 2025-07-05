@@ -967,7 +967,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-8 text-white/90">
+            <div className="grid sm:grid-cols-3 gap-8 text-slate-800">
               <div>
                 <Clock className="w-8 h-8 mx-auto mb-4 text-white" />
                 <h3 className="font-semibold mb-2">Disponibilité</h3>
