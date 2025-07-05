@@ -668,7 +668,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-800 mb-2">Couverture Montpellier Métropole</h3>
-                    <p className="text-slate-600">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
+                    <p className="text-slate-800">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
                   </div>
                 </div>
               </div>
