@@ -922,7 +922,7 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Une Panne ? Appelez-Nous !
             </h2>
             <p className="text-xl text-white/90 mb-8">
