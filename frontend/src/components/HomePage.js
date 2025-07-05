@@ -719,7 +719,7 @@ const HomePage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Ils Nous Font <span className="text-[#1693f1]">Confiance</span>
             </h2>
-            <p className="text-xl text-slate-600">
+            <p className="text-xl text-slate-800">
               Plus de 5 000 clients satisfaits sur Montpellier Métropole
             </p>
           </motion.div>
