@@ -747,7 +747,7 @@ const HomePage = () => {
                   />
                   <div>
                     <h4 className="text-white font-semibold">{testimonial.name}</h4>
-                    <p className="text-gray-400 text-sm">{testimonial.location}</p>
+                    <p className="text-slate-700 text-sm">{testimonial.location}</p>
                   </div>
                 </div>
               </motion.div>
