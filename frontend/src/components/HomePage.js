@@ -925,7 +925,7 @@ const HomePage = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Une Panne ? Appelez-Nous !
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-slate-800 mb-8">
               Service d'urgence disponible 24h/24 - Intervention rapide sur Montpellier Métropole
             </p>
             
