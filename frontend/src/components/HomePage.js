@@ -648,7 +648,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-800 mb-2">Expertise technique</h3>
-                    <p className="text-slate-600">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
+                    <p className="text-slate-800">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
                   </div>
                 </div>
 
