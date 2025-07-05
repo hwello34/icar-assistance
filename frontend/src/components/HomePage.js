@@ -802,7 +802,7 @@ const HomePage = () => {
                       </div>
                       <div>
                         <h4 className="text-white font-semibold text-lg mb-2">Évaluez notre service</h4>
-                        <p className="text-gray-300">Donnez votre note et rédigez votre commentaire</p>
+                        <p className="text-slate-800">Donnez votre note et rédigez votre commentaire</p>
                       </div>
                     </div>
 
