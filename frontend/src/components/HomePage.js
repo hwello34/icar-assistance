@@ -905,7 +905,7 @@ const HomePage = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="px-8 pb-6"
                   >
-                    <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                    <p className="text-slate-800 leading-relaxed">{faq.answer}</p>
                   </motion.div>
                 )}
               </motion.div>
