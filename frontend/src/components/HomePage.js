@@ -961,7 +961,7 @@ const HomePage = () => {
                 )}
               </motion.button>
               
-              <div className="text-blue-100">
+              <div className="text-slate-800">
                 <p className="font-semibold">Email : contact@autoexpress.fr</p>
                 <p>Devis gratuit par téléphone</p>
               </div>
