@@ -792,7 +792,7 @@ const HomePage = () => {
                       </div>
                       <div>
                         <h4 className="text-white font-semibold text-lg mb-2">Scannez le QR Code</h4>
-                        <p className="text-gray-300">Utilisez l'appareil photo de votre téléphone pour scanner le code</p>
+                        <p className="text-slate-800">Utilisez l'appareil photo de votre téléphone pour scanner le code</p>
                       </div>
                     </div>
 
