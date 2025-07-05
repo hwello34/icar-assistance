@@ -638,7 +638,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-800 mb-2">Rapidité d'intervention</h3>
-                    <p className="text-slate-600">Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.</p>
+                    <p className="text-slate-800">Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.</p>
                   </div>
                 </div>
 
