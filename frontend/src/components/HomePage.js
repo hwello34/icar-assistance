@@ -766,7 +766,7 @@ const HomePage = () => {
                 Vous Aussi, Partagez Votre <span className="text-[#1693f1]">Expérience</span> !
               </h3>
               
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="text-xl text-slate-800 mb-8">
                 Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec AutoExpress.
               </p>
 
