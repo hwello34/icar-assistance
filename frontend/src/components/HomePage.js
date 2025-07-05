@@ -400,7 +400,7 @@ const HomePage = () => {
               
               <p className="text-xl text-slate-700 mb-8 leading-relaxed">
                 Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
-                Nos experts interviennent rapidement partout sur Montpellier Métropole.
+                Nos experts interviennent rapidement partout sur Montpellier Métropole pour un service de dépannage professionnel et sans tracas.
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
