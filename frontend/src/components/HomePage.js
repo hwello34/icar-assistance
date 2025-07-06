@@ -469,8 +469,8 @@ const HomePage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1652081848323-5f425c65c2c7"
-                  alt="Dépanneuse AutoExpress en intervention"
+                  src="https://i.imgur.com/YfI4JO3.png"
+                  alt="AutoExpress - Services de dépannage automobile, moto et utilitaire 24h/24"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1693f1]/50 to-transparent"></div>
