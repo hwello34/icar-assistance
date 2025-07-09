@@ -469,13 +469,13 @@ const HomePage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://i.ibb.co/TDYLcZVn/image.png"
+                  src="https://i.ibb.co/DPJ3J72y/image.png"
                   alt="AutoExpress - Services de dépannage professionnel à Montpellier"
                   className="w-full h-[500px] object-contain bg-white rounded-lg"
                   onError={(e) => {
                     console.log('Erreur chargement image:', e.target.src);
                     // Fallback si problème de chargement
-                    e.target.src = 'https://i.ibb.co/TDYLcZVn/image.jpg';
+                    e.target.src = 'https://i.ibb.co/DPJ3J72y/image.jpg';
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1693f1]/50 to-transparent"></div>
