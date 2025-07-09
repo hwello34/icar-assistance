@@ -468,66 +468,16 @@ const HomePage = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden">
-                <div className="relative bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="text-center space-y-6">
-                    {/* Logo central */}
-                    <div className="flex justify-center mb-8">
-                      <div className="relative">
-                        <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
-                          <div className="text-center">
-                            <div className="text-white font-bold text-lg">AUTO</div>
-                            <div className="text-white font-bold text-lg">EXPRESS</div>
-                            <div className="text-yellow-400 font-bold text-sm">24h/7j</div>
-                          </div>
-                        </div>
-                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                          07 81 50 55 55
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Nuage de mots organisé */}
-                    <div className="grid grid-cols-3 gap-4 text-center">
-                      <div className="space-y-2">
-                        <div className="text-2xl font-bold text-blue-600">DÉPANNAGE</div>
-                        <div className="text-lg text-green-600 font-semibold">Professionnel</div>
-                        <div className="text-md text-gray-600">sécurité</div>
-                        <div className="text-lg text-red-500 font-semibold">rapidité</div>
-                      </div>
-                      
-                      <div className="space-y-2">
-                        <div className="text-xl font-bold text-green-600">Expérience</div>
-                        <div className="text-2xl font-bold text-red-500">REMORQUAGE</div>
-                        <div className="text-lg text-blue-600 font-semibold">confiance</div>
-                        <div className="text-md text-gray-600">conseiller</div>
-                      </div>
-                      
-                      <div className="space-y-2">
-                        <div className="text-lg text-green-600 font-semibold">Efficacité</div>
-                        <div className="text-md text-gray-600">Serrurerie</div>
-                        <div className="text-lg text-red-500 font-semibold">crevaison</div>
-                        <div className="text-lg text-blue-600 font-semibold">batterie</div>
-                      </div>
-                    </div>
-
-                    {/* Services spéciaux */}
-                    <div className="flex flex-wrap justify-center gap-3 mt-6">
-                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">moto</span>
-                      <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">accident</span>
-                      <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">panne</span>
-                      <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">épave</span>
-                      <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">sortie fourrière</span>
-                    </div>
-
-                    {/* Qualités */}
-                    <div className="text-center space-x-4 text-sm text-gray-600">
-                      <span>sérénité</span> • 
-                      <span>écouter</span> • 
-                      <span>prix attractif</span> • 
-                      <span>carburant</span>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src="https://i.ibb.co/TDYLcZVn/image.png"
+                  alt="AutoExpress - Services de dépannage professionnel à Montpellier"
+                  className="w-full h-[500px] object-contain bg-white rounded-lg"
+                  onError={(e) => {
+                    console.log('Erreur chargement image:', e.target.src);
+                    // Fallback si problème de chargement
+                    e.target.src = 'https://i.ibb.co/TDYLcZVn/image.jpg';
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1693f1]/50 to-transparent"></div>
               </div>
             </motion.div>
