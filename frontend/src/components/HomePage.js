@@ -469,7 +469,7 @@ const HomePage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://i.ibb.co/DPJ3J72y/image.png"
+                  src="https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg"
                   alt="AutoExpress - Services de dépannage professionnel à Montpellier"
                   className="w-full h-[500px] object-contain bg-white rounded-lg"
                   onError={(e) => {
