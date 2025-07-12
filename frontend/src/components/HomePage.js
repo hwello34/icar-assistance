@@ -391,12 +391,12 @@ const HomePage = () => {
             {/* Emergency Call Button */}
             <motion.a
               href="tel:0781505555"
-              className="hidden md:flex items-center space-x-2 bg-[#c9473e] hover:bg-[#a73d35] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+              className="hidden md:flex items-center space-x-3 bg-[#c9473e] hover:bg-[#a73d35] text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Phone className="w-5 h-5" />
-              <span>07 81 50 55 55</span>
+              <Phone className="w-6 h-6" />
+              <span className="text-xl">07 81 50 55 55</span>
             </motion.a>
 
             {/* Mobile Menu Button */}
