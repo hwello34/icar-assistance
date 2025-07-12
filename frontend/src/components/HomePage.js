@@ -29,6 +29,8 @@ const HomePage = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentLanguage, setCurrentLanguage] = useState('fr');
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [quoteForm, setQuoteForm] = useState({
     vehicleType: '',
     model: '',
@@ -45,6 +47,423 @@ const HomePage = () => {
     email: '',
     details: ''
   });
+
+  // Système de traductions
+  const translations = {
+    fr: {
+      // Navigation
+      services: "Services",
+      quote: "Devis",
+      about: "À propos",
+      testimonials: "Témoignages",
+      contact: "Contact",
+      emergency: "Service d'urgence 24h/24",
+      emergencyCall: "Appel d'urgence",
+      freeQuote: "Devis Gratuit",
+      whatsappGps: "WhatsApp + GPS",
+      locating: "Localisation...",
+      
+      // Hero Section
+      heroTitle: "Auto Express",
+      heroSubtitle: "Pour un dépannage sans stress, appelez AutoExpress !",
+      heroDescription: "Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? Nos experts interviennent rapidement partout sur Montpellier Métropole pour un service de dépannage professionnel et sans tracas.",
+      intervention30min: "Intervention sous 30min",
+      gpsLocation: "Localisation GPS",
+      guarantee: "Garantie satisfaction",
+      
+      // Services
+      servicesTitle: "Nos Services Experts",
+      servicesSubtitle: "Dépannage automobile, transport et services techniques complets sur Montpellier",
+      
+      autoRepair: "Dépannage Automobile",
+      autoRepairDesc: "Intervention rapide tous véhicules légers",
+      completeDiagnostic: "Diagnostic complet",
+      onSiteRepair: "Réparation sur place",
+      allBrands: "Véhicules de toutes marques",
+      
+      vehicleTowing: "Remorquage Véhicules",
+      vehicleTowingDesc: "Service de remorquage professionnel 24h/24",
+      equippedTowTrucks: "Dépanneuses équipées",
+      secureTransport: "Transport sécurisé",
+      allVehicleTypes: "Tous types de véhicules",
+      
+      batteryService: "Dépannage Batterie",
+      batteryServiceDesc: "Démarrage et remplacement batterie",
+      emergencyStart: "Démarrage d'urgence",
+      onSiteReplacement: "Remplacement sur place",
+      qualityBatteries: "Batteries de qualité",
+      
+      tireService: "Service Pneus",
+      tireServiceDesc: "Intervention pneus route et domicile",
+      mountingDismounting: "Démontage/montage",
+      spareWheel: "Roue de secours",
+      punctureRepair: "Réparation crevaison",
+      
+      // FAQ
+      question1: "Intervenez-vous 24h/24 et 7j/7 sur Montpellier ?",
+      answer1: "Oui, nous assurons un service d'urgence 24h/24 et 7j/7 pour tous vos besoins de dépannage automobile et moto sur Montpellier et sa métropole.",
+      
+      question2: "Comment fonctionne la géolocalisation WhatsApp ?",
+      answer2: "Cliquez sur le bouton 'WhatsApp + GPS', autorisez la géolocalisation, et votre position exacte sera automatiquement envoyée via WhatsApp avec un lien Google Maps pour nous permettre de vous localiser instantanément.",
+      
+      // Footer
+      quickLinks: "Liens Rapides",
+      serviceZones: "Zones",
+      contactInfo: "Contact",
+      whatsappWithGps: "WhatsApp avec GPS",
+      freeQuoteText: "Devis gratuit"
+    },
+    
+    en: {
+      // Navigation
+      services: "Services",
+      quote: "Quote",
+      about: "About",
+      testimonials: "Testimonials",
+      contact: "Contact",
+      emergency: "24/7 Emergency Service",
+      emergencyCall: "Emergency Call",
+      freeQuote: "Free Quote",
+      whatsappGps: "WhatsApp + GPS",
+      locating: "Locating...",
+      
+      // Hero Section
+      heroTitle: "Auto Express",
+      heroSubtitle: "For stress-free breakdown assistance, call AutoExpress!",
+      heroDescription: "Car, motorcycle or utility vehicle breakdown? Flat battery? Puncture? Our experts intervene quickly throughout Montpellier Metropolitan area for professional and hassle-free breakdown service.",
+      intervention30min: "Intervention within 30min",
+      gpsLocation: "GPS Location",
+      guarantee: "Satisfaction guarantee",
+      
+      // Services
+      servicesTitle: "Our Expert Services",
+      servicesSubtitle: "Automotive breakdown, transport and complete technical services in Montpellier",
+      
+      autoRepair: "Automotive Breakdown",
+      autoRepairDesc: "Rapid intervention for all light vehicles",
+      completeDiagnostic: "Complete diagnostic",
+      onSiteRepair: "On-site repair",
+      allBrands: "All brand vehicles",
+      
+      vehicleTowing: "Vehicle Towing",
+      vehicleTowingDesc: "Professional 24/7 towing service",
+      equippedTowTrucks: "Equipped tow trucks",
+      secureTransport: "Secure transport",
+      allVehicleTypes: "All vehicle types",
+      
+      batteryService: "Battery Service",
+      batteryServiceDesc: "Jump start and battery replacement",
+      emergencyStart: "Emergency start",
+      onSiteReplacement: "On-site replacement",
+      qualityBatteries: "Quality batteries",
+      
+      tireService: "Tire Service",
+      tireServiceDesc: "Roadside and home tire intervention",
+      mountingDismounting: "Mounting/dismounting",
+      spareWheel: "Spare wheel",
+      punctureRepair: "Puncture repair",
+      
+      // FAQ
+      question1: "Do you operate 24/7 in Montpellier?",
+      answer1: "Yes, we provide 24/7 emergency service for all your automotive and motorcycle breakdown needs in Montpellier and its metropolitan area.",
+      
+      question2: "How does WhatsApp geolocation work?",
+      answer2: "Click the 'WhatsApp + GPS' button, allow geolocation, and your exact position will be automatically sent via WhatsApp with a Google Maps link to help us locate you instantly.",
+      
+      // Footer
+      quickLinks: "Quick Links",
+      serviceZones: "Zones",
+      contactInfo: "Contact",
+      whatsappWithGps: "WhatsApp with GPS",
+      freeQuoteText: "Free quote"
+    },
+    
+    es: {
+      // Navigation
+      services: "Servicios",
+      quote: "Presupuesto",
+      about: "Acerca de",
+      testimonials: "Testimonios",
+      contact: "Contacto",
+      emergency: "Servicio de emergencia 24h/24",
+      emergencyCall: "Llamada de emergencia",
+      freeQuote: "Presupuesto Gratuito",
+      whatsappGps: "WhatsApp + GPS",
+      locating: "Localizando...",
+      
+      // Hero Section
+      heroTitle: "Auto Express",
+      heroSubtitle: "¡Para una asistencia en carretera sin estrés, llame a AutoExpress!",
+      heroDescription: "¿Avería de coche, moto o vehículo utilitario? ¿Batería descargada? ¿Pinchazo? Nuestros expertos intervienen rápidamente en toda el área metropolitana de Montpellier para un servicio de asistencia profesional y sin complicaciones.",
+      intervention30min: "Intervención en 30min",
+      gpsLocation: "Localización GPS",
+      guarantee: "Garantía de satisfacción",
+      
+      // Services
+      servicesTitle: "Nuestros Servicios Expertos",
+      servicesSubtitle: "Asistencia automotriz, transporte y servicios técnicos completos en Montpellier",
+      
+      autoRepair: "Asistencia Automotriz",
+      autoRepairDesc: "Intervención rápida para todos los vehículos ligeros",
+      completeDiagnostic: "Diagnóstico completo",
+      onSiteRepair: "Reparación en el lugar",
+      allBrands: "Vehículos de todas las marcas",
+      
+      vehicleTowing: "Remolque de Vehículos",
+      vehicleTowingDesc: "Servicio de remolque profesional 24h/24",
+      equippedTowTrucks: "Grúas equipadas",
+      secureTransport: "Transporte seguro",
+      allVehicleTypes: "Todos los tipos de vehículos",
+      
+      batteryService: "Servicio de Batería",
+      batteryServiceDesc: "Arranque y reemplazo de batería",
+      emergencyStart: "Arranque de emergencia",
+      onSiteReplacement: "Reemplazo en el lugar",
+      qualityBatteries: "Baterías de calidad",
+      
+      tireService: "Servicio de Neumáticos",
+      tireServiceDesc: "Intervención de neumáticos en carretera y domicilio",
+      mountingDismounting: "Montaje/desmontaje",
+      spareWheel: "Rueda de repuesto",
+      punctureRepair: "Reparación de pinchazos",
+      
+      // FAQ
+      question1: "¿Operan 24h/24 y 7j/7 en Montpellier?",
+      answer1: "Sí, proporcionamos servicio de emergencia 24h/24 y 7j/7 para todas sus necesidades de asistencia automotriz y de motocicletas en Montpellier y su área metropolitana.",
+      
+      question2: "¿Cómo funciona la geolocalización de WhatsApp?",
+      answer2: "Haga clic en el botón 'WhatsApp + GPS', permita la geolocalización, y su posición exacta será enviada automáticamente vía WhatsApp con un enlace de Google Maps para ayudarnos a localizarle instantáneamente.",
+      
+      // Footer
+      quickLinks: "Enlaces Rápidos",
+      serviceZones: "Zonas",
+      contactInfo: "Contacto",
+      whatsappWithGps: "WhatsApp con GPS",
+      freeQuoteText: "Presupuesto gratuito"
+    },
+    
+    it: {
+      // Navigation
+      services: "Servizi",
+      quote: "Preventivo",
+      about: "Chi siamo",
+      testimonials: "Testimonianze",
+      contact: "Contatto",
+      emergency: "Servizio di emergenza 24h/24",
+      emergencyCall: "Chiamata di emergenza",
+      freeQuote: "Preventivo Gratuito",
+      whatsappGps: "WhatsApp + GPS",
+      locating: "Localizzazione...",
+      
+      // Hero Section
+      heroTitle: "Auto Express",
+      heroSubtitle: "Per un'assistenza stradale senza stress, chiama AutoExpress!",
+      heroDescription: "Guasto auto, moto o veicolo commerciale? Batteria scarica? Foratura? I nostri esperti intervengono rapidamente in tutta l'area metropolitana di Montpellier per un servizio di assistenza professionale e senza problemi.",
+      intervention30min: "Intervento entro 30min",
+      gpsLocation: "Localizzazione GPS",
+      guarantee: "Garanzia di soddisfazione",
+      
+      // Services
+      servicesTitle: "I Nostri Servizi Esperti",
+      servicesSubtitle: "Assistenza automobilistica, trasporto e servizi tecnici completi a Montpellier",
+      
+      autoRepair: "Assistenza Automobilistica",
+      autoRepairDesc: "Intervento rapido per tutti i veicoli leggeri",
+      completeDiagnostic: "Diagnosi completa",
+      onSiteRepair: "Riparazione sul posto",
+      allBrands: "Veicoli di tutte le marche",
+      
+      vehicleTowing: "Rimorchio Veicoli",
+      vehicleTowingDesc: "Servizio di rimorchio professionale 24h/24",
+      equippedTowTrucks: "Carri attrezzi attrezzati",
+      secureTransport: "Trasporto sicuro",
+      allVehicleTypes: "Tutti i tipi di veicoli",
+      
+      batteryService: "Servizio Batteria",
+      batteryServiceDesc: "Avviamento e sostituzione batteria",
+      emergencyStart: "Avviamento di emergenza",
+      onSiteReplacement: "Sostituzione sul posto",
+      qualityBatteries: "Batterie di qualità",
+      
+      tireService: "Servizio Pneumatici",
+      tireServiceDesc: "Intervento pneumatici strada e domicilio",
+      mountingDismounting: "Montaggio/smontaggio",
+      spareWheel: "Ruota di scorta",
+      punctureRepair: "Riparazione foratura",
+      
+      // FAQ
+      question1: "Operate 24h/24 e 7g/7 a Montpellier?",
+      answer1: "Sì, forniamo servizio di emergenza 24h/24 e 7g/7 per tutte le vostre esigenze di assistenza automobilistica e motociclistica a Montpellier e nella sua area metropolitana.",
+      
+      question2: "Come funziona la geolocalizzazione WhatsApp?",
+      answer2: "Clicca sul pulsante 'WhatsApp + GPS', consenti la geolocalizzazione, e la tua posizione esatta sarà inviata automaticamente via WhatsApp con un link Google Maps per aiutarci a localizzarti istantaneamente.",
+      
+      // Footer
+      quickLinks: "Link Rapidi",
+      serviceZones: "Zone",
+      contactInfo: "Contatto",
+      whatsappWithGps: "WhatsApp con GPS",
+      freeQuoteText: "Preventivo gratuito"
+    },
+    
+    ar: {
+      // Navigation
+      services: "الخدمات",
+      quote: "عرض سعر",
+      about: "من نحن",
+      testimonials: "الشهادات",
+      contact: "اتصل بنا",
+      emergency: "خدمة طوارئ 24/7",
+      emergencyCall: "مكالمة طوارئ",
+      freeQuote: "عرض سعر مجاني",
+      whatsappGps: "واتساب + GPS",
+      locating: "تحديد الموقع...",
+      
+      // Hero Section
+      heroTitle: "أوتو إكسبريس",
+      heroSubtitle: "للحصول على مساعدة على الطريق بدون إجهاد، اتصل بأوتو إكسبريس!",
+      heroDescription: "عطل في السيارة أو الدراجة النارية أو المركبة التجارية؟ بطارية فارغة؟ ثقب في الإطار؟ خبراؤنا يتدخلون بسرعة في جميع أنحاء منطقة مونبلييه الحضرية لخدمة مساعدة مهنية وبدون متاعب.",
+      intervention30min: "تدخل خلال 30 دقيقة",
+      gpsLocation: "موقع GPS",
+      guarantee: "ضمان الرضا",
+      
+      // Services
+      servicesTitle: "خدماتنا المتخصصة",
+      servicesSubtitle: "مساعدة السيارات والنقل والخدمات التقنية الشاملة في مونبلييه",
+      
+      autoRepair: "مساعدة السيارات",
+      autoRepairDesc: "تدخل سريع لجميع المركبات الخفيفة",
+      completeDiagnostic: "تشخيص شامل",
+      onSiteRepair: "إصلاح في الموقع",
+      allBrands: "مركبات جميع الماركات",
+      
+      vehicleTowing: "سحب المركبات",
+      vehicleTowingDesc: "خدمة سحب مهنية 24/7",
+      equippedTowTrucks: "شاحنات سحب مجهزة",
+      secureTransport: "نقل آمن",
+      allVehicleTypes: "جميع أنواع المركبات",
+      
+      batteryService: "خدمة البطارية",
+      batteryServiceDesc: "تشغيل واستبدال البطارية",
+      emergencyStart: "تشغيل طوارئ",
+      onSiteReplacement: "استبدال في الموقع",
+      qualityBatteries: "بطاريات عالية الجودة",
+      
+      tireService: "خدمة الإطارات",
+      tireServiceDesc: "تدخل الإطارات على الطريق والمنزل",
+      mountingDismounting: "تركيب/فك",
+      spareWheel: "عجلة احتياطية",
+      punctureRepair: "إصلاح الثقب",
+      
+      // FAQ
+      question1: "هل تعملون 24/7 في مونبلييه؟",
+      answer1: "نعم، نوفر خدمة طوارئ 24/7 لجميع احتياجاتكم من مساعدة السيارات والدراجات النارية في مونبلييه ومنطقتها الحضرية.",
+      
+      question2: "كيف يعمل تحديد الموقع عبر واتساب؟",
+      answer2: "انقر على زر 'واتساب + GPS'، اسمح بتحديد الموقع، وسيتم إرسال موقعك الدقيق تلقائياً عبر واتساب مع رابط خرائط جوجل لمساعدتنا في تحديد موقعك فوراً.",
+      
+      // Footer
+      quickLinks: "روابط سريعة",
+      serviceZones: "المناطق",
+      contactInfo: "اتصل بنا",
+      whatsappWithGps: "واتساب مع GPS",
+      freeQuoteText: "عرض سعر مجاني"
+    },
+    
+    de: {
+      // Navigation
+      services: "Dienstleistungen",
+      quote: "Angebot",
+      about: "Über uns",
+      testimonials: "Referenzen",
+      contact: "Kontakt",
+      emergency: "24/7 Notdienst",
+      emergencyCall: "Notruf",
+      freeQuote: "Kostenloses Angebot",
+      whatsappGps: "WhatsApp + GPS",
+      locating: "Ortung...",
+      
+      // Hero Section
+      heroTitle: "Auto Express",
+      heroSubtitle: "Für stressfreie Pannenhilfe rufen Sie AutoExpress an!",
+      heroDescription: "Auto-, Motorrad- oder Nutzfahrzeug-Panne? Leere Batterie? Reifenpanne? Unsere Experten greifen schnell im gesamten Großraum Montpellier für professionellen und problemlosen Pannendienst ein.",
+      intervention30min: "Eingriff innerhalb 30min",
+      gpsLocation: "GPS-Standort",
+      guarantee: "Zufriedenheitsgarantie",
+      
+      // Services
+      servicesTitle: "Unsere Expertendienstleistungen",
+      servicesSubtitle: "Autopannenhilfe, Transport und umfassende technische Dienstleistungen in Montpellier",
+      
+      autoRepair: "Autopannenhilfe",
+      autoRepairDesc: "Schneller Eingriff für alle Leichtfahrzeuge",
+      completeDiagnostic: "Vollständige Diagnose",
+      onSiteRepair: "Reparatur vor Ort",
+      allBrands: "Fahrzeuge aller Marken",
+      
+      vehicleTowing: "Fahrzeugabschleppdienst",
+      vehicleTowingDesc: "Professioneller 24/7 Abschleppdienst",
+      equippedTowTrucks: "Ausgestattete Abschleppwagen",
+      secureTransport: "Sicherer Transport",
+      allVehicleTypes: "Alle Fahrzeugtypen",
+      
+      batteryService: "Batteriedienst",
+      batteryServiceDesc: "Starthilfe und Batteriewechsel",
+      emergencyStart: "Notstarthilfe",
+      onSiteReplacement: "Austausch vor Ort",
+      qualityBatteries: "Qualitätsbatterien",
+      
+      tireService: "Reifendienst",
+      tireServiceDesc: "Reifen-Intervention Straße und Zuhause",
+      mountingDismounting: "Montage/Demontage",
+      spareWheel: "Ersatzrad",
+      punctureRepair: "Reifenreparatur",
+      
+      // FAQ
+      question1: "Arbeiten Sie 24/7 in Montpellier?",
+      answer1: "Ja, wir bieten 24/7 Notdienst für alle Ihre Auto- und Motorrad-Pannenhilfe-Bedürfnisse in Montpellier und seinem Großraum.",
+      
+      question2: "Wie funktioniert die WhatsApp-Geolokalisierung?",
+      answer2: "Klicken Sie auf den 'WhatsApp + GPS' Button, erlauben Sie die Geolokalisierung, und Ihre genaue Position wird automatisch über WhatsApp mit einem Google Maps Link gesendet, um uns zu helfen, Sie sofort zu lokalisieren.",
+      
+      // Footer
+      quickLinks: "Schnelllinks",
+      serviceZones: "Zonen",
+      contactInfo: "Kontakt",
+      whatsappWithGps: "WhatsApp mit GPS",
+      freeQuoteText: "Kostenloses Angebot"
+    }
+  };
+
+  // Langues disponibles avec drapeaux
+  const languages = [
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'es', name: 'Español', flag: '🇪🇸' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' }
+  ];
+
+  // Récupération de la langue depuis localStorage au montage
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('autoexpressLanguage');
+    if (savedLanguage && languages.find(lang => lang.code === savedLanguage)) {
+      setCurrentLanguage(savedLanguage);
+    }
+  }, []);
+
+  // Fonction pour changer de langue
+  const changeLanguage = (langCode) => {
+    setCurrentLanguage(langCode);
+    localStorage.setItem('autoexpressLanguage', langCode);
+    setIsLanguageDropdownOpen(false);
+  };
+
+  // Fonction pour obtenir le texte traduit
+  const t = (key) => {
+    return translations[currentLanguage]?.[key] || translations.fr[key] || key;
+  };
 
   const handleQuoteFormChange = (e) => {
     const { name, value } = e.target;
