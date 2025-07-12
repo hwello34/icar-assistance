@@ -12,6 +12,8 @@ import {
   Shield,
   Star,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Menu,
   X,
   MessageCircle,
