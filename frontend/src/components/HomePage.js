@@ -180,7 +180,7 @@ const HomePage = () => {
           title: "Parking Sous-Sol & Barrières",
           description: "Dépannage parking avec barrière < 2m",
           icon: "🅿️",
-          image: "https://images.unsplash.com/photo-1577307151681-6583439eab92"
+          image: "https://i.ibb.co/j9zycWQD/Sortie-parking-F.jpg"
         },
         {
           title: "Véhicules Utilitaires",
