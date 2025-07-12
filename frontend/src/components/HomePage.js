@@ -142,6 +142,63 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
+  // Images du slideshow
+  const slideshowImages = [
+    {
+      url: "https://i.ibb.co/gbYtjFtq/Slide-Show-1.jpg",
+      alt: "AutoExpress - Dépannage professionnel"
+    },
+    {
+      url: "https://i.ibb.co/ymC7YP25/Slide-Show-2.jpg",
+      alt: "AutoExpress - Service de qualité"
+    },
+    {
+      url: "https://i.ibb.co/j9QJ5zdw/Slide-Show-3.jpg",
+      alt: "AutoExpress - Équipe experte"
+    },
+    {
+      url: "https://i.ibb.co/DfFvBNFM/Slide-Show-4.jpg",
+      alt: "AutoExpress - Intervention rapide"
+    },
+    {
+      url: "https://i.ibb.co/zHxvMGfY/slide-show-5.jpg",
+      alt: "AutoExpress - Matériel professionnel"
+    },
+    {
+      url: "https://i.ibb.co/JW9N9pYm/slide-show-6.jpg",
+      alt: "AutoExpress - Service 24h/24"
+    },
+    {
+      url: "https://i.ibb.co/Qxg1bPc/slide-show-7.jpg",
+      alt: "AutoExpress - Satisfaction client"
+    },
+    {
+      url: "https://i.ibb.co/DPCNyGgj/slide-show-8.jpg",
+      alt: "AutoExpress - Couverture Montpellier",
+      onError: (e) => {
+        // Fallback image si la dernière image ne se charge pas
+        e.target.src = "https://i.ibb.co/gbYtjFtq/Slide-Show-1.jpg";
+      }
+    }
+  ];
+
+  // Fonction pour gérer le slideshow automatique
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+    }, 4000); // Change d'image toutes les 4 secondes
+
+    return () => clearInterval(interval);
+  }, [slideshowImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slideshowImages.length) % slideshowImages.length);
+  };
+
   const services = [
     {
       icon: <Car className="w-8 h-8" />,
