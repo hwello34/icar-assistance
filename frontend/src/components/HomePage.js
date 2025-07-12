@@ -192,7 +192,7 @@ const HomePage = () => {
           title: "Transport Moto/Scooter",
           description: "Dépannage et transport deux-roues",
           icon: "🏍️",
-          image: "https://images.pexels.com/photos/564094/pexels-photo-564094.jpeg"
+          image: "https://i.ibb.co/k6KRL64p/transport-moto-F.jpg"
         }
       ]
     },
