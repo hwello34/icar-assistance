@@ -417,11 +417,11 @@ const HomePage = () => {
             animate={{ opacity: 1, y: 0 }}
           >
             <div className="px-4 py-6 space-y-4">
-              <a href="#services" className="block text-slate-800 hover:text-[#1693f1]">Services</a>
-              <a href="#quote" className="block text-slate-800 hover:text-[#1693f1]">Devis</a>
-              <a href="#about" className="block text-slate-800 hover:text-[#1693f1]">À propos</a>
-              <a href="#testimonials" className="block text-slate-800 hover:text-[#1693f1]">Témoignages</a>
-              <a href="#contact" className="block text-slate-800 hover:text-[#1693f1]">Contact</a>
+              <a href="#services" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Services</a>
+              <a href="#quote" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Devis</a>
+              <a href="#about" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">À propos</a>
+              <a href="#testimonials" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Témoignages</a>
+              <a href="#contact" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Contact</a>
               <a
                 href="tel:0781505555"
                 className="flex items-center space-x-3 bg-[#c9473e] text-white px-6 py-4 rounded-full text-lg font-bold w-fit"
