@@ -832,7 +832,7 @@ const HomePage = () => {
             </motion.a>
 
             {/* Language Selector */}
-            <div className="relative hidden md:block">
+            <div className="relative hidden md:block language-selector">
               <button
                 onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
                 className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full transition-all duration-300"
