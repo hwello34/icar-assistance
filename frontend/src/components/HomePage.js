@@ -154,7 +154,7 @@ const HomePage = () => {
       title: "Remorquage Véhicules",
       description: "Service de remorquage professionnel 24h/24",
       features: ["Dépanneuses équipées", "Transport sécurisé", "Tous types de véhicules"],
-      image: "https://images.pexels.com/photos/7997458/pexels-photo-7997458.jpeg"
+      image: "https://i.ibb.co/Z6sdLK3S/remorquage-v-hicule-F.jpg"
     },
     {
       icon: <Battery className="w-8 h-8" />,
