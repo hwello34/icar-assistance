@@ -424,10 +424,10 @@ const HomePage = () => {
               <a href="#contact" className="block text-slate-800 hover:text-[#1693f1]">Contact</a>
               <a
                 href="tel:0781505555"
-                className="flex items-center space-x-2 bg-[#c9473e] text-white px-4 py-3 rounded-full font-semibold w-fit"
+                className="flex items-center space-x-3 bg-[#c9473e] text-white px-6 py-4 rounded-full text-lg font-bold w-fit"
               >
-                <Phone className="w-5 h-5" />
-                <span>07 81 50 55 55</span>
+                <Phone className="w-6 h-6" />
+                <span className="text-xl">07 81 50 55 55</span>
               </a>
             </div>
           </motion.div>
