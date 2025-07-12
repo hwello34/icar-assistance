@@ -102,10 +102,22 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Replace the current hero section image with the image from the provided URL: https://ibb.co/DPJ3J72y"
+user_problem_statement: "Replace 13 service images with new images from provided ibb.co URLs for AutoExpress website"
 
 frontend:
   - task: "Replace hero section image"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "completed"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully replaced hero section image from https://i.ibb.co/DPJ3J72y/image.png to https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg. Image is displaying correctly in hero section with proper dimensions and styling."
+
+  - task: "Replace all 13 service images"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
@@ -115,7 +127,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Successfully replaced hero section image from https://i.ibb.co/DPJ3J72y/image.png to https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg. Image is displaying correctly in hero section with proper dimensions and styling."
+        comment: "Successfully replaced all 13 service images with new French-specific images. All images are displaying correctly: Service Pneus, Parking Sous-Sol, Transport Moto, Dépannage Batterie, Dépannage Automobile, Remorquage Véhicules, Véhicules Utilitaires, Sortie Fossé, Serrurerie Auto, Port/Bateau, Enlèvement Épave, Transport Longue Distance, Sortie Fourrière."
 
 backend:
   - task: "Backend functionality check"
