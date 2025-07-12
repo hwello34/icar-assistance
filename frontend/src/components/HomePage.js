@@ -906,21 +906,20 @@ const HomePage = () => {
             >
               <div className="inline-flex items-center space-x-2 bg-[#c9473e]/20 text-[#c9473e] px-4 py-2 rounded-full mb-6">
                 <Clock className="w-4 h-4" />
-                <span className="text-sm font-medium">Service d'urgence 24h/24</span>
+                <span className="text-sm font-medium">{t('emergency')}</span>
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
-                Auto
-                <span className="text-[#1693f1]"> Express</span>
+                {t('heroTitle').split(' ')[0]}
+                <span className="text-[#1693f1]"> {t('heroTitle').split(' ')[1]}</span>
               </h1>
               
               <h2 className="text-2xl lg:text-3xl font-semibold text-[#87a2b8] mb-8 leading-relaxed">
-                Pour un dépannage sans stress, appelez AutoExpress !
+                {t('heroSubtitle')}
               </h2>
               
               <p className="text-xl text-slate-800 mb-8 leading-relaxed">
-                Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? 
-                Nos experts interviennent rapidement partout sur Montpellier Métropole pour un service de dépannage professionnel et sans tracas.
+                {t('heroDescription')}
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
