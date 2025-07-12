@@ -25,6 +25,7 @@ const HomePage = () => {
   const [locationStatus, setLocationStatus] = useState(null);
   const [currentLocation, setCurrentLocation] = useState(null);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [quoteForm, setQuoteForm] = useState({
     vehicleType: '',
     model: '',
