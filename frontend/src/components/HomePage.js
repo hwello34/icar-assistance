@@ -445,6 +445,18 @@ const HomePage = () => {
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' }
   ];
 
+  // Fermer le dropdown de langue quand on clique ailleurs
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.language-selector')) {
+        setIsLanguageDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   // Récupération de la langue depuis localStorage au montage
   useEffect(() => {
     const savedLanguage = localStorage.getItem('autoexpressLanguage');
