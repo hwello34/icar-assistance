@@ -168,7 +168,7 @@ const HomePage = () => {
       title: "Service Pneus",
       description: "Intervention pneus route et domicile",
       features: ["Démontage/montage", "Roue de secours", "Réparation crevaison"],
-      image: "https://i.ibb.co/S44b0Wkw/image.png"
+      image: "https://i.ibb.co/N253n7ry/crevaison-pneu-F.jpg"
     }
   ];
 
