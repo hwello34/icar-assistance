@@ -147,7 +147,7 @@ const HomePage = () => {
       title: "Dépannage Automobile",
       description: "Intervention rapide tous véhicules légers",
       features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"],
-      image: "https://images.pexels.com/photos/784139/pexels-photo-784139.jpeg"
+      image: "https://i.ibb.co/w1hRQMJ/depannage-automobile-F.jpg"
     },
     {
       icon: <Truck className="w-8 h-8" />,
