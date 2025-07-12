@@ -1501,7 +1501,7 @@ const HomePage = () => {
               <img 
                 src="https://i.ibb.co/qL22D0Nc/Capture-d-cran-2025-06-30-152525-1.webp"
                 alt="AutoExpress Logo"
-                className="h-20 w-auto mr-4"
+                className="h-24 w-auto mr-4"
                 onError={(e) => {
                   console.log('Erreur footer logo:', e.target.src);
                   // Fallback vers le texte
