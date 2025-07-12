@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { 
   Phone, 
@@ -18,7 +18,8 @@ import {
   X,
   MessageCircle,
   Navigation,
-  AlertCircle
+  AlertCircle,
+  Globe
 } from "lucide-react";
 
 const HomePage = () => {
