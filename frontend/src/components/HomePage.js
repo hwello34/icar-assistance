@@ -161,7 +161,7 @@ const HomePage = () => {
       title: "Dépannage Batterie",
       description: "Démarrage et remplacement batterie",
       features: ["Démarrage d'urgence", "Remplacement sur place", "Batteries de qualité"],
-      image: "https://images.pexels.com/photos/7562123/pexels-photo-7562123.jpeg"
+      image: "https://i.ibb.co/ynNMrBPM/panne-betterie-F.jpg"
     },
     {
       icon: <Settings className="w-8 h-8" />,
