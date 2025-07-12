@@ -186,7 +186,7 @@ const HomePage = () => {
           title: "Véhicules Utilitaires",
           description: "Fourgon, benne, camping-car, caravane, agricole, BTP",
           icon: "🚛",
-          image: "https://images.unsplash.com/photo-1718723570631-02456bcadbe8"
+          image: "https://i.ibb.co/1Gt2rhDx/vehicules-utilitaires-F.jpg"
         },
         {
           title: "Transport Moto/Scooter",
