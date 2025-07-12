@@ -226,7 +226,7 @@ const HomePage = () => {
           title: "Enlèvement Épave",
           description: "Service enlèvement véhicule hors d'usage",
           icon: "♻️",
-          image: "https://images.unsplash.com/photo-1709606641879-652618742ca9"
+          image: "https://i.ibb.co/DPcMRdMY/enlevement-epave-F.jpg"
         },
         {
           title: "Transport Port/Bateau",
