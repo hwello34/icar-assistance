@@ -819,6 +819,46 @@ const HomePage = () => {
               <span className="text-xl">07 81 50 55 55</span>
             </motion.a>
 
+            {/* Language Selector */}
+            <div className="relative hidden md:block">
+              <button
+                onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+                className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full transition-all duration-300"
+              >
+                <Globe className="w-5 h-5" />
+                <span className="text-lg">
+                  {languages.find(lang => lang.code === currentLanguage)?.flag}
+                </span>
+                <span className="font-medium">
+                  {languages.find(lang => lang.code === currentLanguage)?.code.toUpperCase()}
+                </span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {/* Language Dropdown */}
+              {isLanguageDropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 py-2 min-w-[200px] z-50"
+                >
+                  {languages.map((language) => (
+                    <button
+                      key={language.code}
+                      onClick={() => changeLanguage(language.code)}
+                      className={`w-full flex items-center space-x-3 px-4 py-3 hover:bg-gray-50 transition-colors ${
+                        currentLanguage === language.code ? 'bg-blue-50 text-[#1693f1]' : 'text-gray-700'
+                      }`}
+                    >
+                      <span className="text-xl">{language.flag}</span>
+                      <span className="font-medium">{language.name}</span>
+                      <span className="text-sm text-gray-500 ml-auto">{language.code.toUpperCase()}</span>
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+
             {/* Mobile Menu Button */}
             <button
               className="md:hidden text-white"
