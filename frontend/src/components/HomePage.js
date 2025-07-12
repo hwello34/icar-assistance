@@ -364,9 +364,9 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://i.imgur.com/YfI4JO3.png"
+                src="https://i.ibb.co/qL22D0Nc/Capture-d-cran-2025-06-30-152525-1.webp"
                 alt="AutoExpress - Dépannage 24h/24"
-                className="h-14 w-auto mr-2"
+                className="h-20 w-auto mr-2"
                 onError={(e) => {
                   console.log('Erreur de chargement logo:', e.target.src);
                   // Fallback vers le texte si l'image ne se charge pas
