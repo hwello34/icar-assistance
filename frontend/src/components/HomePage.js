@@ -312,6 +312,49 @@ const HomePage = () => {
       mountingDismounting: "Montaje/desmontaje",
       spareWheel: "Rueda de repuesto",
       punctureRepair: "Reparación de pinchazos",
+
+      // Specialized Services
+      specializedBreakdown: "Asistencia Especializada",
+      undergroundParking: "Parking Subterráneo y Barreras",
+      undergroundParkingDesc: "Asistencia en parking con barrera < 2m",
+      utilityVehicles: "Vehículos Utilitarios",
+      utilityVehiclesDesc: "Furgoneta, camión, autocaravana, caravana, agrícola, construcción",
+      motoTransport: "Transporte Moto/Scooter",
+      motoTransportDesc: "Asistencia y transporte de dos ruedas",
+
+      // Technical Services
+      technicalServices: "Servicios Técnicos",
+      autoLocksmith: "Cerrajería Auto",
+      autoLocksmithDesc: "Apertura de puertas, reproducción de llaves",
+      impoundRecovery: "Recuperación de Depósito",
+      impoundRecoveryDesc: "Recuperación de vehículo del depósito",
+      ditchRecovery: "Recuperación de Zanja/Barranco",
+      ditchRecoveryDesc: "Recuperación de vehículo accidentado",
+
+      // Transport & Removal
+      transportRemoval: "Transporte y Retirada",
+      scrapRemoval: "Retirada de Chatarra",
+      scrapRemovalDesc: "Servicio de retirada de vehículo fuera de uso",
+      portTransport: "Transporte Puerto/Barco",
+      portTransportDesc: "Transporte y embarque de vehículo",
+      longDistanceTransport: "Transporte Larga Distancia",
+      longDistanceTransportDesc: "Transporte cualquier distancia Francia/Europa",
+
+      // Why Choose Us
+      whyChooseTitle: "Por Qué Elegir",
+      whyChooseSubtitle: "AutoExpress",
+      rapidIntervention: "Intervención rápida",
+      rapidInterventionDesc: "Nuestros equipos intervienen en 30 minutos después de su llamada en Montpellier.",
+      technicalExpertise: "Experiencia técnica",
+      technicalExpertiseDesc: "Técnicos certificados con más de 10 años de experiencia en asistencia.",
+      transparentPricing: "Precios transparentes",
+      transparentPricingDesc: "Presupuesto gratuito y sin compromiso. Sin tarifas ocultas.",
+      montpellierCoverage: "Cobertura Área Metropolitana Montpellier",
+      montpellierCoverageDesc: "Servicio disponible en Montpellier y todos los municipios metropolitanos.",
+
+      // Testimonials
+      testimonialsTitle: "Confían en Nosotros",
+      testimonialsSubtitle: "Más de 5,000 clientes satisfechos en el área metropolitana de Montpellier",
       
       // FAQ
       question1: "¿Operan 24h/24 y 7j/7 en Montpellier?",
