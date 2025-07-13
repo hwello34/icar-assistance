@@ -2600,6 +2600,77 @@ const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      {/* Boutons Flottants Sidebar Droite */}
+      <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 flex flex-col space-y-4">
+        {/* Appel d'Urgence */}
+        <motion.a
+          href="tel:+33781505555"
+          className="group relative w-16 h-16 bg-[#c9473e] hover:bg-[#a73d35] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          whileHover={{ scale: 1.1, x: -5 }}
+          whileTap={{ scale: 0.95 }}
+          title="Appel d'urgence"
+        >
+          <Phone className="w-7 h-7 text-white" />
+          
+          {/* Tooltip */}
+          <div className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            📞 Appel d'urgence
+            <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
+          </div>
+        </motion.a>
+
+        {/* Géolocalisation WhatsApp */}
+        <motion.button
+          onClick={() => {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(
+                (position) => {
+                  const { latitude, longitude } = position.coords;
+                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AMa position exacte : https://www.google.com/maps?q=${latitude},${longitude}%0A%0AMerci d'intervenir rapidement !`;
+                  const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
+                  window.open(whatsappUrl, '_blank');
+                },
+                () => {
+                  // Fallback si géolocalisation refusée
+                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AJe vous communique ma position par message.%0A%0AMerci d'intervenir rapidement !`;
+                  const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
+                  window.open(whatsappUrl, '_blank');
+                }
+              );
+            }
+          }}
+          className="group relative w-16 h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          whileHover={{ scale: 1.1, x: -5 }}
+          whileTap={{ scale: 0.95 }}
+          title="Envoyer géolocalisation"
+        >
+          <Navigation className="w-7 h-7 text-white" />
+          
+          {/* Tooltip */}
+          <div className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            📍 Envoyer ma position
+            <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
+          </div>
+        </motion.button>
+
+        {/* Contact Email */}
+        <motion.a
+          href="mailto:autoexpres34@gmail.com?subject=Demande de dépannage&body=Bonjour AutoExpress,%0A%0AJe souhaite vous contacter pour..."
+          className="group relative w-16 h-16 bg-[#1693f1] hover:bg-[#1478c7] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          whileHover={{ scale: 1.1, x: -5 }}
+          whileTap={{ scale: 0.95 }}
+          title="Contact par email"
+        >
+          <Mail className="w-7 h-7 text-white" />
+          
+          {/* Tooltip */}
+          <div className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            ✉️ Contact par email
+            <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
+          </div>
+        </motion.a>
+      </div>
     </div>
   );
 };
