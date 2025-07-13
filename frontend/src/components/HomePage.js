@@ -19,7 +19,8 @@ import {
   MessageCircle,
   Navigation,
   AlertCircle,
-  Globe
+  Globe,
+  Mail
 } from "lucide-react";
 
 const HomePage = () => {
