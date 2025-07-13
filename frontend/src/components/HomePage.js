@@ -1460,7 +1460,7 @@ const HomePage = () => {
                 className="flex items-center space-x-3 bg-[#c9473e] text-white px-6 py-4 rounded-full text-lg font-bold w-fit"
               >
                 <Phone className="w-6 h-6" />
-                <span className="text-xl">07 81 50 55 55</span>
+                <span className="text-xl">+33 7 81 50 55 55</span>
               </a>
             </div>
           </motion.div>
