@@ -1084,7 +1084,7 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Images du slideshow - 11 images au total (5 images supprimées)
+  // Images du slideshow - 10 images au total (BB9 supprimée)
   const slideshowImages = [
     {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
@@ -1093,10 +1093,6 @@ const HomePage = () => {
     {
       url: "https://i.ibb.co/Qv3w8BrS/BB3.jpg",
       alt: "AutoExpress - Service de qualité"
-    },
-    {
-      url: "https://i.ibb.co/tnrpV6W/BB9.jpg",
-      alt: "AutoExpress - Équipe experte"
     },
     {
       url: "https://i.ibb.co/QF5pghjr/BB18.jpg",
