@@ -475,7 +475,7 @@ const HomePage = () => {
       
       contactInfo: "Contact",
       whatsappWithGps: "WhatsApp with GPS",
-      contactEmail: "contact@autoexpress.fr",
+      contactEmail: "autoexpres34@gmail.com",
       freeQuoteText: "Free quote",
       
       footerTagline: "Your automotive breakdown specialist, rapid and adapted intervention in Montpellier Metropolitan area",
