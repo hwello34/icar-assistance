@@ -1084,7 +1084,7 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Images du slideshow - 14 images au total
+  // Images du slideshow - 16 images au total
   const slideshowImages = [
     {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
@@ -1141,6 +1141,14 @@ const HomePage = () => {
     {
       url: "https://i.ibb.co/v6C4fs0s/F-transport-moto.jpg",
       alt: "AutoExpress - Transport moto/scooter"
+    },
+    {
+      url: "https://i.ibb.co/BKtkyqM4/a6eaea80-3ecc-45ee-8406-cfabb89e.jpg",
+      alt: "AutoExpress - Expertise technique"
+    },
+    {
+      url: "https://i.ibb.co/Z18N7syr/Whats-App-Image-2025-07-13-23-5.jpg",
+      alt: "AutoExpress - Service spécialisé"
     }
   ];
 
