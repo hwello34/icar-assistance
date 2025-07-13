@@ -1421,8 +1421,8 @@ const HomePage = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-8">
-                Pourquoi Choisir 
-                <span className="text-[#1693f1]"> AutoExpress</span> ?
+                {t('whyChooseTitle')} 
+                <span className="text-[#1693f1]"> {t('whyChooseSubtitle')}</span> ?
               </h2>
               
               <div className="space-y-8">
@@ -1431,8 +1431,8 @@ const HomePage = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Rapidité d'intervention</h3>
-                    <p className="text-slate-800">Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{t('rapidIntervention')}</h3>
+                    <p className="text-slate-800">{t('rapidInterventionDesc')}</p>
                   </div>
                 </div>
 
@@ -1441,8 +1441,8 @@ const HomePage = () => {
                     <Wrench className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Expertise technique</h3>
-                    <p className="text-slate-800">Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{t('technicalExpertise')}</h3>
+                    <p className="text-slate-800">{t('technicalExpertiseDesc')}</p>
                   </div>
                 </div>
 
@@ -1451,8 +1451,8 @@ const HomePage = () => {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Tarifs transparents</h3>
-                    <p className="text-slate-800">Devis gratuit et sans engagement. Pas de frais cachés.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{t('transparentPricing')}</h3>
+                    <p className="text-slate-800">{t('transparentPricingDesc')}</p>
                   </div>
                 </div>
 
@@ -1461,8 +1461,8 @@ const HomePage = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Couverture Montpellier Métropole</h3>
-                    <p className="text-slate-800">Service disponible sur Montpellier et toutes les communes de la métropole.</p>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{t('montpellierCoverage')}</h3>
+                    <p className="text-slate-800">{t('montpellierCoverageDesc')}</p>
                   </div>
                 </div>
               </div>
