@@ -1188,62 +1188,9 @@ const HomePage = () => {
       rating: 5,
       image: "https://images.unsplash.com/photo-1537149436249-b065c9f0950e"
     }
-  // FAQs dynamiques basées sur les traductions
-  const getFaqs = () => [
-    {
-      question: t('question1'),
-      answer: t('answer1')
-    },
-    {
-      question: t('question2'), 
-      answer: t('answer2')
-    },
-    {
-      question: t('question3'),
-      answer: t('answer3')
-    },
-    {
-      question: t('question4'),
-      answer: t('answer4')
-    },
-    {
-      question: t('question5'),
-      answer: t('answer5')
-    }
-  ];
-
-  // Témoignages dynamiques basés sur les traductions
-  const getTestimonials = () => [
-    {
-      name: t('testimonial1Name'),
-      location: t('testimonial1Location'),
-      text: t('testimonial1Text'),
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1647934464726-25c3b2d53a4b"
-    },
-    {
-      name: t('testimonial2Name'),
-      location: t('testimonial2Location'),
-      text: t('testimonial2Text'),
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1563895439929-873e667d3279"
-    },
-    {
-      name: t('testimonial3Name'),
-      location: t('testimonial3Location'),
-      text: t('testimonial3Text'),
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1537149436249-b065c9f0950e"
-    }
   ];
 
   const services = [
-    {
-      icon: <Car className="w-8 h-8" />,
-      title: "Dépannage Automobile",
-      description: "Intervention rapide tous véhicules légers",
-      features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"],
-      image: "https://i.ibb.co/w1hRQMJ/depannage-automobile-F.jpg"
     },
     {
       icon: <Truck className="w-8 h-8" />,
