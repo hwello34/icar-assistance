@@ -205,6 +205,49 @@ const HomePage = () => {
       mountingDismounting: "Mounting/dismounting",
       spareWheel: "Spare wheel",
       punctureRepair: "Puncture repair",
+
+      // Specialized Services
+      specializedBreakdown: "Specialized Breakdown",
+      undergroundParking: "Underground Parking & Barriers",
+      undergroundParkingDesc: "Parking breakdown with barrier < 2m",
+      utilityVehicles: "Utility Vehicles",
+      utilityVehiclesDesc: "Van, truck, motorhome, caravan, agricultural, construction",
+      motoTransport: "Motorcycle/Scooter Transport",
+      motoTransportDesc: "Two-wheel breakdown and transport",
+
+      // Technical Services
+      technicalServices: "Technical Services",
+      autoLocksmith: "Auto Locksmith",
+      autoLocksmithDesc: "Door opening, car key reproduction",
+      impoundRecovery: "Impound Recovery",
+      impoundRecoveryDesc: "Vehicle recovery from impound lot",
+      ditchRecovery: "Ditch/Ravine Recovery",
+      ditchRecoveryDesc: "Accident vehicle recovery",
+
+      // Transport & Removal
+      transportRemoval: "Transport & Removal",
+      scrapRemoval: "Scrap Removal",
+      scrapRemovalDesc: "End-of-life vehicle removal service",
+      portTransport: "Port/Boat Transport",
+      portTransportDesc: "Vehicle transport and loading",
+      longDistanceTransport: "Long Distance Transport",
+      longDistanceTransportDesc: "Transport any distance France/Europe",
+
+      // Why Choose Us
+      whyChooseTitle: "Why Choose",
+      whyChooseSubtitle: "AutoExpress",
+      rapidIntervention: "Rapid intervention",
+      rapidInterventionDesc: "Our teams intervene within 30 minutes of your call in Montpellier.",
+      technicalExpertise: "Technical expertise",
+      technicalExpertiseDesc: "Certified technicians with over 10 years of breakdown experience.",
+      transparentPricing: "Transparent pricing",
+      transparentPricingDesc: "Free quote with no commitment. No hidden fees.",
+      montpellierCoverage: "Montpellier Metropolitan Coverage",
+      montpellierCoverageDesc: "Service available in Montpellier and all metropolitan municipalities.",
+
+      // Testimonials
+      testimonialsTitle: "They Trust Us",
+      testimonialsSubtitle: "Over 5,000 satisfied customers in Montpellier Metropolitan area",
       
       // FAQ
       question1: "Do you operate 24/7 in Montpellier?",
