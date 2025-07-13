@@ -1389,7 +1389,7 @@ const HomePage = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Phone className="w-6 h-6" />
-              <span className="text-xl">07 81 50 55 55</span>
+              <span className="text-xl">+33 7 81 50 55 55</span>
             </motion.a>
 
             {/* Language Selector */}
