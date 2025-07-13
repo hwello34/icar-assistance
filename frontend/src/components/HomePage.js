@@ -1084,7 +1084,7 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Images du slideshow - 16 images au total
+  // Images du slideshow - 11 images au total (5 images supprimées)
   const slideshowImages = [
     {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
@@ -1099,10 +1099,6 @@ const HomePage = () => {
       alt: "AutoExpress - Équipe experte"
     },
     {
-      url: "https://i.ibb.co/Cp2k9qfx/BB10.jpg",
-      alt: "AutoExpress - Intervention rapide"
-    },
-    {
       url: "https://i.ibb.co/QF5pghjr/BB18.jpg",
       alt: "AutoExpress - Matériel professionnel"
     },
@@ -1111,24 +1107,8 @@ const HomePage = () => {
       alt: "AutoExpress - Service 24h/24"
     },
     {
-      url: "https://i.ibb.co/QjF7RNcX/BB23.jpg",
-      alt: "AutoExpress - Satisfaction client"
-    },
-    {
       url: "https://i.ibb.co/bD3WdGG/Slide-Show-1.jpg",
       alt: "AutoExpress - Services professionnels"
-    },
-    {
-      url: "https://i.ibb.co/3m2xHn5G/Slide-Show-3.jpg",
-      alt: "AutoExpress - Transport spécialisé"
-    },
-    {
-      url: "https://i.ibb.co/ccdRnWQr/slide-show-5.jpg",
-      alt: "AutoExpress - Assistance routière"
-    },
-    {
-      url: "https://i.ibb.co/whnCFrrc/slide-show-6.jpg",
-      alt: "AutoExpress - Dépannage expert"
     },
     {
       url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
