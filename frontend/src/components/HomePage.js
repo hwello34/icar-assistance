@@ -2549,7 +2549,7 @@ const HomePage = () => {
                 <p className="text-sm">Votre spécialiste du dépannage automobile, moto et utilitaire sur Montpellier.</p>
                 <div className="flex items-center space-x-2 mt-2">
                   <Phone className="w-4 h-4" />
-                  <span>07 81 50 55 55</span>
+                  <span>+33 7 81 50 55 55</span>
                 </div>
               </div>
             </div>
