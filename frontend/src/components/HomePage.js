@@ -633,6 +633,49 @@ const HomePage = () => {
       mountingDismounting: "Montage/Demontage",
       spareWheel: "Ersatzrad",
       punctureRepair: "Reifenreparatur",
+
+      // Specialized Services
+      specializedBreakdown: "Spezialisierte Pannenhilfe",
+      undergroundParking: "Tiefgarage & Schranken",
+      undergroundParkingDesc: "Pannenhilfe Parkhaus mit Schranke < 2m",
+      utilityVehicles: "Nutzfahrzeuge",
+      utilityVehiclesDesc: "Transporter, LKW, Wohnmobil, Wohnwagen, Landwirtschaft, Bau",
+      motoTransport: "Motorrad/Roller Transport",
+      motoTransportDesc: "Pannenhilfe und Transport Zweiräder",
+
+      // Technical Services
+      technicalServices: "Technische Dienste",
+      autoLocksmith: "Auto-Schlüsseldienst",
+      autoLocksmithDesc: "Türöffnung, Autoschlüssel-Reproduktion",
+      impoundRecovery: "Abholung vom Abstellplatz",
+      impoundRecoveryDesc: "Fahrzeugabholung vom Abstellplatz",
+      ditchRecovery: "Graben/Schlucht Bergung",
+      ditchRecoveryDesc: "Verunfalltes Fahrzeug bergen",
+
+      // Transport & Removal
+      transportRemoval: "Transport & Entsorgung",
+      scrapRemoval: "Schrottentsorgung",
+      scrapRemovalDesc: "Altfahrzeug-Entsorgungsservice",
+      portTransport: "Hafen/Boot Transport",
+      portTransportDesc: "Fahrzeugtransport und Verladung",
+      longDistanceTransport: "Fernverkehr",
+      longDistanceTransportDesc: "Transport jede Entfernung Frankreich/Europa",
+
+      // Why Choose Us
+      whyChooseTitle: "Warum",
+      whyChooseSubtitle: "AutoExpress Wählen",
+      rapidIntervention: "Schnelle Intervention",
+      rapidInterventionDesc: "Unsere Teams greifen innerhalb von 30 Minuten nach Ihrem Anruf in Montpellier ein.",
+      technicalExpertise: "Technische Kompetenz",
+      technicalExpertiseDesc: "Zertifizierte Techniker mit über 10 Jahren Pannenhilfe-Erfahrung.",
+      transparentPricing: "Transparente Preise",
+      transparentPricingDesc: "Kostenloses Angebot ohne Verpflichtung. Keine versteckten Gebühren.",
+      montpellierCoverage: "Montpellier Großraum Abdeckung",
+      montpellierCoverageDesc: "Service verfügbar in Montpellier und allen Großraumgemeinden.",
+
+      // Testimonials
+      testimonialsTitle: "Sie Vertrauen Uns",
+      testimonialsSubtitle: "Über 5.000 zufriedene Kunden im Großraum Montpellier",
       
       // FAQ
       question1: "Arbeiten Sie 24/7 in Montpellier?",
