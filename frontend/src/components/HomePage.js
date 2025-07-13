@@ -1084,88 +1084,55 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Images du slideshow - Nouvelles images BB
+  // Images du slideshow - Nouvelles images (12 images)
   const slideshowImages = [
     {
-      url: "https://i.ibb.co/Hfr4rynV/BB1.jpg",
-      alt: "AutoExpress - Dépannage professionnel 1"
+      url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
+      alt: "AutoExpress - Dépannage professionnel"
     },
     {
-      url: "https://i.ibb.co/chgTCww6/BB3.jpg",
-      alt: "AutoExpress - Service de qualité 1"
+      url: "https://i.ibb.co/Qv3w8BrS/BB3.jpg",
+      alt: "AutoExpress - Service de qualité"
     },
     {
-      url: "https://i.ibb.co/C5fQGSWB/BB9.jpg",
-      alt: "AutoExpress - Équipe experte 1"
+      url: "https://i.ibb.co/tnrpV6W/BB9.jpg",
+      alt: "AutoExpress - Équipe experte"
     },
     {
-      url: "https://i.ibb.co/ymWNfLNW/BB10.jpg",
-      alt: "AutoExpress - Intervention rapide 1"
+      url: "https://i.ibb.co/Cp2k9qfx/BB10.jpg",
+      alt: "AutoExpress - Intervention rapide"
     },
     {
-      url: "https://i.ibb.co/twSZqLGk/BB18.jpg",
-      alt: "AutoExpress - Matériel professionnel 1"
+      url: "https://i.ibb.co/QF5pghjr/BB18.jpg",
+      alt: "AutoExpress - Matériel professionnel"
     },
     {
-      url: "https://i.ibb.co/zT9HyX6W/BB22.jpg",
-      alt: "AutoExpress - Service 24h/24 1"
+      url: "https://i.ibb.co/pr5Jh9Dz/BB22.jpg",
+      alt: "AutoExpress - Service 24h/24"
     },
     {
-      url: "https://i.ibb.co/C5n1fYRX/BB23.jpg",
-      alt: "AutoExpress - Satisfaction client 1"
+      url: "https://i.ibb.co/QjF7RNcX/BB23.jpg",
+      alt: "AutoExpress - Satisfaction client"
     },
     {
-      url: "https://i.ibb.co/TM6765qN/BB24.jpg",
-      alt: "AutoExpress - Couverture Montpellier 1"
+      url: "https://i.ibb.co/bD3WdGG/Slide-Show-1.jpg",
+      alt: "AutoExpress - Services professionnels"
     },
     {
-      url: "https://i.ibb.co/SDv8hpZd/BB25.jpg",
-      alt: "AutoExpress - Dépannage professionnel 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/Hfr4rynV/BB1.jpg";
-      }
+      url: "https://i.ibb.co/3m2xHn5G/Slide-Show-3.jpg",
+      alt: "AutoExpress - Transport spécialisé"
     },
     {
-      url: "https://i.ibb.co/4nXD6WHz/BB26.jpg",
-      alt: "AutoExpress - Service de qualité 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/chgTCww6/BB3.jpg";
-      }
+      url: "https://i.ibb.co/ccdRnWQr/slide-show-5.jpg",
+      alt: "AutoExpress - Assistance routière"
     },
     {
-      url: "https://i.ibb.co/6RF4g6dF/BB27.jpg",
-      alt: "AutoExpress - Équipe experte 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/C5fQGSWB/BB9.jpg";
-      }
+      url: "https://i.ibb.co/whnCFrrc/slide-show-6.jpg",
+      alt: "AutoExpress - Dépannage expert"
     },
     {
-      url: "https://i.ibb.co/Z68x9mMc/BB28.jpg",
-      alt: "AutoExpress - Intervention rapide 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/ymWNfLNW/BB10.jpg";
-      }
-    },
-    {
-      url: "https://i.ibb.co/jZHTPyt9/BB29.jpg",
-      alt: "AutoExpress - Matériel professionnel 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/twSZqLGk/BB18.jpg";
-      }
-    },
-    {
-      url: "https://i.ibb.co/PZjQY5zZ/BB30.jpg",
-      alt: "AutoExpress - Service 24h/24 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/zT9HyX6W/BB22.jpg";
-      }
-    },
-    {
-      url: "https://i.ibb.co/66HR8Tp/BB31.jpg",
-      alt: "AutoExpress - Satisfaction client 2",
-      onError: (e) => {
-        e.target.src = "https://i.ibb.co/C5n1fYRX/BB23.jpg";
-      }
+      url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
+      alt: "AutoExpress - Zone d'intervention Montpellier"
     }
   ];
 
