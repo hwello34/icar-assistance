@@ -143,11 +143,136 @@ const HomePage = () => {
       testimonialsSubtitle: "Plus de 5 000 clients satisfaits sur Montpellier Métropole",
       
       // FAQ
+      faqTitle: "Questions Fréquentes",
       question1: "Intervenez-vous 24h/24 et 7j/7 sur Montpellier ?",
       answer1: "Oui, nous assurons un service d'urgence 24h/24 et 7j/7 pour tous vos besoins de dépannage automobile et moto sur Montpellier et sa métropole.",
       
       question2: "Comment fonctionne la géolocalisation WhatsApp ?",
       answer2: "Cliquez sur le bouton 'WhatsApp + GPS', autorisez la géolocalisation, et votre position exacte sera automatiquement envoyée via WhatsApp avec un lien Google Maps pour nous permettre de vous localiser instantanément.",
+      
+      question3: "Quels sont vos délais d'intervention sur Montpellier ?",
+      answer3: "Nos équipes interviennent en moyenne dans les 30 minutes suivant votre appel, selon votre localisation sur Montpellier Métropole. Avec la géolocalisation, nous pouvons vous trouver encore plus rapidement.",
+      
+      question4: "Quels types de véhicules pouvez-vous dépanner ?",
+      answer4: "Nous dépannons tous types de véhicules : voitures, motos, scooters, véhicules utilitaires, fourgons, bennes, camping-cars, caravanes, véhicules agricoles et BTP. Nous intervenons même dans les parkings sous-sol avec barrières basses.",
+      
+      question5: "Comment laisser un avis sur nos services ?",
+      answer5: "Vous pouvez laisser un avis en scannant le QR code dans la section témoignages de notre site, ou directement via notre page Google Business. Votre retour nous aide à améliorer continuellement nos services de dépannage.",
+
+      // Quote Form
+      quoteTitle: "Demandez Votre Devis Gratuit",
+      quoteSubtitle: "Obtenez rapidement un devis personnalisé pour votre dépannage ou transport",
+      getQuote: "Obtenir mon devis",
+      freeQuoteNoCommitment: "Devis gratuit et sans engagement",
+      
+      vehicleInfo: "Informations Véhicule",
+      vehicleType: "Type de véhicule",
+      selectVehicleType: "Sélectionnez le type",
+      car: "Voiture",
+      motorcycle: "Moto",
+      utility: "Utilitaire",
+      
+      brand: "Marque",
+      enterBrand: "Saisissez la marque",
+      model: "Modèle",
+      enterModel: "Saisissez le modèle",
+      licensePlate: "Plaque d'immatriculation",
+      enterLicensePlate: "Saisissez la plaque",
+      
+      vehicleStatus: "État du véhicule",
+      breakdown: "Panne",
+      accident: "Accidenté",
+      
+      wheels: "Roues",
+      freeWheels: "Roue libre",
+      blockedWheels: "Roue bloquée",
+      
+      gearbox: "Boîte de vitesse",
+      manual: "Manuelle",
+      automatic: "Automatique",
+      
+      transportInfo: "Informations Transport",
+      pickupAddress: "Adresse d'enlèvement",
+      enterPickupAddress: "Saisissez l'adresse complète",
+      dropoffAddress: "Lieu de dépôt",
+      enterDropoffAddress: "Saisissez le lieu de dépôt",
+      pickupDate: "Date d'enlèvement",
+      
+      contactInfo: "Vos Coordonnées",
+      fullName: "Nom Prénom",
+      enterFullName: "Saisissez votre nom complet",
+      phone: "Téléphone",
+      enterPhone: "Saisissez votre numéro",
+      email: "Email",
+      enterEmail: "Saisissez votre email",
+      
+      additionalDetails: "Précisions complémentaires",
+      enterDetails: "Décrivez votre situation...",
+      
+      // WhatsApp Messages
+      whatsappTitle: "Envoyez Votre Position via WhatsApp",
+      whatsappSubtitle: "Partagez instantanément votre localisation GPS précise via WhatsApp. Nos équipes vous localisent en quelques secondes partout sur Montpellier !",
+      
+      step1: "Cliquez sur le bouton",
+      step1Desc: "Autorisez la géolocalisation sur votre téléphone",
+      step2: "Position automatique",
+      step2Desc: "Votre position GPS est ajoutée automatiquement",
+      step3: "Envoi instantané",
+      step3Desc: "Votre demande arrive directement chez nous",
+      
+      sendMyLocation: "Envoyer ma position",
+      whatsappWithoutGps: "WhatsApp sans GPS",
+      locationSharedExclusively: "Votre position est partagée uniquement avec AutoExpress pour le dépannage",
+      
+      // Footer
+      quickLinks: "Liens Rapides",
+      serviceZones: "Zones",
+      montpellierCenter: "Montpellier Centre",
+      castelnauLeLez: "Castelnau-le-Lez",
+      lattes: "Lattes - Pérols",
+      saintJeanDeVedas: "Saint-Jean-de-Védas",
+      juvignacGrabels: "Juvignac - Grabels",
+      
+      ourServices: "Nos Services",
+      autoMotoBreakdown: "Dépannage Auto/Moto",
+      specializedTowing: "Remorquage Spécialisé",
+      longDistanceTransport: "Transport Longue Distance",
+      autoLocksmithService: "Serrurerie Automobile",
+      scrapRemovalService: "Enlèvement Épave",
+      tireServiceFooter: "Service Pneus",
+      
+      contactInfo: "Contact",
+      whatsappWithGps: "WhatsApp avec GPS",
+      contactEmail: "contact@autoexpress.fr",
+      freeQuoteText: "Devis gratuit",
+      
+      footerTagline: "Votre spécialiste du dépannage automobile, intervention rapide et adaptée sur Montpellier Métropole",
+      allRightsReserved: "© 2025 AutoExpress Montpellier. Tous droits réservés.",
+      legalMentions: "Mentions légales",
+      confidentialityPolicy: "Politique de confidentialité",
+
+      // Testimonials Data
+      testimonial1Name: "Marie Dubois",
+      testimonial1Location: "Montpellier Centre",
+      testimonial1Text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
+      
+      testimonial2Name: "Jean Martinez", 
+      testimonial2Location: "Castelnau-le-Lez",
+      testimonial2Text: "Ma moto est tombée en panne sur la rocade. Professionnels et réactifs, ils ont été là en un temps record avec une dépanneuse adaptée.",
+      
+      testimonial3Name: "Sophie Laurent",
+      testimonial3Location: "Lattes",
+      testimonial3Text: "Batterie à plat devant Odysseum. Tarifs transparents et service de qualité. Ils ont changé ma batterie en quelques minutes seulement.",
+
+      // CTA Section
+      needSpecializedService: "Besoin d'un Service Spécialisé ?",
+      situationDescription: "Quelle que soit votre situation de dépannage sur Montpellier, nos experts ont la solution.",
+      immediateQuote: "Devis Immédiat",
+      gpsLocation: "Localisation GPS",
+
+      // Experience Section  
+      shareYourExperience: "Vous Aussi, Partagez Votre Expérience",
+      reviewHelpsImprove: "Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec AutoExpress.",
       
       // Footer
       quickLinks: "Liens Rapides",
