@@ -1970,7 +1970,7 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Questions <span className="text-[#1693f1]">Fréquentes</span>
+              {t('faqTitle').split(' ')[0]} <span className="text-[#1693f1]">{t('faqTitle').split(' ').slice(1).join(' ')}</span>
             </h2>
           </motion.div>
 
