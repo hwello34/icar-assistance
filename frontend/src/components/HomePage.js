@@ -2588,7 +2588,7 @@ const HomePage = () => {
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp avec GPS</span>
                 </li>
-                <li>contact@autoexpress.fr</li>
+                <li>autoexpres34@gmail.com</li>
                 <li>Devis gratuit</li>
               </ul>
             </div>
