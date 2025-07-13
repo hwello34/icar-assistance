@@ -1084,7 +1084,7 @@ const HomePage = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Images du slideshow - Nouvelles images (12 images)
+  // Images du slideshow - 14 images au total
   const slideshowImages = [
     {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
@@ -1133,6 +1133,14 @@ const HomePage = () => {
     {
       url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
       alt: "AutoExpress - Zone d'intervention Montpellier"
+    },
+    {
+      url: "https://i.ibb.co/gMTJYVRt/Slide-Show-4.jpg",
+      alt: "AutoExpress - Service premium"
+    },
+    {
+      url: "https://i.ibb.co/v6C4fs0s/F-transport-moto.jpg",
+      alt: "AutoExpress - Transport moto/scooter"
     }
   ];
 
