@@ -1862,80 +1862,20 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              {/* Slideshow Container */}
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                {/* Image Container */}
-                <div className="relative w-full h-full">
-                  {slideshowImages.map((image, index) => (
-                    <motion.div
-                      key={index}
-                      className={`absolute inset-0 transition-opacity duration-1000 ${
-                        index === currentSlide ? 'opacity-100' : 'opacity-0'
-                      }`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: index === currentSlide ? 1 : 0 }}
-                      transition={{ duration: 1 }}
-                    >
-                      <img
-                        src={image.url}
-                        alt={image.alt}
-                        className="w-full h-full object-cover"
-                        onError={image.onError}
-                      />
-                      {/* Overlay gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                    </motion.div>
-                  ))}
-                </div>
-
-                {/* Navigation Buttons */}
-                <button
-                  onClick={prevSlide}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group"
-                >
-                  <ChevronLeft className="w-6 h-6 text-white group-hover:text-[#1693f1] transition-colors" />
-                </button>
+                <img
+                  src="https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg"
+                  alt="AutoExpress - Services de dépannage professionnel à Montpellier"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 
-                <button
-                  onClick={nextSlide}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group"
-                >
-                  <ChevronRight className="w-6 h-6 text-white group-hover:text-[#1693f1] transition-colors" />
-                </button>
-
-                {/* Slide Indicators */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                  {slideshowImages.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentSlide(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentSlide
-                          ? 'bg-[#1693f1] scale-125'
-                          : 'bg-white/50 hover:bg-white/80'
-                      }`}
-                    />
-                  ))}
-                </div>
-
-                {/* Slide Counter */}
-                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm">
-                  {currentSlide + 1} / {slideshowImages.length}
+                {/* Overlay text */}
+                <div className="absolute bottom-8 left-8 text-white">
+                  <h3 className="text-2xl font-bold mb-2">AutoExpress</h3>
+                  <p className="text-lg">Votre partenaire de confiance à Montpellier</p>
                 </div>
               </div>
-
-              {/* Slideshow Caption */}
-              <motion.div
-                key={currentSlide}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="mt-4 text-center"
-              >
-                <p className="text-slate-800 font-medium">
-                  {slideshowImages[currentSlide].alt}
-                </p>
-              </motion.div>
             </motion.div>
           </div>
         </div>
