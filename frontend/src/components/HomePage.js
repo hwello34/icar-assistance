@@ -243,7 +243,7 @@ const HomePage = () => {
       
       contactInfo: "Contact",
       whatsappWithGps: "WhatsApp avec GPS",
-      contactEmail: "contact@autoexpress.fr",
+      contactEmail: "autoexpres34@gmail.com",
       freeQuoteText: "Devis gratuit",
       
       footerTagline: "Votre spécialiste du dépannage automobile, intervention rapide et adaptée sur Montpellier Métropole",
