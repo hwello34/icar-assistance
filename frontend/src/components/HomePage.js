@@ -526,6 +526,49 @@ const HomePage = () => {
       mountingDismounting: "تركيب/فك",
       spareWheel: "عجلة احتياطية",
       punctureRepair: "إصلاح الثقب",
+
+      // Specialized Services
+      specializedBreakdown: "مساعدة متخصصة",
+      undergroundParking: "مواقف تحت الأرض والحواجز",
+      undergroundParkingDesc: "مساعدة مواقف مع حاجز < 2م",
+      utilityVehicles: "المركبات التجارية",
+      utilityVehiclesDesc: "شاحنة، قلاب، بيت متنقل، مقطورة، زراعي، بناء",
+      motoTransport: "نقل الدراجة النارية/السكوتر",
+      motoTransportDesc: "مساعدة ونقل ذوات العجلتين",
+
+      // Technical Services
+      technicalServices: "الخدمات التقنية",
+      autoLocksmith: "صانع أقفال السيارات",
+      autoLocksmithDesc: "فتح الأبواب، تكرار مفاتيح السيارة",
+      impoundRecovery: "استرداد من المصادرة",
+      impoundRecoveryDesc: "استرداد المركبة من ساحة المصادرة",
+      ditchRecovery: "استرداد من الخندق/الوادي",
+      ditchRecoveryDesc: "استرداد المركبة المتضررة",
+
+      // Transport & Removal
+      transportRemoval: "النقل والإزالة",
+      scrapRemoval: "إزالة الخردة",
+      scrapRemovalDesc: "خدمة إزالة المركبة خارج الخدمة",
+      portTransport: "نقل الميناء/القارب",
+      portTransportDesc: "نقل وشحن المركبة",
+      longDistanceTransport: "النقل لمسافات طويلة",
+      longDistanceTransportDesc: "نقل أي مسافة فرنسا/أوروبا",
+
+      // Why Choose Us
+      whyChooseTitle: "لماذا تختار",
+      whyChooseSubtitle: "أوتو إكسبريس",
+      rapidIntervention: "تدخل سريع",
+      rapidInterventionDesc: "فرقنا تتدخل خلال 30 دقيقة من مكالمتك في مونبلييه.",
+      technicalExpertise: "خبرة تقنية",
+      technicalExpertiseDesc: "فنيون معتمدون مع أكثر من 10 سنوات خبرة في المساعدة.",
+      transparentPricing: "أسعار شفافة",
+      transparentPricingDesc: "عرض سعر مجاني وبدون التزام. لا توجد رسوم مخفية.",
+      montpellierCoverage: "تغطية منطقة مونبلييه الحضرية",
+      montpellierCoverageDesc: "الخدمة متاحة في مونبلييه وجميع البلديات الحضرية.",
+
+      // Testimonials
+      testimonialsTitle: "يثقون بنا",
+      testimonialsSubtitle: "أكثر من 5000 عميل راضٍ في منطقة مونبلييه الحضرية",
       
       // FAQ
       question1: "هل تعملون 24/7 في مونبلييه؟",
