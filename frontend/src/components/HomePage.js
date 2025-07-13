@@ -2112,7 +2112,7 @@ const HomePage = () => {
               </motion.button>
               
               <div className="text-slate-800">
-                <p className="font-semibold">Email : contact@autoexpress.fr</p>
+                <p className="font-semibold">Email : autoexpres34@gmail.com</p>
                 <p>Devis gratuit par téléphone</p>
               </div>
             </div>
