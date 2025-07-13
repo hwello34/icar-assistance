@@ -1284,10 +1284,10 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-              Nos Services <span className="text-[#1693f1]">Experts</span>
+              {t('servicesTitle').split(' ').slice(0, -1).join(' ')} <span className="text-[#1693f1]">{t('servicesTitle').split(' ').slice(-1)[0]}</span>
             </h2>
             <p className="text-xl text-slate-800 max-w-3xl mx-auto">
-              Dépannage automobile, transport et services techniques complets sur Montpellier
+              {t('servicesSubtitle')}
             </p>
           </motion.div>
 
