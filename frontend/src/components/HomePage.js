@@ -375,11 +375,136 @@ const HomePage = () => {
       testimonialsSubtitle: "Over 5,000 satisfied customers in Montpellier Metropolitan area",
       
       // FAQ
+      faqTitle: "Frequently Asked Questions",
       question1: "Do you operate 24/7 in Montpellier?",
       answer1: "Yes, we provide 24/7 emergency service for all your automotive and motorcycle breakdown needs in Montpellier and its metropolitan area.",
       
       question2: "How does WhatsApp geolocation work?",
       answer2: "Click the 'WhatsApp + GPS' button, allow geolocation, and your exact position will be automatically sent via WhatsApp with a Google Maps link to help us locate you instantly.",
+      
+      question3: "What are your response times in Montpellier?",
+      answer3: "Our teams respond on average within 30 minutes of your call, depending on your location in Montpellier Metropolitan area. With geolocation, we can find you even faster.",
+      
+      question4: "What types of vehicles can you assist?",
+      answer4: "We assist all types of vehicles: cars, motorcycles, scooters, utility vehicles, vans, trucks, motorhomes, caravans, agricultural and construction vehicles. We even intervene in underground parking with low barriers.",
+      
+      question5: "How to leave a review of our services?",
+      answer5: "You can leave a review by scanning the QR code in the testimonials section of our site, or directly via our Google Business page. Your feedback helps us continuously improve our breakdown services.",
+
+      // Quote Form
+      quoteTitle: "Request Your Free Quote",
+      quoteSubtitle: "Get a personalized quote quickly for your breakdown or transport",
+      getQuote: "Get my quote",
+      freeQuoteNoCommitment: "Free quote with no commitment",
+      
+      vehicleInfo: "Vehicle Information",
+      vehicleType: "Vehicle type",
+      selectVehicleType: "Select type",
+      car: "Car",
+      motorcycle: "Motorcycle",
+      utility: "Utility vehicle",
+      
+      brand: "Brand",
+      enterBrand: "Enter brand",
+      model: "Model", 
+      enterModel: "Enter model",
+      licensePlate: "License plate",
+      enterLicensePlate: "Enter license plate",
+      
+      vehicleStatus: "Vehicle status",
+      breakdown: "Breakdown",
+      accident: "Accident",
+      
+      wheels: "Wheels",
+      freeWheels: "Free wheels",
+      blockedWheels: "Blocked wheels",
+      
+      gearbox: "Gearbox",
+      manual: "Manual",
+      automatic: "Automatic",
+      
+      transportInfo: "Transport Information",
+      pickupAddress: "Pickup address",
+      enterPickupAddress: "Enter complete address",
+      dropoffAddress: "Drop-off location",
+      enterDropoffAddress: "Enter drop-off location",
+      pickupDate: "Pickup date",
+      
+      contactInfo: "Your Contact Information",
+      fullName: "Full Name",
+      enterFullName: "Enter your full name",
+      phone: "Phone",
+      enterPhone: "Enter your number",
+      email: "Email",
+      enterEmail: "Enter your email",
+      
+      additionalDetails: "Additional details",
+      enterDetails: "Describe your situation...",
+      
+      // WhatsApp Messages
+      whatsappTitle: "Send Your Location via WhatsApp",
+      whatsappSubtitle: "Instantly share your precise GPS location via WhatsApp. Our teams locate you in seconds anywhere in Montpellier!",
+      
+      step1: "Click the button",
+      step1Desc: "Allow geolocation on your phone",
+      step2: "Automatic position",
+      step2Desc: "Your GPS position is added automatically",
+      step3: "Instant send",
+      step3Desc: "Your request arrives directly to us",
+      
+      sendMyLocation: "Send my location",
+      whatsappWithoutGps: "WhatsApp without GPS",
+      locationSharedExclusively: "Your location is shared exclusively with AutoExpress for breakdown assistance",
+      
+      // Footer
+      quickLinks: "Quick Links",
+      serviceZones: "Zones",
+      montpellierCenter: "Montpellier Center",
+      castelnauLeLez: "Castelnau-le-Lez",
+      lattes: "Lattes - Pérols",
+      saintJeanDeVedas: "Saint-Jean-de-Védas",
+      juvignacGrabels: "Juvignac - Grabels",
+      
+      ourServices: "Our Services",
+      autoMotoBreakdown: "Auto/Motorcycle Breakdown",
+      specializedTowing: "Specialized Towing",
+      longDistanceTransport: "Long Distance Transport",
+      autoLocksmithService: "Auto Locksmith",
+      scrapRemovalService: "Scrap Removal",
+      tireServiceFooter: "Tire Service",
+      
+      contactInfo: "Contact",
+      whatsappWithGps: "WhatsApp with GPS",
+      contactEmail: "contact@autoexpress.fr",
+      freeQuoteText: "Free quote",
+      
+      footerTagline: "Your automotive breakdown specialist, rapid and adapted intervention in Montpellier Metropolitan area",
+      allRightsReserved: "© 2025 AutoExpress Montpellier. All rights reserved.",
+      legalMentions: "Legal mentions",
+      confidentialityPolicy: "Privacy policy",
+
+      // Testimonials Data
+      testimonial1Name: "Marie Dubois",
+      testimonial1Location: "Montpellier Center",
+      testimonial1Text: "Impeccable service! They arrived in 20 minutes near Place de la Comédie and resolved my breakdown quickly. I highly recommend AutoExpress.",
+      
+      testimonial2Name: "Jean Martinez",
+      testimonial2Location: "Castelnau-le-Lez", 
+      testimonial2Text: "My motorcycle broke down on the ring road. Professional and responsive, they were there in record time with an adapted tow truck.",
+      
+      testimonial3Name: "Sophie Laurent",
+      testimonial3Location: "Lattes",
+      testimonial3Text: "Dead battery in front of Odysseum. Transparent pricing and quality service. They changed my battery in just a few minutes.",
+
+      // CTA Section
+      needSpecializedService: "Need a Specialized Service?",
+      situationDescription: "Whatever your breakdown situation in Montpellier, our experts have the solution.",
+      immediateQuote: "Immediate Quote",
+      gpsLocation: "GPS Location",
+
+      // Experience Section
+      shareYourExperience: "You Too, Share Your Experience", 
+      reviewHelpsImprove: "Your opinion matters! Help other customers by sharing your experience with AutoExpress.",
       
       // Footer
       quickLinks: "Quick Links",
