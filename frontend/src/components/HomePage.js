@@ -98,6 +98,49 @@ const HomePage = () => {
       mountingDismounting: "Démontage/montage",
       spareWheel: "Roue de secours",
       punctureRepair: "Réparation crevaison",
+
+      // Specialized Services
+      specializedBreakdown: "Dépannage Spécialisé",
+      undergroundParking: "Parking Sous-Sol & Barrières",
+      undergroundParkingDesc: "Dépannage parking avec barrière < 2m",
+      utilityVehicles: "Véhicules Utilitaires",
+      utilityVehiclesDesc: "Fourgon, benne, camping-car, caravane, agricole, BTP",
+      motoTransport: "Transport Moto/Scooter",
+      motoTransportDesc: "Dépannage et transport deux-roues",
+
+      // Technical Services
+      technicalServices: "Services Techniques",
+      autoLocksmith: "Serrurerie Auto",
+      autoLocksmithDesc: "Ouverture portière, reproduction clé auto",
+      impoundRecovery: "Sortie de Fourrière",
+      impoundRecoveryDesc: "Récupération véhicule en fourrière",
+      ditchRecovery: "Sortie de Fossé/Ravin",
+      ditchRecoveryDesc: "Récupération véhicule accidenté",
+
+      // Transport & Removal
+      transportRemoval: "Transport & Enlèvement",
+      scrapRemoval: "Enlèvement Épave",
+      scrapRemovalDesc: "Service enlèvement véhicule hors d'usage",
+      portTransport: "Transport Port/Bateau",
+      portTransportDesc: "Transport et embarquement véhicule",
+      longDistanceTransport: "Transport Longue Distance",
+      longDistanceTransportDesc: "Transport toute distance France/Europe",
+
+      // Why Choose Us
+      whyChooseTitle: "Pourquoi Choisir",
+      whyChooseSubtitle: "AutoExpress",
+      rapidIntervention: "Rapidité d'intervention",
+      rapidInterventionDesc: "Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.",
+      technicalExpertise: "Expertise technique",
+      technicalExpertiseDesc: "Techniciens certifiés avec plus de 10 ans d'expérience en dépannage.",
+      transparentPricing: "Tarifs transparents",
+      transparentPricingDesc: "Devis gratuit et sans engagement. Pas de frais cachés.",
+      montpellierCoverage: "Couverture Montpellier Métropole",
+      montpellierCoverageDesc: "Service disponible sur Montpellier et toutes les communes de la métropole.",
+
+      // Testimonials
+      testimonialsTitle: "Ils Nous Font Confiance",
+      testimonialsSubtitle: "Plus de 5 000 clients satisfaits sur Montpellier Métropole",
       
       // FAQ
       question1: "Intervenez-vous 24h/24 et 7j/7 sur Montpellier ?",
