@@ -1456,7 +1456,7 @@ const HomePage = () => {
               <a href="#testimonials" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Témoignages</a>
               <a href="#contact" className="block text-slate-800 hover:text-[#1693f1] text-lg font-semibold">Contact</a>
               <a
-                href="tel:0781505555"
+                href="tel:+33781505555"
                 className="flex items-center space-x-3 bg-[#c9473e] text-white px-6 py-4 rounded-full text-lg font-bold w-fit"
               >
                 <Phone className="w-6 h-6" />
