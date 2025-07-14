@@ -962,7 +962,11 @@ const HomePage = () => {
       serviceZones: "Zonen",
       contactInfo: "Kontakt",
       whatsappWithGps: "WhatsApp mit GPS",
-      freeQuoteText: "Kostenloses Angebot"
+      freeQuoteText: "Kostenloses Angebot",
+      followUs: "Folgen Sie uns",
+      instagramTooltip: "Instagram @autoexpres34",
+      facebookTooltip: "Facebook AutoExpress",
+      snapchatTooltip: "Snapchat hwello07"
     }
   };
 
