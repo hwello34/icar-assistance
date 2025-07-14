@@ -20,7 +20,9 @@ import {
   Navigation,
   AlertCircle,
   Globe,
-  Mail
+  Mail,
+  Instagram,
+  Facebook
 } from "lucide-react";
 
 const HomePage = () => {
