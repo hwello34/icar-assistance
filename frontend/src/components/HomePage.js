@@ -2657,7 +2657,7 @@ const HomePage = () => {
                     title={t('snapchatTooltip')}
                   >
                     <img 
-                      src="https://i.ibb.co/PzY6gQDm/snapchat-logo.png"
+                      src="https://i.ibb.co/x8s76HFC/Snapchat.png"
                       alt="Snapchat"
                       className="w-5 h-5"
                       onError={(e) => {
