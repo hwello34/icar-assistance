@@ -518,7 +518,11 @@ const HomePage = () => {
       serviceZones: "Zones",
       contactInfo: "Contact",
       whatsappWithGps: "WhatsApp with GPS",
-      freeQuoteText: "Free quote"
+      freeQuoteText: "Free quote",
+      followUs: "Follow Us",
+      instagramTooltip: "Instagram @autoexpres34",
+      facebookTooltip: "Facebook AutoExpress",
+      snapchatTooltip: "Snapchat hwello07"
     },
     
     es: {
