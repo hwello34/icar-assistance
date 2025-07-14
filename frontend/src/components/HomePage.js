@@ -629,7 +629,11 @@ const HomePage = () => {
       serviceZones: "Zonas",
       contactInfo: "Contacto",
       whatsappWithGps: "WhatsApp con GPS",
-      freeQuoteText: "Presupuesto gratuito"
+      freeQuoteText: "Presupuesto gratuito",
+      followUs: "Síguenos",
+      instagramTooltip: "Instagram @autoexpres34",
+      facebookTooltip: "Facebook AutoExpress",
+      snapchatTooltip: "Snapchat hwello07"
     },
     
     it: {
