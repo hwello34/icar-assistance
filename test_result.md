@@ -102,32 +102,20 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Replace 13 service images with new images from provided ibb.co URLs for AutoExpress website"
+user_problem_statement: "Integrate social media links (Instagram, Facebook, Snapchat) into the AutoExpress website"
 
 frontend:
-  - task: "Replace hero section image"
-    implemented: true
-    working: true
-    file: "/app/frontend/src/components/HomePage.js"
-    stuck_count: 0
-    priority: "completed"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Successfully replaced hero section image from https://i.ibb.co/DPJ3J72y/image.png to https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg. Image is displaying correctly in hero section with proper dimensions and styling."
-
-  - task: "Replace all 13 service images"
+  - task: "Integrate social media links in footer"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "Successfully replaced all 13 service images with new French-specific images. All images are displaying correctly: Service Pneus, Parking Sous-Sol, Transport Moto, Dépannage Batterie, Dépannage Automobile, Remorquage Véhicules, Véhicules Utilitaires, Sortie Fossé, Serrurerie Auto, Port/Bateau, Enlèvement Épave, Transport Longue Distance, Sortie Fourrière."
+        comment: "Successfully integrated social media links for Instagram (https://www.instagram.com/autoexpres34/), Facebook (https://www.facebook.com/profile.php?id=61578160629390), and Snapchat (https://www.snapchat.com/add/hwello07?share_id=mPCR4xFWHWE&locale=fr-FR) in the footer section. Added appropriate icons (Instagram, Facebook from lucide-react, and custom SVG for Snapchat), styled with brand colors, and added multi-language support for all 6 languages. Links open in new tabs with proper security attributes."
 
 backend:
   - task: "Backend functionality check"
@@ -140,7 +128,7 @@ backend:
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "No backend changes made for image replacement. Need to verify backend services are still functioning correctly."
+        comment: "No backend changes required for social media integration. Need to verify backend services are still functioning correctly."
       - working: true
         agent: "testing"
         comment: "Backend testing completed successfully. All core functionality verified: ✅ Server connectivity (FastAPI running on correct URL), ✅ Database operations (MongoDB CRUD working), ✅ API endpoints (/api/, /api/status GET/POST), ✅ Error handling (422 for invalid requests), ✅ All supervisor services running. Minor: CORS headers missing from OPTIONS requests but not affecting functionality. Created backend_test.py for comprehensive testing."
@@ -148,19 +136,16 @@ backend:
 metadata:
   created_by: "main_agent"
   version: "1.0"
-  test_sequence: 1
+  test_sequence: 2
   run_ui: false
 
 test_plan:
-  current_focus: []
+  current_focus:
+    - "Integrate social media links in footer"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "Completed hero section image replacement task. Image successfully updated from https://i.ibb.co/DPJ3J72y/image.png to https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg (word cloud image). Screenshot confirms proper display. Ready for backend testing."
-  - agent: "main"
-    message: "Completed all 13 service image replacements. All images successfully updated with new French-specific images from provided ibb.co URLs. Screenshot confirms all images are displaying correctly across all service sections. Task completed successfully."
-  - agent: "testing"
-    message: "Backend testing completed successfully. All critical functionality verified: FastAPI server running correctly, MongoDB database operations working, all API endpoints responding properly, error handling working as expected. Created comprehensive backend_test.py for future testing. No critical issues found - backend is fully functional after frontend image replacement."
+    message: "Completed social media integration task. Added Instagram, Facebook, and Snapchat links to the footer with proper styling, animations, and multi-language support. All social media links are properly configured to open in new tabs with security attributes. Ready for testing."
