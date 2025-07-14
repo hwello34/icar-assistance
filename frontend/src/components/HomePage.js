@@ -851,7 +851,11 @@ const HomePage = () => {
       serviceZones: "المناطق",
       contactInfo: "اتصل بنا",
       whatsappWithGps: "واتساب مع GPS",
-      freeQuoteText: "عرض سعر مجاني"
+      freeQuoteText: "عرض سعر مجاني",
+      followUs: "تابعنا",
+      instagramTooltip: "Instagram @autoexpres34",
+      facebookTooltip: "Facebook AutoExpress",
+      snapchatTooltip: "Snapchat hwello07"
     },
     
     de: {
