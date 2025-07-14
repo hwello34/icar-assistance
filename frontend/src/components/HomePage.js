@@ -2656,7 +2656,18 @@ const HomePage = () => {
                     whileTap={{ scale: 0.95 }}
                     title={t('snapchatTooltip')}
                   >
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <img 
+                      src="https://i.ibb.co/PzY6gQDm/snapchat-logo.png"
+                      alt="Snapchat"
+                      className="w-5 h-5"
+                      onError={(e) => {
+                        console.log('Erreur logo Snapchat:', e.target.src);
+                        // Fallback vers une icône SVG simple
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'block';
+                      }}
+                    />
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" style={{display: 'none'}}>
                       <path d="M12.166 3c3.483 0 6.334 2.851 6.334 6.334 0 3.483-2.851 6.334-6.334 6.334s-6.334-2.851-6.334-6.334c0-3.483 2.851-6.334 6.334-6.334zm0 1.2c-2.836 0-5.134 2.298-5.134 5.134s2.298 5.134 5.134 5.134 5.134-2.298 5.134-5.134-2.298-5.134-5.134-5.134zm-1.155 2.023c.392-.392 1.025-.392 1.417 0l2.121 2.121c.392.392.392 1.025 0 1.417l-2.121 2.121c-.392.392-1.025.392-1.417 0-.392-.392-.392-1.025 0-1.417l1.414-1.414-1.414-1.414c-.392-.392-.392-1.025 0-1.417z"/>
                     </svg>
                   </motion.a>
