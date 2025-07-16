@@ -87,7 +87,7 @@ const HomePage = () => {
       vehicleTowing: "Remorquage Véhicules",
       vehicleTowingDesc: "Service professionnel 24H/7J pour tout type de véhicule léger ou utilitaire",
       equippedTowTrucks: "Dépanneuses équipées",
-      secureTransport: "Nous vous accompagnons jusqu'au garage ou lieu de votre choix",
+      secureTransport: "Vous accompagner jusqu'au garage ou lieu de votre choix",
       allVehicleTypes: "intervention sur véhicule immobilisé ou accidenté, que ce soit en ville, sur route ou en zone difficile d'accès.",
       
       batteryService: "Dépannage Batterie",
