@@ -1233,7 +1233,7 @@ const HomePage = () => {
       icon: <Truck className="w-8 h-8" />,
       title: "Remorquage Véhicules",
       description: "Service professionnel 24H/7J pour tout type de véhicule léger ou utilitaire",
-      features: ["Nous vous accompagnons jusqu'au garage ou lieu de votre choix", "intervention sur véhicule immobilisé ou accidenté, que ce soit en ville, sur route ou en zone difficile d'accès."],
+      features: ["Vous accompagner jusqu'au garage ou lieu de votre choix", "Intervention sur véhicule immobilisé ou accidenté: En ville, sur route ou en zone difficile d'accès"],
       image: "https://i.ibb.co/Z6sdLK3S/remorquage-v-hicule-F.jpg"
     },
     {
