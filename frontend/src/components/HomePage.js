@@ -69,7 +69,7 @@ const HomePage = () => {
       // Hero Section
       heroTitle: "Auto Express",
       heroSubtitle: "Pour un dépannage sans stress, appelez AutoExpress !",
-      heroDescription: "Panne d'auto, moto ou utilitaire ? Batterie à plat ? Crevaison ? Nos experts interviennent rapidement partout sur Montpellier Métropole pour un service de dépannage professionnel et sans tracas.",
+      heroDescription: "Depuis plus de 15 ans, Auto express est le spécialiste du dépannage et du remorquage automobile à Montpellier et dans sa métropole. Disponible 7J/24H et doté d'une flotte de véhicules et matériels performants, notre équipe intervient rapidement, efficacement et en toute sécurité, quelle que soit la situation. Nous proposons un service complet, allant de l'assistance en cas de panne au dépannage, en passant par le remorquage longue distance en France ou à l'étranger (Espagne, Italie, Allemagne…). Notre savoir-faire, notre réactivité et notre sens du service font d'Auto express un allié de confiance pour les particuliers comme pour les professionnels. Avec nous, pas de mauvaise surprise : vous êtes entre de bonnes mains, du premier appel jusqu'à la remise en route de votre véhicule.",
       intervention30min: "Intervention sous 30min",
       gpsLocation: "Localisation GPS",
       guarantee: "Garantie satisfaction",
