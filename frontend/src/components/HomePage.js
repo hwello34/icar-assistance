@@ -1225,7 +1225,7 @@ const HomePage = () => {
     {
       icon: <Car className="w-8 h-8" />,
       title: "Dépannage Automobile",
-      description: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
+      description: "Notre priorité : vous faire repartir rapidement et en toute sérénité.",
       features: ["Diagnostic de panne", "Dépannage sur place si possible", "Vous orienter vers la meilleure solution"],
       image: "https://i.ibb.co/w1hRQMJ/depannage-automobile-F.jpg"
     },
