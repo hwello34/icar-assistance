@@ -81,7 +81,7 @@ const HomePage = () => {
       autoRepair: "Dépannage Automobile",
       autoRepairDesc: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
       completeDiagnostic: "Diagnostic de panne",
-      onSiteRepair: "Réparation sur place",
+      onSiteRepair: "Dépannage sur place si possible",
       allBrands: "Véhicules de toutes marques",
       
       vehicleTowing: "Remorquage Véhicules",
