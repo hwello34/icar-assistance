@@ -88,7 +88,7 @@ const HomePage = () => {
       vehicleTowingDesc: "Service professionnel 24H/7J pour tout type de véhicule léger ou utilitaire",
       equippedTowTrucks: "Dépanneuses équipées",
       secureTransport: "Vous accompagner jusqu'au garage ou lieu de votre choix",
-      allVehicleTypes: "intervention sur véhicule immobilisé ou accidenté, que ce soit en ville, sur route ou en zone difficile d'accès.",
+      allVehicleTypes: "Intervention sur véhicule immobilisé ou accidenté: En ville, sur route ou en zone difficile d'accès",
       
       batteryService: "Dépannage Batterie",
       batteryServiceDesc: "Démarrage et remplacement batterie",
