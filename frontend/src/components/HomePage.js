@@ -1518,8 +1518,7 @@ const HomePage = () => {
                 {t('heroSubtitle')}
               </h2>
               
-              <p className="text-xl text-slate-800 mb-8 leading-relaxed">
-                {t('heroDescription')}
+              <p className="text-xl text-slate-800 mb-8 leading-relaxed text-justify" dangerouslySetInnerHTML={{__html: t('heroDescription')}}>
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
