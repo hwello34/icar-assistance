@@ -96,7 +96,7 @@ const HomePage = () => {
       onSiteReplacement: "Aide au démarrage d'urgence",
       qualityBatteries: "Remplacement si nécessaire",
       
-      tireService: "Service Pneus",
+      tireService: "Service Pneumatique",
       tireServiceDesc: "Intervention pneus route et domicile",
       mountingDismounting: "Démontage/montage",
       spareWheel: "Roue de secours",
