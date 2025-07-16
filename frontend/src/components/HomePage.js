@@ -88,7 +88,7 @@ const HomePage = () => {
       vehicleTowingDesc: "Service de remorquage professionnel 24h/24 pour tout type de véhicule léger ou utilitaire",
       equippedTowTrucks: "Dépanneuses équipées",
       secureTransport: "Nous vous accompagnons jusqu'au garage ou lieu de votre choix",
-      allVehicleTypes: "Tous types de véhicules",
+      allVehicleTypes: "intervention sur véhicule immobilisé ou accidenté, que ce soit en ville, sur route ou en zone difficile d'accès.",
       
       batteryService: "Dépannage Batterie",
       batteryServiceDesc: "Démarrage et remplacement batterie",
