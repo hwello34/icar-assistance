@@ -1240,7 +1240,7 @@ const HomePage = () => {
       icon: <Battery className="w-8 h-8" />,
       title: "Dépannage Batterie",
       description: "Batterie à plat ou hors service ? Intervention rapide et fiable, pour éviter l'immobilisation de votre véhicule",
-      features: ["Test complet batterie, alternateur et fusibles", "Aide au démarrage d'urgences", "Remplacement sur place si nécessaires"],
+      features: ["Test complet batterie, alternateur et fusibles", "Aide au démarrage d'urgence", "Remplacement si nécessaire"],
       image: "https://i.ibb.co/ynNMrBPM/panne-betterie-F.jpg"
     },
     {
