@@ -1225,8 +1225,8 @@ const HomePage = () => {
     {
       icon: <Car className="w-8 h-8" />,
       title: "Dépannage Automobile",
-      description: "Intervention rapide tous véhicules légers",
-      features: ["Diagnostic complet", "Réparation sur place", "Véhicules de toutes marques"],
+      description: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
+      features: ["Diagnostic de panne", "Dépannage sur place si possible", "Vous orienter vers la meilleure solution"],
       image: "https://i.ibb.co/w1hRQMJ/depannage-automobile-F.jpg"
     },
     {
