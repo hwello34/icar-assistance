@@ -80,7 +80,7 @@ const HomePage = () => {
       
       autoRepair: "Dépannage Automobile",
       autoRepairDesc: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
-      completeDiagnostic: "Diagnostic complet",
+      completeDiagnostic: "Diagnostic de panne",
       onSiteRepair: "Réparation sur place",
       allBrands: "Véhicules de toutes marques",
       
