@@ -1239,8 +1239,8 @@ const HomePage = () => {
     {
       icon: <Battery className="w-8 h-8" />,
       title: "Dépannage Batterie",
-      description: "Démarrage et remplacement batterie",
-      features: ["Démarrage d'urgence", "Remplacement sur place", "Batteries de qualité"],
+      description: "Batterie à plat ou hors service ? Intervention rapide et fiable, pour éviter l'immobilisation de votre véhicule",
+      features: ["Test complet batterie, alternateur et fusibles", "Aide au démarrage d'urgences", "Remplacement sur place si nécessaires"],
       image: "https://i.ibb.co/ynNMrBPM/panne-betterie-F.jpg"
     },
     {
