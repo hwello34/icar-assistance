@@ -79,7 +79,7 @@ const HomePage = () => {
       servicesSubtitle: "Dépannage automobile, transport et services techniques complets sur Montpellier",
       
       autoRepair: "Dépannage Automobile",
-      autoRepairDesc: "Intervention rapide tous véhicules légers",
+      autoRepairDesc: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
       completeDiagnostic: "Diagnostic complet",
       onSiteRepair: "Réparation sur place",
       allBrands: "Véhicules de toutes marques",
