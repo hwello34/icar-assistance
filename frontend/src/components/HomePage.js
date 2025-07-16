@@ -93,7 +93,7 @@ const HomePage = () => {
       batteryService: "Dépannage Batterie",
       batteryServiceDesc: "Batterie à plat ou hors service ? Intervention rapide et fiable, pour éviter l'immobilisation de votre véhicule",
       emergencyStart: "Test complet batterie, alternateur et fusibles",
-      onSiteReplacement: "Aide au démarrage d'urgences",
+      onSiteReplacement: "Aide au démarrage d'urgence",
       qualityBatteries: "Remplacement sur place si nécessaires",
       
       tireService: "Service Pneus",
