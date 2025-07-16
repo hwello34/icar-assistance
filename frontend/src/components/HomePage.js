@@ -100,7 +100,7 @@ const HomePage = () => {
       tireServiceDesc: "Crevaison ou pneu endommagé ? Intervention sur route ou à domicile.",
       mountingDismounting: "Remplacement immédiat",
       spareWheel: "Réparation crevaison",
-      punctureRepair: "Réparation crevaison",
+      punctureRepair: "Transport vers une centrale pneu",
 
       // Specialized Services
       specializedBreakdown: "Dépannage Spécialisé",
