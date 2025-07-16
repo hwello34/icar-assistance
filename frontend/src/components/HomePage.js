@@ -97,7 +97,7 @@ const HomePage = () => {
       qualityBatteries: "Remplacement si nécessaire",
       
       tireService: "Service Pneumatique",
-      tireServiceDesc: "Intervention pneus route et domicile",
+      tireServiceDesc: "Crevaison ou pneu endommagé ? Intervention sur route ou à domicile.",
       mountingDismounting: "Démontage/montage",
       spareWheel: "Roue de secours",
       punctureRepair: "Réparation crevaison",
