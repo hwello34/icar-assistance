@@ -85,7 +85,7 @@ const HomePage = () => {
       allBrands: "Vous orienter vers la meilleure solution",
       
       vehicleTowing: "Remorquage Véhicules",
-      vehicleTowingDesc: "Service de remorquage professionnel 24h/24 pour tout type de véhicule léger ou utilitaire",
+      vehicleTowingDesc: "Service professionnel 24H/7J pour tout type de véhicule léger ou utilitaire",
       equippedTowTrucks: "Dépanneuses équipées",
       secureTransport: "Nous vous accompagnons jusqu'au garage ou lieu de votre choix",
       allVehicleTypes: "intervention sur véhicule immobilisé ou accidenté, que ce soit en ville, sur route ou en zone difficile d'accès.",
