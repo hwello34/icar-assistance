@@ -1245,9 +1245,9 @@ const HomePage = () => {
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Service Pneus",
-      description: "Intervention pneus route et domicile",
-      features: ["Démontage/montage", "Roue de secours", "Réparation crevaison"],
+      title: "Service Pneumatique",
+      description: "Crevaison ou pneu endommagé ? Intervention sur route ou à domicile.",
+      features: ["Remplacement immédiat", "Réparation crevaison", "Transport vers une centrale pneu"],
       image: "https://i.ibb.co/N253n7ry/crevaison-pneu-F.jpg"
     }
   ];
