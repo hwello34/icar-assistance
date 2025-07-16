@@ -91,7 +91,7 @@ const HomePage = () => {
       allVehicleTypes: "Intervention sur véhicule immobilisé ou accidenté: En ville, sur route ou en zone difficile d'accès",
       
       batteryService: "Dépannage Batterie",
-      batteryServiceDesc: "Démarrage et remplacement batterie",
+      batteryServiceDesc: "Batterie à plat ou hors service ? Intervention rapide et fiable, pour éviter l'immobilisation de votre véhicule",
       emergencyStart: "Démarrage d'urgence",
       onSiteReplacement: "Remplacement sur place",
       qualityBatteries: "Batteries de qualité",
