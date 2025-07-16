@@ -82,7 +82,7 @@ const HomePage = () => {
       autoRepairDesc: "Notre priorité : vous faire repartir rapidement et en toute sécurité.",
       completeDiagnostic: "Diagnostic de panne",
       onSiteRepair: "Dépannage sur place si possible",
-      allBrands: "Véhicules de toutes marques",
+      allBrands: "Vous orienter vers la meilleure solution",
       
       vehicleTowing: "Remorquage Véhicules",
       vehicleTowingDesc: "Service de remorquage professionnel 24h/24",
