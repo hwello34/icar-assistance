@@ -143,7 +143,7 @@ const HomePage = () => {
 
       // Testimonials
       testimonialsTitle: "Ils Nous Font Confiance",
-      testimonialsSubtitle: "Plus de 5 000 clients satisfaits sur Montpellier Métropole",
+      testimonialsSubtitle: "Chaque jour, plus de clients satisfaits",
       
       // FAQ
       faqTitle: "Questions Fréquentes",
