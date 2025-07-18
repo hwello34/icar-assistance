@@ -32,6 +32,7 @@ const HomePage = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentLanguage, setCurrentLanguage] = useState('fr');
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [quoteForm, setQuoteForm] = useState({
