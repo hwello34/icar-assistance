@@ -1165,6 +1165,15 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, [slideshowImages.length]);
 
+  // Fonction pour gérer le carrousel de témoignages automatique
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 6000); // Change de témoignage toutes les 6 secondes
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
   };
