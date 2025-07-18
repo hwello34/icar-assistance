@@ -114,7 +114,7 @@ const HomePage = () => {
       // Technical Services
       technicalServices: "Services Techniques",
       autoLocksmith: "Serrurerie Auto",
-      autoLocksmithDesc: "Ouverture portière, reproduction clé auto",
+      autoLocksmithDesc: "Clé cassée, perdue ou verrouillage accidentel du véhicule ? Nous intervenons rapidement pour ouvrir votre portière voiture sans l'endommager, et si besoin, nous aidons à trouver une solution de reprogrammation ou reproduction de clef.",
       impoundRecovery: "Sortie de Fourrière",
       impoundRecoveryDesc: "Récupération véhicule en fourrière",
       ditchRecovery: "Sortie de Fossé/Ravin",
