@@ -1264,7 +1264,7 @@ const HomePage = () => {
         },
         {
           title: "Véhicules Utilitaires",
-          description: "Fourgon, benne, camping-car, caravane, agricole, BTP",
+          description: "Besoin de dépanner un véhicule utilitaire ou professionnel ? Auto Express prend en charge les dépannages et remorquages de fourgons toutes tailles, camions bennes, camping-car, engins Btp et Agricoles en respectant vos contraintes de temps et d'activité.",
           icon: "🚛",
           image: "https://i.ibb.co/1Gt2rhDx/vehicules-utilitaires-F.jpg"
         },
