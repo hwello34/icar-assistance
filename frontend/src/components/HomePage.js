@@ -1981,68 +1981,57 @@ const HomePage = () => {
           </motion.div>
 
           {/* Carrousel de témoignages */}
-          <div className="relative mb-16">
+          <div className="relative mb-16 max-w-4xl mx-auto">
             {/* Navigation précédent/suivant */}
             <button
               onClick={() => setCurrentTestimonial((prev) => prev === 0 ? testimonials.length - 1 : prev - 1)}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
             >
               <ChevronLeft className="w-6 h-6 text-[#1693f1]" />
             </button>
             
             <button
               onClick={() => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
             >
               <ChevronRight className="w-6 h-6 text-[#1693f1]" />
             </button>
 
-            {/* Container du carrousel */}
-            <div className="overflow-hidden rounded-2xl">
-              <motion.div
-                className="flex transition-transform duration-500 ease-in-out"
-                animate={{ x: `-${currentTestimonial * 100}%` }}
-                style={{ width: `${testimonials.length * 100}%` }}
-              >
-                {testimonials.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-full px-4"
-                    style={{ width: `${100 / testimonials.length}%` }}
-                  >
-                    <motion.div
-                      className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#87a2b8]/20 hover:shadow-lg transition-all duration-300 mx-auto max-w-4xl"
-                      initial={{ opacity: 0.7 }}
-                      animate={{ 
-                        opacity: index === currentTestimonial ? 1 : 0.7,
-                        scale: index === currentTestimonial ? 1 : 0.95 
-                      }}
-                      transition={{ duration: 0.5 }}
-                    >
-                      <div className="flex items-center space-x-1 mb-4 justify-center">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <p className="text-slate-800 mb-6 italic text-center text-lg leading-relaxed">
-                        "{testimonial.text}"
-                      </p>
-                      <div className="flex items-center justify-center space-x-4">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.name}
-                          className="w-16 h-16 rounded-full object-cover border-2 border-[#1693f1]/20"
-                        />
-                        <div className="text-center">
-                          <h4 className="text-slate-800 font-semibold text-lg">{testimonial.name}</h4>
-                          <p className="text-slate-600 text-sm">{testimonial.location}</p>
-                        </div>
-                      </div>
-                    </motion.div>
+            {/* Affichage du témoignage actuel */}
+            <motion.div
+              key={currentTestimonial}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#87a2b8]/20 shadow-lg"
+            >
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-1 mb-6">
+                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-slate-800 mb-8 italic text-lg leading-relaxed">
+                  "{testimonials[currentTestimonial].text}"
+                </p>
+                <div className="flex items-center justify-center space-x-4">
+                  <img
+                    src={testimonials[currentTestimonial].image}
+                    alt={testimonials[currentTestimonial].name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-[#1693f1]/20"
+                  />
+                  <div>
+                    <h4 className="text-slate-800 font-semibold text-lg">
+                      {testimonials[currentTestimonial].name}
+                    </h4>
+                    <p className="text-slate-600 text-sm">
+                      {testimonials[currentTestimonial].location}
+                    </p>
                   </div>
-                ))}
-              </motion.div>
-            </div>
+                </div>
+              </div>
+            </motion.div>
 
             {/* Indicateurs de pagination */}
             <div className="flex justify-center space-x-2 mt-8">
