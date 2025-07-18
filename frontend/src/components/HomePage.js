@@ -1258,7 +1258,7 @@ const HomePage = () => {
       services: [
         {
           title: "Parking Sous-Sol & Barrières",
-          description: "Dépannage parking avec barrière < 2m",
+          description: "Votre voiture est bloquée dans un parking souterrain ou à hauteur inferieur à 2 mètres ? Grâce à nos 4X4 paniers et notre expérience, nous pouvons sortir votre véhicule jusqu'à la destination souhaitée.",
           icon: "🅿️",
           image: "https://i.ibb.co/j9zycWQD/Sortie-parking-F.jpg"
         },
