@@ -1304,7 +1304,7 @@ const HomePage = () => {
       services: [
         {
           title: "Enlèvement Épave",
-          description: "Service enlèvement véhicule hors d'usage",
+          description: "Votre véhicule est hors d'usage VHU ? Nous proposons un service d'enlèvement gratuit d'épaves agréé. Nous intervenons rapidement et prenons en charge l'enlèvement et les démarches administratives pour vous débarrasser votre véhicule en toute légalité..",
           icon: "♻️",
           image: "https://i.ibb.co/DPcMRdMY/enlevement-epave-F.jpg"
         },
