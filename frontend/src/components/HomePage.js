@@ -1281,7 +1281,7 @@ const HomePage = () => {
       services: [
         {
           title: "Serrurerie Auto",
-          description: "Ouverture portière, reproduction clé auto",
+          description: "Clé cassée, perdue ou verrouillage accidentel du véhicule ? Nous intervenons rapidement pour ouvrir votre portière voiture sans l'endommager, et si besoin, nous aidons à trouver une solution de reprogrammation ou reproduction de clef.",
           icon: "🔑",
           image: "https://i.ibb.co/S7BgDx9Z/serrure-portiere-voiture-F.jpg"
         },
