@@ -1922,7 +1922,7 @@ const HomePage = () => {
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <h4 className="text-white font-semibold">{testimonial.name}</h4>
+                    <h4 className="text-slate-800 font-semibold">{testimonial.name}</h4>
                     <p className="text-slate-700 text-sm">{testimonial.location}</p>
                   </div>
                 </div>
