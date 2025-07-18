@@ -1156,6 +1156,172 @@ const HomePage = () => {
     }
   ];
 
+  // Témoignages Array - Déclaré avant les useEffect pour éviter l'erreur de hoisting
+  const testimonials = [
+    {
+      name: "Marie Dubois",
+      location: "Montpellier Centre",
+      text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1647934464726-25c3b2d53a4b"
+    },
+    {
+      name: "Jean Martinez",
+      location: "Castelnau-le-Lez",
+      text: "Ma moto est tombée en panne sur la rocade. Professionnels et réactifs, ils ont été là en un temps record avec une dépanneuse adaptée.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+    },
+    {
+      name: "Sophie Laurent",
+      location: "Lattes",
+      text: "Batterie à plat devant Odysseum. Tarifs transparents et service de qualité. Ils ont changé ma batterie en quelques minutes seulement.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+    },
+    {
+      name: "Pierre Moreau",
+      location: "Saint-Jean-de-Védas",
+      text: "Clés oubliées dans ma voiture un dimanche soir. AutoExpress a ouvert ma portière sans l'abîmer. Service 24h/24 vraiment fiable !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    {
+      name: "Emma Rousseau",
+      location: "Pérols",
+      text: "Crevaison sur l'autoroute avant mes vacances. Intervention rapide et efficace. Ils m'ont même conseillé un bon garagiste pour le lendemain.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+    },
+    {
+      name: "Julien Petit",
+      location: "Juvignac",
+      text: "Fourgon en panne devant un chantier. L'équipe s'est adaptée aux contraintes du site et a réglé le problème sur place. Très professionnel.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      name: "Claudia Fernandez",
+      location: "Grabels",
+      text: "Ma voiture est tombée dans un fossé après la pluie. Ils ont sorti mon véhicule sans dommage avec un matériel adapté. Merci !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
+    },
+    {
+      name: "Nicolas Blanc",
+      location: "Montpellier Antigone",
+      text: "Service d'enlèvement d'épave parfait. Ils ont géré toute la paperasse administrative. Enlèvement gratuit comme promis.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+    },
+    {
+      name: "Amélie Bonnet",
+      location: "Vendargues",
+      text: "Besoin d'emmener ma voiture au port pour un ferry. Transport sécurisé et à l'heure. Mon voyage n'a pas été compromis.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+    },
+    {
+      name: "Thomas Girard",
+      location: "Le Crès",
+      text: "Dépannage d'urgence en pleine nuit. Réactivité exemplaire et tarifs honnêtes. Je n'hésiterai pas à refaire appel à leurs services.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+    },
+    {
+      name: "Isabelle Roux",
+      location: "Clapiers",
+      text: "Camping-car en panne sur le parking d'un supermarché. Intervention délicate mais réussie. Équipe compétente et matériel professionnel.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f"
+    },
+    {
+      name: "Alexandre Durand",
+      location: "Saint-Gély-du-Fesc",
+      text: "Sortie de fourrière express ! Ils ont facilité toutes les démarches et récupéré ma voiture dès l'autorisation obtenue. Parfait.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+    },
+    {
+      name: "Céline Morel",
+      location: "Baillargues",
+      text: "Transport longue distance pour un déménagement. Véhicule livré en parfait état à Paris. Service sûr et soigné comme annoncé.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
+    },
+    // 10 nouveaux témoignages ajoutés
+    {
+      name: "Laurent Dubois",
+      location: "Montpellier Hôpitaux-Facultés",
+      text: "Panne électrique complexe sur ma voiture hybride. L'équipe a su diagnostiquer et réparer le problème avec expertise. Service hautement qualifié !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a"
+    },
+    {
+      name: "Martine Leblanc",
+      location: "Palavas-les-Flots",
+      text: "Accident sur la route du littoral. Remorquage délicat mais parfaitement exécuté. Ils ont préservé ma voiture des dégâts supplémentaires.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1494790108755-2616c4e0e3e2"
+    },
+    {
+      name: "Fabrice Hernandez",
+      location: "Saint-Clément-de-Rivière",
+      text: "Dépannage de ma camionnette de livraison un samedi matin. Intervention rapide qui m'a évité de perdre ma journée de travail. Merci !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+    },
+    {
+      name: "Nadia Bouchard",
+      location: "Jacou",
+      text: "Crevaison de nuit sur l'A9. Ils sont venus malgré les conditions difficiles et ont changé ma roue en toute sécurité. Service exceptionnel.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
+    },
+    {
+      name: "Vincent Collin",
+      location: "Castries",
+      text: "Ma voiture ne démarrait plus après les fêtes. Diagnostic précis et remplacement de batterie immédiat. Tarifs corrects et service pro.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      name: "Sandrine Duval",
+      location: "Lunel",
+      text: "Transport de ma moto vintage vers un salon. Manipulation soignée et sécurisée. Ils traitent les véhicules avec le plus grand respect.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
+    },
+    {
+      name: "Raphaël Giraud",
+      location: "Mauguio",
+      text: "Enlèvement de ma vieille voiture hors d'usage. Démarches administratives prises en charge intégralement. Service gratuit et efficace.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+    },
+    {
+      name: "Corinne Mathieu",
+      location: "Pignan",
+      text: "Panne de direction assistée en centre-ville. Remorquage délicat dans les rues étroites. Pilotage expert et matériel adapté.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+    },
+    {
+      name: "Didier Rousset",
+      location: "Mudaison",
+      text: "Sortie de fossé après aquaplanage. Opération de récupération impressionnante avec treuil. Aucun dommage supplémentaire sur le véhicule.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    {
+      name: "Valérie Clement",
+      location: "Carnon",
+      text: "Besoin urgent d'emmener ma voiture au garage avant les vacances. Transport express organisé le jour même. Parfait pour les urgences !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+    }
+  ];
+
   // Fonction pour gérer le slideshow automatique
   React.useEffect(() => {
     const interval = setInterval(() => {
