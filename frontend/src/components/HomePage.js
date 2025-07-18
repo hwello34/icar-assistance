@@ -1751,7 +1751,7 @@ const HomePage = () => {
                       </div>
                       <div className="p-6">
                         <h4 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h4>
-                        <p className="text-slate-800 leading-relaxed">{service.description}</p>
+                        <p className="text-slate-800 leading-relaxed text-justify">{service.description}</p>
                         <div className="mt-4 pt-4 border-t border-[#87a2b8]/20">
                           <span className="text-[#1693f1] text-sm font-semibold">Service disponible 24h/24</span>
                         </div>
