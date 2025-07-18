@@ -1574,7 +1574,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center space-x-2 text-slate-800">
                   <Shield className="w-5 h-5 text-[#1693f1]" />
-                  <span>Garantie satisfaction</span>
+                  <span>Professionnel et à l'écoute</span>
                 </div>
               </div>
             </motion.div>
