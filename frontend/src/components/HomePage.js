@@ -123,7 +123,7 @@ const HomePage = () => {
       // Transport & Removal
       transportRemoval: "Transport & Enlèvement",
       scrapRemoval: "Enlèvement Épave",
-      scrapRemovalDesc: "Service enlèvement véhicule hors d'usage",
+      scrapRemovalDesc: "Votre véhicule est hors d'usage VHU ? Nous proposons un service d'enlèvement gratuit d'épaves agréé. Nous intervenons rapidement et prenons en charge l'enlèvement et les démarches administratives pour vous débarrasser votre véhicule en toute légalité..",
       portTransport: "Transport Port/Bateau",
       portTransportDesc: "Transport et embarquement véhicule",
       longDistanceTransport: "Transport Longue Distance",
