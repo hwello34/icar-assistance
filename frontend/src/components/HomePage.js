@@ -1270,7 +1270,7 @@ const HomePage = () => {
         },
         {
           title: "Transport Moto/Scooter",
-          description: "Dépannage et transport deux-roues",
+          description: "Votre moto , scooter ou Quad en panne ? Nous assurons  un  transport sécurisé , qu'il s'agisse d'une intervention locale ou d'un transfert long distance.",
           icon: "🏍️",
           image: "https://i.ibb.co/k6KRL64p/transport-moto-F.jpg"
         }
