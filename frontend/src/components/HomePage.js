@@ -118,7 +118,7 @@ const HomePage = () => {
       impoundRecovery: "Sortie de Fourrière",
       impoundRecoveryDesc: "Votre véhicule a été placé en fourrière ? Nous vous assistons dans toutes les démarches et venons sortir votre voiture de la fourrière dès que l'autorisation vous est délivrée, pour vous éviter tracas, perte de temps et frais de gardiennage.",
       ditchRecovery: "Sortie de Fossé/Ravin",
-      ditchRecoveryDesc: "Récupération véhicule accidenté",
+      ditchRecoveryDesc: "Votre véhicule est sorti de route ? Nos engins de remorquage puissants nous permettent de sortir les voitures embourbées, tombées dans un fossé ou sur le bas-côté, avec le plus grand soin pour préserver la mécanique.",
 
       // Transport & Removal
       transportRemoval: "Transport & Enlèvement",
