@@ -105,8 +105,7 @@ const HomePage = () => {
       // Specialized Services
       specializedBreakdown: "Dépannage Spécialisé",
       undergroundParking: "Parking Sous-Sol & Barrières",
-      undergroundParkingDesc: "Votre voiture est bloquée dans un parking souterrain ou à hauteur inferieur à 2 mètres ? 
-Grâce à nos 4X4 paniers et notre expérience, nous pouvons sortir votre véhicule jusqu'à la destination souhaitée.",
+      undergroundParkingDesc: "Votre voiture est bloquée dans un parking souterrain ou à hauteur inferieur à 2 mètres ? Grâce à nos 4X4 paniers et notre expérience, nous pouvons sortir votre véhicule jusqu'à la destination souhaitée.",
       utilityVehicles: "Véhicules Utilitaires",
       utilityVehiclesDesc: "Fourgon, benne, camping-car, caravane, agricole, BTP",
       motoTransport: "Transport Moto/Scooter",
