@@ -116,7 +116,7 @@ const HomePage = () => {
       autoLocksmith: "Serrurerie Auto",
       autoLocksmithDesc: "Clé cassée, perdue ou verrouillage accidentel du véhicule ? Nous intervenons rapidement pour ouvrir votre portière voiture sans l'endommager, et si besoin, nous aidons à trouver une solution de reprogrammation ou reproduction de clef.",
       impoundRecovery: "Sortie de Fourrière",
-      impoundRecoveryDesc: "Récupération véhicule en fourrière",
+      impoundRecoveryDesc: "Votre véhicule a été placé en fourrière ? Nous vous assistons dans toutes les démarches et venons sortir votre voiture de la fourrière dès que l'autorisation vous est délivrée, pour vous éviter tracas, perte de temps et frais de gardiennage.",
       ditchRecovery: "Sortie de Fossé/Ravin",
       ditchRecoveryDesc: "Récupération véhicule accidenté",
 
