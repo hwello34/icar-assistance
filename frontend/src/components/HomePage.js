@@ -109,7 +109,7 @@ const HomePage = () => {
       utilityVehicles: "Véhicules Utilitaires",
       utilityVehiclesDesc: "Fourgon, benne, camping-car, caravane, agricole, BTP",
       motoTransport: "Transport Moto/Scooter",
-      motoTransportDesc: "Dépannage et transport deux-roues",
+      motoTransportDesc: "Votre moto , scooter ou Quad en panne ? Nous assurons  un  transport sécurisé , qu'il s'agisse d'une intervention locale ou d'un transfert long distance.",
 
       // Technical Services
       technicalServices: "Services Techniques",
