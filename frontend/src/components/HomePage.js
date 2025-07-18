@@ -269,7 +269,7 @@ const HomePage = () => {
 
       // CTA Section
       needSpecializedService: "Besoin d'un Service Spécialisé ?",
-      situationDescription: "Quelle que soit votre situation de dépannage sur Montpellier, nos experts ont la solution.",
+      situationDescription: "Quelle que soit votre situation de dépannage sur Montpellier, Notre équipe professionnelle et expérimentée a la solution.",
       immediateQuote: "Devis Immédiat",
       gpsLocation: "Localisation GPS",
 
