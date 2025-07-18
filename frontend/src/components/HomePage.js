@@ -107,7 +107,7 @@ const HomePage = () => {
       undergroundParking: "Parking Sous-Sol & Barrières",
       undergroundParkingDesc: "Votre voiture est bloquée dans un parking souterrain ou à hauteur inferieur à 2 mètres ? Grâce à nos 4X4 paniers et notre expérience, nous pouvons sortir votre véhicule jusqu'à la destination souhaitée.",
       utilityVehicles: "Véhicules Utilitaires",
-      utilityVehiclesDesc: "Fourgon, benne, camping-car, caravane, agricole, BTP",
+      utilityVehiclesDesc: "Besoin de dépanner un véhicule utilitaire ou professionnel ? Auto Express prend en charge les dépannages et remorquages de fourgons toutes tailles, camions bennes, camping-car, engins Btp et Agricoles en respectant vos contraintes de temps et d'activité.",
       motoTransport: "Transport Moto/Scooter",
       motoTransportDesc: "Votre moto , scooter ou Quad en panne ? Nous assurons  un  transport sécurisé , qu'il s'agisse d'une intervention locale ou d'un transfert long distance.",
 
