@@ -1703,7 +1703,7 @@ const HomePage = () => {
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-slate-800 mb-4">{service.title}</h3>
-                  <p className="text-slate-800 mb-6">{service.description}</p>
+                  <p className="text-slate-800 mb-6 text-justify">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center space-x-2 text-sm text-slate-700">
