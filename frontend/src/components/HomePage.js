@@ -1337,14 +1337,84 @@ const HomePage = () => {
       location: "Castelnau-le-Lez",
       text: "Ma moto est tombée en panne sur la rocade. Professionnels et réactifs, ils ont été là en un temps record avec une dépanneuse adaptée.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1563895439929-873e667d3279"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     },
     {
       name: "Sophie Laurent",
       location: "Lattes",
       text: "Batterie à plat devant Odysseum. Tarifs transparents et service de qualité. Ils ont changé ma batterie en quelques minutes seulement.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1537149436249-b065c9f0950e"
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+    },
+    {
+      name: "Pierre Moreau",
+      location: "Saint-Jean-de-Védas",
+      text: "Clés oubliées dans ma voiture un dimanche soir. AutoExpress a ouvert ma portière sans l'abîmer. Service 24h/24 vraiment fiable !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    {
+      name: "Emma Rousseau",
+      location: "Pérols",
+      text: "Crevaison sur l'autoroute avant mes vacances. Intervention rapide et efficace. Ils m'ont même conseillé un bon garagiste pour le lendemain.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+    },
+    {
+      name: "Julien Petit",
+      location: "Juvignac",
+      text: "Fourgon en panne devant un chantier. L'équipe s'est adaptée aux contraintes du site et a réglé le problème sur place. Très professionnel.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      name: "Claudia Fernandez",
+      location: "Grabels",
+      text: "Ma voiture est tombée dans un fossé après la pluie. Ils ont sorti mon véhicule sans dommage avec un matériel adapté. Merci !",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
+    },
+    {
+      name: "Nicolas Blanc",
+      location: "Montpellier Antigone",
+      text: "Service d'enlèvement d'épave parfait. Ils ont géré toute la paperasse administrative. Enlèvement gratuit comme promis.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+    },
+    {
+      name: "Amélie Bonnet",
+      location: "Vendargues",
+      text: "Besoin d'emmener ma voiture au port pour un ferry. Transport sécurisé et à l'heure. Mon voyage n'a pas été compromis.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+    },
+    {
+      name: "Thomas Girard",
+      location: "Le Crès",
+      text: "Dépannage d'urgence en pleine nuit. Réactivité exemplaire et tarifs honnêtes. Je n'hésiterai pas à refaire appel à leurs services.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+    },
+    {
+      name: "Isabelle Roux",
+      location: "Clapiers",
+      text: "Camping-car en panne sur le parking d'un supermarché. Intervention délicate mais réussie. Équipe compétente et matériel professionnel.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f"
+    },
+    {
+      name: "Alexandre Durand",
+      location: "Saint-Gély-du-Fesc",
+      text: "Sortie de fourrière express ! Ils ont facilité toutes les démarches et récupéré ma voiture dès l'autorisation obtenue. Parfait.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+    },
+    {
+      name: "Céline Morel",
+      location: "Baillargues",
+      text: "Transport longue distance pour un déménagement. Véhicule livré en parfait état à Paris. Service sûr et soigné comme annoncé.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
     }
   ];
 
