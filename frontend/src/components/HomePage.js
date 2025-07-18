@@ -1293,7 +1293,7 @@ const HomePage = () => {
         },
         {
           title: "Sortie de Fossé/Ravin",
-          description: "Récupération véhicule accidenté",
+          description: "Votre véhicule est sorti de route ? Nos engins de remorquage puissants nous permettent de sortir les voitures embourbées, tombées dans un fossé ou sur le bas-côté, avec le plus grand soin pour préserver la mécanique.",
           icon: "🆘",
           image: "https://i.ibb.co/7d6NBZmP/Sortie-ravin-F.jpg"
         }
