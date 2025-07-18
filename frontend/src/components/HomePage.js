@@ -1287,7 +1287,7 @@ const HomePage = () => {
         },
         {
           title: "Sortie de Fourrière",
-          description: "Récupération véhicule en fourrière",
+          description: "Votre véhicule a été placé en fourrière ? Nous vous assistons dans toutes les démarches et venons sortir votre voiture de la fourrière dès que l'autorisation vous est délivrée, pour vous éviter tracas, perte de temps et frais de gardiennage.",
           icon: "🏢",
           image: "https://i.ibb.co/7xkH5LSY/Fourriere-Montpellier-F.jpg"
         },
