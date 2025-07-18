@@ -127,7 +127,7 @@ const HomePage = () => {
       portTransport: "Transport Port/Bateau",
       portTransportDesc: "Votre voiture tombe en panne alors que vous deviez embarquer sur un ferry ? Pas de panique. Nous organisons son transport jusqu'au port ou terminal pour qu'elle puisse prendre le bateau comme prévu, sans compromettre votre voyage.",
       longDistanceTransport: "Transport Longue Distance",
-      longDistanceTransportDesc: "Transport toute distance France/Europe",
+      longDistanceTransportDesc: "Auto Express propose le transport longue distance de véhicules sur l'ensemble de la France et vers les pays frontaliers. Un service sûr et soigné pour particuliers ou professionnels, que ce soit pour un convoyage, un achat ou un besoin exceptionnel.",
 
       // Why Choose Us
       whyChooseTitle: "Pourquoi Choisir",
