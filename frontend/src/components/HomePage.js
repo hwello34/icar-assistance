@@ -1316,7 +1316,7 @@ const HomePage = () => {
         },
         {
           title: "Transport Longue Distance",
-          description: "Transport toute distance France/Europe",
+          description: "Auto Express propose le transport longue distance de véhicules sur l'ensemble de la France et vers les pays frontaliers. Un service sûr et soigné pour particuliers ou professionnels, que ce soit pour un convoyage, un achat ou un besoin exceptionnel.",
           icon: "🌍",
           image: "https://i.ibb.co/35SKqhk3/transport-longue-distance-F.jpg"
         }
