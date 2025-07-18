@@ -1310,7 +1310,7 @@ const HomePage = () => {
         },
         {
           title: "Transport Port/Bateau",
-          description: "Transport et embarquement véhicule",
+          description: "Votre voiture tombe en panne alors que vous deviez embarquer sur un ferry ? Pas de panique. Nous organisons son transport jusqu'au port ou terminal pour qu'elle puisse prendre le bateau comme prévu, sans compromettre votre voyage.",
           icon: "⚓",
           image: "https://i.ibb.co/RTNqGn6Q/Port-bateau-F.jpg"
         },
