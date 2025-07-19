@@ -1324,7 +1324,7 @@ const HomePage = () => {
       location: "Fabrègues",
       text: "Intervention nocturne pour ma voiture en panne sur l'A750. Équipe professionnelle arrivée rapidement malgré l'heure tardive. Service impeccable et tarifs raisonnables.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36"
     }
   ];
 
