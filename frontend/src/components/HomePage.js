@@ -1254,7 +1254,7 @@ const HomePage = () => {
       location: "Montpellier Hôpitaux-Facultés",
       text: "Panne électrique complexe sur ma voiture hybride. L'équipe a su diagnostiquer et réparer le problème avec grande expertise. Molto bene !",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61"
     },
     {
       name: "Fatima Benali",
