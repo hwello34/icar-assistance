@@ -727,7 +727,7 @@ const HomePage = () => {
 
       // Testimonials
       testimonialsTitle: "Si Fidano di Noi",
-      testimonialsSubtitle: "Oltre 5.000 clienti soddisfatti nell'area metropolitana di Montpellier",
+      testimonialsSubtitle: "Ogni giorno, più clienti soddisfatti",
       
       // FAQ
       question1: "Operate 24h/24 e 7g/7 a Montpellier?",
