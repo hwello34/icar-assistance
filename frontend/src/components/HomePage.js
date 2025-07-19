@@ -1331,11 +1331,14 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, [slideshowImages.length]);
 
-  // Fonction pour gérer le carrousel de témoignages automatique
+  // Fonction pour gérer le carrousel de témoignages automatique (par groupes de 3)
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 6000); // Change de témoignage toutes les 6 secondes
+      setCurrentTestimonial((prev) => {
+        const totalGroups = Math.ceil(testimonials.length / 3);
+        return (prev + 3) >= testimonials.length ? 0 : prev + 3;
+      });
+    }, 8000); // Change de groupe de témoignages toutes les 8 secondes
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
