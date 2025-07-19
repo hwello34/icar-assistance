@@ -306,10 +306,10 @@ const HomePage = () => {
       // Hero Section
       heroTitle: "Auto Express",
       heroSubtitle: "For stress-free breakdown assistance, call AutoExpress!",
-      heroDescription: "Car, motorcycle or utility vehicle breakdown? Flat battery? Puncture? Our experts intervene quickly throughout Montpellier Metropolitan area for professional and hassle-free breakdown service.",
+      heroDescription: "For <strong>more than 15 years</strong>, <strong>Auto Express</strong> has been the specialist in automotive breakdown and towing services in <strong>Montpellier and its metropolitan area</strong>. Available 7 days a week, 24 hours a day, and equipped with a fleet of high-performance vehicles and equipment, our team intervenes <strong>quickly, efficiently and safely</strong>, whatever the situation. We offer <strong>a complete service</strong>, ranging from assistance in case of breakdown to recovery, including long-distance towing in France or abroad (Spain, Italy, Germany...). Our expertise, responsiveness and sense of service make <strong>Auto Express a trusted ally</strong> for individuals and professionals alike. With us, no unpleasant surprises: you are <strong>in good hands</strong>, from the first call to getting your vehicle back on the road.",
       intervention30min: "Intervention within 30min",
       gpsLocation: "GPS Location",
-      guarantee: "Satisfaction guarantee",
+      guarantee: "Professional and attentive",
       
       // Services
       servicesTitle: "Our Expert Services",
