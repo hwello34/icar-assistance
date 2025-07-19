@@ -2346,9 +2346,23 @@ const HomePage = () => {
                 )}
               </motion.button>
               
-              <div className="text-slate-800">
-                <p className="font-semibold">Email : autoexpres34@gmail.com</p>
-                <p>Devis gratuit par téléphone</p>
+              <div className="flex flex-col space-y-3">
+                <motion.div
+                  className="inline-flex items-center justify-center space-x-3 bg-[#1693f1] hover:bg-[#1478c7] text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 border-2 border-[#1693f1] hover:border-[#1478c7]"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Mail className="w-5 h-5" />
+                  <span>Email : autoexpres34@gmail.com</span>
+                </motion.div>
+                <motion.div
+                  className="inline-flex items-center justify-center space-x-3 bg-[#1693f1] hover:bg-[#1478c7] text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 border-2 border-[#1693f1] hover:border-[#1478c7]"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Phone className="w-5 h-5" />
+                  <span>Devis gratuit par téléphone</span>
+                </motion.div>
               </div>
             </div>
 
