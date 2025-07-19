@@ -949,7 +949,7 @@ const HomePage = () => {
 
       // Testimonials
       testimonialsTitle: "Sie Vertrauen Uns",
-      testimonialsSubtitle: "Über 5.000 zufriedene Kunden im Großraum Montpellier",
+      testimonialsSubtitle: "Jeden Tag, mehr zufriedene Kunden",
       
       // FAQ
       question1: "Arbeiten Sie 24/7 in Montpellier?",
