@@ -1319,6 +1319,13 @@ const HomePage = () => {
       text: "Besoin urgent d'emmener ma voiture au garage avant les vacances. Transport express organisé le jour même. Parfait pour les urgences !",
       rating: 5,
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+    },
+    {
+      name: "Philippe Moretti",
+      location: "Fabrègues",
+      text: "Intervention nocturne pour ma voiture en panne sur l'A750. Équipe professionnelle arrivée rapidement malgré l'heure tardive. Service impeccable et tarifs raisonnables.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     }
   ];
 
