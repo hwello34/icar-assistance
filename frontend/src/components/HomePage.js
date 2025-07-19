@@ -1198,7 +1198,7 @@ const HomePage = () => {
       location: "Juvignac",
       text: "Dépannage de ma voiture hybride. L'équipe maîtrise parfaitement les nouvelles technologies. Service professionnel et soigné.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66"
     },
     {
       name: "Claudia Fernandez",
