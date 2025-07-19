@@ -1163,7 +1163,7 @@ const HomePage = () => {
       location: "Montpellier Centre",
       text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1647934464726-25c3b2d53a4b"
+      image: "https://images.unsplash.com/photo-1494790108755-2616c4e0e3e2"
     },
     {
       name: "Ahmed Ben Ali",
@@ -1261,49 +1261,49 @@ const HomePage = () => {
       location: "Palavas-les-Flots",
       text: "Accident léger sur la route du littoral. Remorquage délicat mais parfaitement exécuté. L'équipe a préservé ma voiture des dégâts supplémentaires.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616c4e0e3e2"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
     },
     {
       name: "Fabrice Hernandez",
       location: "Saint-Clément-de-Rivière",
       text: "Dépannage de ma camionnette de livraison un samedi matin. Intervention rapide qui m'a évité de perdre ma journée de travail. Merci !",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     },
     {
       name: "Priya Sharma",
       location: "Jacou",
       text: "Crevaison de nuit sur l'A9. L'équipe est venue malgré les conditions difficiles et a changé ma roue en toute sécurité. Service exceptionnel.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
+      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
     },
     {
       name: "Vincent Collin",
       location: "Castries",
       text: "Ma voiture ne démarrait plus après les fêtes. Diagnostic précis et remplacement de batterie immédiat. Tarifs corrects et service pro.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+      image: "https://images.unsplash.com/photo-1463453091185-61582044d556"
     },
     {
       name: "Sandrine Duval",
       location: "Lunel",
       text: "Transport de ma moto vintage vers un salon. Manipulation soignée et sécurisée. Ils traitent les véhicules avec le plus grand respect.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
+      image: "https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b"
     },
     {
       name: "Dimitri Petrov",
       location: "Mauguio",
       text: "Enlèvement de ma vieille voiture hors d'usage. Démarches administratives prises en charge intégralement. Service gratuit et très efficace.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54"
     },
     {
       name: "Aïcha Kone",
       location: "Pignan",
       text: "Panne de direction assistée en centre-ville. Remorquage délicat dans les rues étroites. L'équipe a montré un pilotage expert avec matériel adapté.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04"
     },
     {
       name: "Lars Andersen",
@@ -1317,7 +1317,7 @@ const HomePage = () => {
       location: "Carnon",
       text: "Besoin urgent d'emmener ma voiture au garage avant les vacances. Transport express organisé le jour même. Parfait pour les urgences !",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
+      image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91"
     },
     {
       name: "Philippe Moretti",
