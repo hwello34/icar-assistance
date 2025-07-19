@@ -838,7 +838,7 @@ const HomePage = () => {
 
       // Testimonials
       testimonialsTitle: "يثقون بنا",
-      testimonialsSubtitle: "أكثر من 5000 عميل راضٍ في منطقة مونبلييه الحضرية",
+      testimonialsSubtitle: "كل يوم، المزيد من العملاء الراضين",
       
       // FAQ
       question1: "هل تعملون 24/7 في مونبلييه؟",
