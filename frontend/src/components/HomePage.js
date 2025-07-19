@@ -1166,11 +1166,11 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1647934464726-25c3b2d53a4b"
     },
     {
-      name: "Jean Martinez",
+      name: "Ahmed Ben Ali",
       location: "Castelnau-le-Lez",
-      text: "Ma moto est tombée en panne sur la rocade. Professionnels et réactifs, ils ont été là en un temps record avec une dépanneuse adaptée.",
+      text: "Ma voiture est tombée en panne sur la rocade un vendredi soir. L'équipe d'AutoExpress a été très professionnelle et respectueuse. Service rapide et efficace.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
     },
     {
       name: "Sophie Laurent",
@@ -1180,9 +1180,9 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
     },
     {
-      name: "Pierre Moreau",
+      name: "Kwame Asante",
       location: "Saint-Jean-de-Védas",
-      text: "Clés oubliées dans ma voiture un dimanche soir. AutoExpress a ouvert ma portière sans l'abîmer. Service 24h/24 vraiment fiable !",
+      text: "Excellent service ! L'équipe est arrivée rapidement pour ma panne de direction assistée. Personnel compétent et très sympathique. Je recommande !",
       rating: 5,
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
     },
@@ -1194,11 +1194,11 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
     },
     {
-      name: "Julien Petit",
+      name: "Chen Wei Ming",
       location: "Juvignac",
-      text: "Fourgon en panne devant un chantier. L'équipe s'est adaptée aux contraintes du site et a réglé le problème sur place. Très professionnel.",
+      text: "Dépannage de ma voiture hybride. L'équipe maîtrise parfaitement les nouvelles technologies. Service professionnel et soigné.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     },
     {
       name: "Claudia Fernandez",
@@ -1208,11 +1208,11 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
     },
     {
-      name: "Nicolas Blanc",
+      name: "Mamadou Diallo",
       location: "Montpellier Antigone",
-      text: "Service d'enlèvement d'épave parfait. Ils ont géré toute la paperasse administrative. Enlèvement gratuit comme promis.",
+      text: "Service d'enlèvement d'épave parfait. L'équipe a été très respectueuse et a géré toute la paperasse administrative. Service gratuit comme promis.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
     },
     {
       name: "Amélie Bonnet",
@@ -1222,9 +1222,9 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956"
     },
     {
-      name: "Thomas Girard",
+      name: "Yuki Tanaka",
       location: "Le Crès",
-      text: "Dépannage d'urgence en pleine nuit. Réactivité exemplaire et tarifs honnêtes. Je n'hésiterai pas à refaire appel à leurs services.",
+      text: "Dépannage d'urgence pour ma moto en pleine nuit. Réactivité exemplaire et tarifs honnêtes. Service très professionnel et courtois.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
     },
@@ -1236,11 +1236,11 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f"
     },
     {
-      name: "Alexandre Durand",
+      name: "Omar El Fassi",
       location: "Saint-Gély-du-Fesc",
-      text: "Sortie de fourrière express ! Ils ont facilité toutes les démarches et récupéré ma voiture dès l'autorisation obtenue. Parfait.",
+      text: "Sortie de fourrière express ! L'équipe a facilité toutes les démarches et récupéré ma voiture dès l'autorisation obtenue. Service impeccable.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a"
     },
     {
       name: "Céline Morel",
@@ -1249,18 +1249,17 @@ const HomePage = () => {
       rating: 5,
       image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
     },
-    // 10 nouveaux témoignages ajoutés
     {
-      name: "Laurent Dubois",
+      name: "Giuseppe Rossi",
       location: "Montpellier Hôpitaux-Facultés",
-      text: "Panne électrique complexe sur ma voiture hybride. L'équipe a su diagnostiquer et réparer le problème avec expertise. Service hautement qualifié !",
+      text: "Panne électrique complexe sur ma voiture hybride. L'équipe a su diagnostiquer et réparer le problème avec grande expertise. Molto bene !",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     },
     {
-      name: "Martine Leblanc",
+      name: "Fatima Benali",
       location: "Palavas-les-Flots",
-      text: "Accident sur la route du littoral. Remorquage délicat mais parfaitement exécuté. Ils ont préservé ma voiture des dégâts supplémentaires.",
+      text: "Accident léger sur la route du littoral. Remorquage délicat mais parfaitement exécuté. L'équipe a préservé ma voiture des dégâts supplémentaires.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108755-2616c4e0e3e2"
     },
@@ -1269,12 +1268,12 @@ const HomePage = () => {
       location: "Saint-Clément-de-Rivière",
       text: "Dépannage de ma camionnette de livraison un samedi matin. Intervention rapide qui m'a évité de perdre ma journée de travail. Merci !",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
     },
     {
-      name: "Nadia Bouchard",
+      name: "Priya Sharma",
       location: "Jacou",
-      text: "Crevaison de nuit sur l'A9. Ils sont venus malgré les conditions difficiles et ont changé ma roue en toute sécurité. Service exceptionnel.",
+      text: "Crevaison de nuit sur l'A9. L'équipe est venue malgré les conditions difficiles et a changé ma roue en toute sécurité. Service exceptionnel.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
     },
@@ -1283,7 +1282,7 @@ const HomePage = () => {
       location: "Castries",
       text: "Ma voiture ne démarrait plus après les fêtes. Diagnostic précis et remplacement de batterie immédiat. Tarifs corrects et service pro.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
     },
     {
       name: "Sandrine Duval",
@@ -1293,25 +1292,25 @@ const HomePage = () => {
       image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb"
     },
     {
-      name: "Raphaël Giraud",
+      name: "Dimitri Petrov",
       location: "Mauguio",
-      text: "Enlèvement de ma vieille voiture hors d'usage. Démarches administratives prises en charge intégralement. Service gratuit et efficace.",
+      text: "Enlèvement de ma vieille voiture hors d'usage. Démarches administratives prises en charge intégralement. Service gratuit et très efficace.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
     },
     {
-      name: "Corinne Mathieu",
+      name: "Aïcha Kone",
       location: "Pignan",
-      text: "Panne de direction assistée en centre-ville. Remorquage délicat dans les rues étroites. Pilotage expert et matériel adapté.",
+      text: "Panne de direction assistée en centre-ville. Remorquage délicat dans les rues étroites. L'équipe a montré un pilotage expert avec matériel adapté.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
     },
     {
-      name: "Didier Rousset",
+      name: "Lars Andersen",
       location: "Mudaison",
       text: "Sortie de fossé après aquaplanage. Opération de récupération impressionnante avec treuil. Aucun dommage supplémentaire sur le véhicule.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
     },
     {
       name: "Valérie Clement",
