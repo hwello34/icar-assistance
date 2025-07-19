@@ -380,7 +380,7 @@ const HomePage = () => {
 
       // Testimonials
       testimonialsTitle: "They Trust Us",
-      testimonialsSubtitle: "Over 5,000 satisfied customers in Montpellier Metropolitan area",
+      testimonialsSubtitle: "Every day, more satisfied customers",
       
       // FAQ
       faqTitle: "Frequently Asked Questions",
