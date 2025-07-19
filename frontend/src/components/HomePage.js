@@ -2055,67 +2055,82 @@ const HomePage = () => {
             </p>
           </motion.div>
 
-          {/* Carrousel de témoignages */}
-          <div className="relative mb-16 max-w-4xl mx-auto">
+          {/* Carrousel de témoignages (3 par vue) */}
+          <div className="relative mb-16">
             {/* Navigation précédent/suivant */}
             <button
-              onClick={() => setCurrentTestimonial((prev) => prev === 0 ? testimonials.length - 1 : prev - 1)}
+              onClick={() => setCurrentTestimonial((prev) => {
+                const totalGroups = Math.ceil(testimonials.length / 3);
+                const currentGroup = Math.floor(prev / 3);
+                const prevGroup = currentGroup === 0 ? totalGroups - 1 : currentGroup - 1;
+                return prevGroup * 3;
+              })}
               className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
             >
               <ChevronLeft className="w-6 h-6 text-[#1693f1]" />
             </button>
             
             <button
-              onClick={() => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)}
+              onClick={() => setCurrentTestimonial((prev) => {
+                const nextIndex = prev + 3;
+                return nextIndex >= testimonials.length ? 0 : nextIndex;
+              })}
               className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
             >
               <ChevronRight className="w-6 h-6 text-[#1693f1]" />
             </button>
 
-            {/* Affichage du témoignage actuel */}
+            {/* Affichage des 3 témoignages actuels */}
             <motion.div
-              key={currentTestimonial}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#87a2b8]/20 shadow-lg"
+              key={Math.floor(currentTestimonial / 3)}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.6 }}
+              className="grid md:grid-cols-3 gap-6 px-16"
             >
-              <div className="text-center">
-                <div className="flex items-center justify-center space-x-1 mb-6">
-                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-800 mb-8 italic text-lg leading-relaxed">
-                  "{testimonials[currentTestimonial].text}"
-                </p>
-                <div className="flex items-center justify-center space-x-4">
-                  <img
-                    src={testimonials[currentTestimonial].image}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-[#1693f1]/20"
-                  />
-                  <div>
-                    <h4 className="text-slate-800 font-semibold text-lg">
-                      {testimonials[currentTestimonial].name}
-                    </h4>
-                    <p className="text-slate-600 text-sm">
-                      {testimonials[currentTestimonial].location}
+              {testimonials.slice(currentTestimonial, currentTestimonial + 3).map((testimonial, index) => (
+                <div
+                  key={currentTestimonial + index}
+                  className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-[#87a2b8]/20 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="text-center">
+                    <div className="flex items-center justify-center space-x-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-slate-800 mb-6 italic text-sm leading-relaxed line-clamp-4">
+                      "{testimonial.text}"
                     </p>
+                    <div className="flex flex-col items-center space-y-2">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1693f1]/20"
+                      />
+                      <div>
+                        <h4 className="text-slate-800 font-semibold text-sm">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-slate-600 text-xs">
+                          {testimonial.location}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </motion.div>
 
-            {/* Indicateurs de pagination */}
+            {/* Indicateurs de pagination (par groupes de 3) */}
             <div className="flex justify-center space-x-2 mt-8">
-              {testimonials.map((_, index) => (
+              {Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, groupIndex) => (
                 <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
+                  key={groupIndex}
+                  onClick={() => setCurrentTestimonial(groupIndex * 3)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial
+                    Math.floor(currentTestimonial / 3) === groupIndex
                       ? 'bg-[#1693f1] scale-125'
                       : 'bg-slate-300 hover:bg-slate-400'
                   }`}
