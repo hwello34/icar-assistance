@@ -542,10 +542,10 @@ const HomePage = () => {
       // Hero Section
       heroTitle: "Auto Express",
       heroSubtitle: "¡Para una asistencia en carretera sin estrés, llame a AutoExpress!",
-      heroDescription: "¿Avería de coche, moto o vehículo utilitario? ¿Batería descargada? ¿Pinchazo? Nuestros expertos intervienen rápidamente en toda el área metropolitana de Montpellier para un servicio de asistencia profesional y sin complicaciones.",
+      heroDescription: "Desde <strong>más de 15 años</strong>, <strong>Auto Express</strong> es el especialista en averías y remolque de automóviles en <strong>Montpellier y su área metropolitana</strong>. Disponible 7 días a la semana, 24 horas al día, y equipado con una flota de vehículos y equipos de alto rendimiento, nuestro equipo interviene <strong>rápida, eficaz y seguramente</strong>, cualquiera que sea la situación. Ofrecemos <strong>un servicio completo</strong>, desde la asistencia en caso de avería hasta la grúa, pasando por el remolque de larga distancia en Francia o en el extranjero (España, Italia, Alemania...). Nuestra experiencia, capacidad de respuesta y sentido del servicio hacen de <strong>Auto Express un aliado de confianza</strong> tanto para particulares como para profesionales. Con nosotros, no hay sorpresas desagradables: usted está <strong>en buenas manos</strong>, desde la primera llamada hasta la puesta en marcha de su vehículo.",
       intervention30min: "Intervención en 30min",
       gpsLocation: "Localización GPS",
-      guarantee: "Garantía de satisfacción",
+      guarantee: "Profesional y atento",
       
       // Services
       servicesTitle: "Nuestros Servicios Expertos",
