@@ -615,7 +615,7 @@ const HomePage = () => {
       montpellierCoverageDesc: "Servicio disponible en Montpellier y todos los municipios metropolitanos.",
 
       // Testimonials
-      testimonialsTitle: "Confían en Nosotros",
+      testimonialsTitle: "Hablan de Nosotros",
       testimonialsSubtitle: "Cada día, más clientes satisfechos",
       
       // FAQ
