@@ -995,7 +995,7 @@ const HomePage = () => {
 
   // Récupération de la langue depuis localStorage au montage
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('autoexpressLanguage');
+    const savedLanguage = localStorage.getItem('icarassistanceLanguage');
     if (savedLanguage && languages.find(lang => lang.code === savedLanguage)) {
       setCurrentLanguage(savedLanguage);
     }
