@@ -251,7 +251,7 @@ const HomePage = () => {
       freeQuoteText: "Devis gratuit",
       
       footerTagline: "Votre spécialiste du dépannage automobile, intervention rapide et adaptée sur Montpellier Métropole",
-      allRightsReserved: "© 2025 AutoExpress Montpellier. Tous droits réservés.",
+      allRightsReserved: "© 2025 Icar Assistance Montpellier. Tous droits réservés.",
       legalMentions: "Mentions légales",
       confidentialityPolicy: "Politique de confidentialité",
 
