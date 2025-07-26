@@ -379,7 +379,7 @@ const HomePage = () => {
       montpellierCoverageDesc: "Service available in Montpellier and all metropolitan municipalities.",
 
       // Testimonials
-      testimonialsTitle: "They Trust Us",
+      testimonialsTitle: "They talk about Us",
       testimonialsSubtitle: "Every day, more satisfied customers",
       
       // FAQ
