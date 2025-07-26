@@ -1562,11 +1562,11 @@ const HomePage = () => {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="#services" className="text-white hover:text-[#1693f1] transition-colors font-semibold text-lg">{t('services')}</a>
-              <a href="#quote" className="text-white hover:text-[#1693f1] transition-colors font-semibold text-lg">{t('quote')}</a>
-              <a href="#about" className="text-white hover:text-[#1693f1] transition-colors font-semibold text-lg">{t('about')}</a>
-              <a href="#testimonials" className="text-white hover:text-[#1693f1] transition-colors font-semibold text-lg">{t('testimonials')}</a>
-              <a href="#contact" className="text-white hover:text-[#1693f1] transition-colors font-semibold text-lg">{t('contact')}</a>
+              <a href="#services" className="text-white hover:text-[#3498DB] transition-colors font-semibold text-lg">{t('services')}</a>
+              <a href="#quote" className="text-white hover:text-[#3498DB] transition-colors font-semibold text-lg">{t('quote')}</a>
+              <a href="#about" className="text-white hover:text-[#3498DB] transition-colors font-semibold text-lg">{t('about')}</a>
+              <a href="#testimonials" className="text-white hover:text-[#3498DB] transition-colors font-semibold text-lg">{t('testimonials')}</a>
+              <a href="#contact" className="text-white hover:text-[#3498DB] transition-colors font-semibold text-lg">{t('contact')}</a>
             </div>
 
             {/* Emergency Call Button */}
