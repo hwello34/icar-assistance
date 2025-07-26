@@ -2057,8 +2057,8 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-              {t('testimonialsTitle').split(' ').slice(0, -1).join(' ')} <span className="text-[#1693f1]">{t('testimonialsTitle').split(' ').slice(-1)[0]}</span>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0F2D52]">Ils parlent de </span><span className="text-[#F39C12]">Nous</span>
             </h2>
             <p className="text-xl text-slate-800">
               {t('testimonialsSubtitle')}
