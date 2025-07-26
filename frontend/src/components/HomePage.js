@@ -2269,7 +2269,7 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              {t('faqTitle').split(' ')[0]} <span className="text-[#1693f1]">{t('faqTitle').split(' ').slice(1).join(' ')}</span>
+              <span className="text-[#0F2D52]">{t('faqTitle').split(' ')[0]}</span> <span className="text-[#F39C12]">{t('faqTitle').split(' ').slice(1).join(' ')}</span>
             </h2>
           </motion.div>
 
