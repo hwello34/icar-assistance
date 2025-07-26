@@ -132,7 +132,7 @@ const HomePage = () => {
 
       // Why Choose Us
       whyChooseTitle: "Pourquoi Choisir",
-      whyChooseSubtitle: "AutoExpress",
+      whyChooseSubtitle: "Icar Assistance",
       rapidIntervention: "Rapidité d'intervention",
       rapidInterventionDesc: "Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.",
       technicalExpertise: "Expertise technique",
