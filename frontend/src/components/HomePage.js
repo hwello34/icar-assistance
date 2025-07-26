@@ -1973,7 +1973,8 @@ const HomePage = () => {
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-8">
                 {t('whyChooseTitle')} 
-                <span className="text-[#1693f1]"> {t('whyChooseSubtitle')}</span> ?
+                <span className="text-[#0F2D52]">{t('whyChooseSubtitle').split(' ')[0]}</span>
+                <span className="text-[#F39C12]"> {t('whyChooseSubtitle').split(' ')[1]}</span> ?
               </h2>
               
               <div className="space-y-8">
