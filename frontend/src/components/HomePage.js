@@ -1168,7 +1168,7 @@ const HomePage = () => {
     {
       name: "Ahmed Ben Ali",
       location: "Castelnau-le-Lez",
-      text: "Ma voiture est tombée en panne sur la rocade un vendredi soir. L'équipe d'AutoExpress a été très professionnelle et respectueuse. Service rapide et efficace.",
+      text: "Ma voiture est tombée en panne sur la rocade un vendredi soir. L'équipe d'Icar Assistance a été très professionnelle et respectueuse. Service rapide et efficace.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
     },
