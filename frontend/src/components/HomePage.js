@@ -2157,8 +2157,8 @@ const HomePage = () => {
             className="bg-gradient-to-r from-[#0F2D52]/20 to-[#2A5CAA]/20 rounded-2xl p-12 border border-[#2A5CAA]/30 text-center"
           >
             <div className="max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold text-white mb-6">
-                Vous Aussi, Partagez Votre <span className="text-[#1693f1]">Expérience</span> !
+              <h3 className="text-3xl font-bold mb-6">
+                <span className="text-[#0F2D52]">Vous Aussi, Partagez Votre </span><span className="text-[#F39C12]">Expérience !</span>
               </h3>
               
               <p className="text-xl text-slate-800 mb-8">
