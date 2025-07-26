@@ -2317,10 +2317,10 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Une Panne ? Appelez-Nous !
             </h2>
-            <p className="text-xl text-slate-800 mb-8">
+            <p className="text-xl text-white mb-8">
               Service d'urgence disponible 24h/24 - Intervention rapide sur Montpellier Métropole
             </p>
             
