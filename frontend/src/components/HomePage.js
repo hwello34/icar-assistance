@@ -2654,7 +2654,7 @@ const HomePage = () => {
       )}
 
       {/* Devis Section */}
-      <section id="quote" className="py-20 bg-gradient-to-r from-[#87a2b8] to-[#1693f1]">
+      <section id="quote" className="py-20 bg-gradient-to-r from-[#2A5CAA] to-[#0F2D52]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
