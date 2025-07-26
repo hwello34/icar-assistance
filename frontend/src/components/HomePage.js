@@ -1128,7 +1128,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/pr5Jh9Dz/BB22.jpg",
-      alt: "AutoExpress - Service 24h/24"
+      alt: "Icar Assistance - Service 24h/24"
     },
     {
       url: "https://i.ibb.co/bD3WdGG/Slide-Show-1.jpg",
