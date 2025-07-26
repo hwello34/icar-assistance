@@ -966,7 +966,7 @@ const HomePage = () => {
       freeQuoteText: "Kostenloses Angebot",
       followUs: "Folgen Sie uns",
       instagramTooltip: "Instagram @autoexpres34",
-      facebookTooltip: "Facebook AutoExpress",
+      facebookTooltip: "Facebook Icar Assistance",
       snapchatTooltip: "Snapchat hwello07"
     }
   };
