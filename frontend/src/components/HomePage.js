@@ -1024,7 +1024,7 @@ const HomePage = () => {
   const handleQuoteSubmit = (e) => {
     e.preventDefault();
     // Créer le message WhatsApp avec toutes les informations
-    const message = `🚗 DEMANDE DE DEVIS AUTOEXPRESS 🚗%0A%0A` +
+    const message = `🚗 DEMANDE DE DEVIS ICAR ASSISTANCE 🚗%0A%0A` +
       `👤 CONTACT:%0A` +
       `Nom Prénom: ${quoteForm.fullName}%0A` +
       `Téléphone: ${quoteForm.phone}%0A` +
