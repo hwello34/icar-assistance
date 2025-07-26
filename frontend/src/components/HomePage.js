@@ -512,7 +512,7 @@ const HomePage = () => {
 
       // Experience Section
       shareYourExperience: "You Too, Share Your Experience", 
-      reviewHelpsImprove: "Your opinion matters! Help other customers by sharing your experience with AutoExpress.",
+      reviewHelpsImprove: "Your opinion matters! Help other customers by sharing your experience with Icar Assistance.",
       
       // Footer
       quickLinks: "Quick Links",
