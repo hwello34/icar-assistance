@@ -2158,7 +2158,7 @@ const HomePage = () => {
               </h3>
               
               <p className="text-xl text-slate-800 mb-8">
-                Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec AutoExpress.
+                Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec Icar Assistance.
               </p>
 
               <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
