@@ -2934,7 +2934,7 @@ const HomePage = () => {
                 },
                 () => {
                   // Fallback si géolocalisation refusée
-                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AJe vous communique ma position par message.%0A%0AMerci d'intervenir rapidement !`;
+                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour Icar Assistance,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AJe vous communique ma position par message.%0A%0AMerci d'intervenir rapidement !`;
                   const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
                   window.open(whatsappUrl, '_blank');
                 }
