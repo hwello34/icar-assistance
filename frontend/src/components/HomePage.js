@@ -487,7 +487,7 @@ const HomePage = () => {
       freeQuoteText: "Free quote",
       
       footerTagline: "Your automotive breakdown specialist, rapid and adapted intervention in Montpellier Metropolitan area",
-      allRightsReserved: "© 2025 AutoExpress Montpellier. All rights reserved.",
+      allRightsReserved: "© 2025 Icar Assistance Montpellier. All rights reserved.",
       legalMentions: "Legal mentions",
       confidentialityPolicy: "Privacy policy",
 
