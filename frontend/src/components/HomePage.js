@@ -1161,7 +1161,7 @@ const HomePage = () => {
     {
       name: "Marie Dubois",
       location: "Montpellier Centre",
-      text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement AutoExpress.",
+      text: "Service impeccable ! Ils sont arrivés en 20 minutes près de la Place de la Comédie et ont résolu ma panne rapidement. Je recommande vivement Icar Assistance.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108755-2616c4e0e3e2"
     },
