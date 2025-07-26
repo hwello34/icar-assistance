@@ -1148,7 +1148,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/BKtkyqM4/a6eaea80-3ecc-45ee-8406-cfabb89e.jpg",
-      alt: "AutoExpress - Expertise technique"
+      alt: "Icar Assistance - Expertise technique"
     },
     {
       url: "https://i.ibb.co/Z18N7syr/Whats-App-Image-2025-07-13-23-5.jpg",
