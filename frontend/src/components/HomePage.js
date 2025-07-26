@@ -2780,7 +2780,7 @@ const HomePage = () => {
             <div className="flex items-center">
               <img 
                 src="https://i.ibb.co/qL22D0Nc/Capture-d-cran-2025-06-30-152525-1.webp"
-                alt="AutoExpress Logo"
+                alt="Icar Assistance Logo"
                 className="h-24 w-auto mr-4"
                 onError={(e) => {
                   console.log('Erreur footer logo:', e.target.src);
