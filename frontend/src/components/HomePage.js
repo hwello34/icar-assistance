@@ -2268,7 +2268,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-[#0F2D52]">{t('faqTitle').split(' ')[0]}</span> <span className="text-[#F39C12]">{t('faqTitle').split(' ').slice(1).join(' ')}</span>
             </h2>
           </motion.div>
