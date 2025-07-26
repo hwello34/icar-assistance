@@ -2777,7 +2777,7 @@ const HomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 py-12">
+      <footer className="bg-[#2C3E50] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="flex items-center">
