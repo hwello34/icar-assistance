@@ -2028,7 +2028,7 @@ const HomePage = () => {
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg"
-                  alt="AutoExpress - Services de dépannage professionnel à Montpellier"
+                  alt="Icar Assistance - Services de dépannage professionnel à Montpellier"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
