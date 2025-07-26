@@ -1546,7 +1546,7 @@ const HomePage = () => {
             >
               <img 
                 src="https://i.ibb.co/qL22D0Nc/Capture-d-cran-2025-06-30-152525-1.webp"
-                alt="AutoExpress - Dépannage 24h/24"
+                alt="Icar Assistance - Dépannage 24h/24"
                 className="h-28 w-auto mr-2"
                 onError={(e) => {
                   console.log('Erreur de chargement logo:', e.target.src);
