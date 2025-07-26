@@ -1671,8 +1671,8 @@ const HomePage = () => {
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
-                {t('heroTitle').split(' ')[0]}
-                <span className="text-[#1693f1]"> {t('heroTitle').split(' ')[1]}</span>
+                <span className="text-[#0F2D52]">{t('heroTitle').split(' ')[0]}</span>
+                <span className="text-[#F39C12]"> {t('heroTitle').split(' ')[1]}</span>
               </h1>
               
               <h2 className="text-2xl lg:text-3xl font-semibold text-[#87a2b8] mb-8 leading-relaxed">
