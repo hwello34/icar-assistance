@@ -494,7 +494,7 @@ const HomePage = () => {
       // Testimonials Data
       testimonial1Name: "Marie Dubois",
       testimonial1Location: "Montpellier Center",
-      testimonial1Text: "Impeccable service! They arrived in 20 minutes near Place de la Comédie and resolved my breakdown quickly. I highly recommend AutoExpress.",
+      testimonial1Text: "Impeccable service! They arrived in 20 minutes near Place de la Comédie and resolved my breakdown quickly. I highly recommend Icar Assistance.",
       
       testimonial2Name: "Jean Martinez",
       testimonial2Location: "Castelnau-le-Lez", 
