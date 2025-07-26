@@ -1124,7 +1124,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/QF5pghjr/BB18.jpg",
-      alt: "AutoExpress - Matériel professionnel"
+      alt: "Icar Assistance - Matériel professionnel"
     },
     {
       url: "https://i.ibb.co/pr5Jh9Dz/BB22.jpg",
