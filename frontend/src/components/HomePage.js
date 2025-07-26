@@ -2928,7 +2928,7 @@ const HomePage = () => {
               navigator.geolocation.getCurrentPosition(
                 (position) => {
                   const { latitude, longitude } = position.coords;
-                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour AutoExpress,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AMa position exacte : https://www.google.com/maps?q=${latitude},${longitude}%0A%0AMerci d'intervenir rapidement !`;
+                  const message = `🚨 URGENCE DÉPANNAGE 🚨%0A%0ABonjour Icar Assistance,%0A%0AJ'ai besoin d'une intervention de dépannage.%0A%0AMa position exacte : https://www.google.com/maps?q=${latitude},${longitude}%0A%0AMerci d'intervenir rapidement !`;
                   const whatsappUrl = `https://wa.me/33781505555?text=${message}`;
                   window.open(whatsappUrl, '_blank');
                 },
