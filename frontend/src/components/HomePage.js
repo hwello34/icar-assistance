@@ -1132,7 +1132,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/bD3WdGG/Slide-Show-1.jpg",
-      alt: "AutoExpress - Services professionnels"
+      alt: "Icar Assistance - Services professionnels"
     },
     {
       url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
