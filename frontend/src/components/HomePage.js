@@ -69,7 +69,7 @@ const HomePage = () => {
       
       // Hero Section
       heroTitle: "Icar Assistance",
-      heroSubtitle: "Pour un dépannage sans stress, appelez AutoExpress !",
+      heroSubtitle: "Pour un dépannage sans stress, appelez Icar Assistance !",
       heroDescription: "Depuis <strong>plus de 15 ans</strong>, <strong>Auto express</strong> est le spécialiste du dépannage et du remorquage automobile à <strong>Montpellier et dans sa métropole</strong>. Disponible 7J/24H et doté d'une flotte de véhicules et matériels performants, notre équipe intervient <strong>rapidement, efficacement et en toute sécurité</strong>, quelle que soit la situation. Nous proposons <strong>un service complet</strong>, allant de l'assistance en cas de panne au dépannage, en passant par le remorquage longue distance en France ou à l'étranger (Espagne, Italie, Allemagne…). Notre savoir-faire, notre réactivité et notre sens du service font d'<strong>Auto express un allié de confiance</strong> pour les particuliers comme pour les professionnels. Avec nous, pas de mauvaise surprise : vous êtes <strong>entre de bonnes mains</strong>, du premier appel jusqu'à la remise en route de votre véhicule.",
       intervention30min: "Intervention sous 30min",
       gpsLocation: "Localisation GPS",
