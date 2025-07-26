@@ -2102,7 +2102,7 @@ const HomePage = () => {
               {testimonials.slice(currentTestimonial, currentTestimonial + 3).map((testimonial, index) => (
                 <div
                   key={currentTestimonial + index}
-                  className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-[#87a2b8]/20 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-[#E8E8E8]/20 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <div className="text-center">
                     <div className="flex items-center justify-center space-x-1 mb-4">
