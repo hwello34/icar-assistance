@@ -2117,7 +2117,7 @@ const HomePage = () => {
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1693f1]/20"
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#2A5CAA]/20"
                       />
                       <div>
                         <h4 className="text-slate-800 font-semibold text-sm">
