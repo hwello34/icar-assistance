@@ -1152,7 +1152,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/Z18N7syr/Whats-App-Image-2025-07-13-23-5.jpg",
-      alt: "AutoExpress - Service spécialisé"
+      alt: "Icar Assistance - Service spécialisé"
     }
   ];
 
