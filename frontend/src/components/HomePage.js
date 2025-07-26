@@ -837,7 +837,7 @@ const HomePage = () => {
       montpellierCoverageDesc: "الخدمة متاحة في مونبلييه وجميع البلديات الحضرية.",
 
       // Testimonials
-      testimonialsTitle: "يثقون بنا",
+      testimonialsTitle: "يتحدثون عنا",
       testimonialsSubtitle: "كل يوم، المزيد من العملاء الراضين",
       
       // FAQ
