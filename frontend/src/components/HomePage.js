@@ -2403,7 +2403,7 @@ const HomePage = () => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="relative bg-slate-900 rounded-2xl p-8 w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-[#2A5CAA]/30"
+              className="relative bg-[#2C3E50] rounded-2xl p-8 w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-[#2A5CAA]/30"
             >
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl font-bold text-white">
