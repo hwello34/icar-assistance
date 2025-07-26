@@ -462,7 +462,7 @@ const HomePage = () => {
       
       sendMyLocation: "Send my location",
       whatsappWithoutGps: "WhatsApp without GPS",
-      locationSharedExclusively: "Your location is shared exclusively with AutoExpress for breakdown assistance",
+      locationSharedExclusively: "Your location is shared exclusively with Icar Assistance for breakdown assistance",
       
       // Footer
       quickLinks: "Quick Links",
