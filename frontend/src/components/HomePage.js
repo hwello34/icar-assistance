@@ -1695,7 +1695,7 @@ const HomePage = () => {
                 
                 <motion.button
                   onClick={() => setShowQuoteForm(true)}
-                  className="inline-flex items-center justify-center space-x-3 bg-[#1693f1] hover:bg-[#1478d1] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center justify-center space-x-3 bg-[#2A5CAA] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
