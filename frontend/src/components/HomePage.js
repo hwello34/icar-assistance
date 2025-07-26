@@ -1675,7 +1675,7 @@ const HomePage = () => {
                 <span className="text-[#F39C12]"> {t('heroTitle').split(' ')[1]}</span>
               </h1>
               
-              <h2 className="text-2xl lg:text-3xl font-semibold text-[#87a2b8] mb-8 leading-relaxed">
+              <h2 className="text-2xl lg:text-3xl font-semibold text-[#2C3E50] mb-8 leading-relaxed">
                 {t('heroSubtitle')}
               </h2>
               
