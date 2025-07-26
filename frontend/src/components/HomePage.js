@@ -1608,7 +1608,7 @@ const HomePage = () => {
                       key={language.code}
                       onClick={() => changeLanguage(language.code)}
                       className={`w-full flex items-center space-x-3 px-4 py-3 hover:bg-gray-50 transition-colors ${
-                        currentLanguage === language.code ? 'bg-blue-50 text-[#1693f1]' : 'text-gray-700'
+                        currentLanguage === language.code ? 'bg-blue-50 text-[#2A5CAA]' : 'text-gray-700'
                       }`}
                     >
                       <span className="text-xl">{language.flag}</span>
