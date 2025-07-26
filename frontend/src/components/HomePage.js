@@ -1144,7 +1144,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/v6C4fs0s/F-transport-moto.jpg",
-      alt: "AutoExpress - Transport moto/scooter"
+      alt: "Icar Assistance - Transport moto/scooter"
     },
     {
       url: "https://i.ibb.co/BKtkyqM4/a6eaea80-3ecc-45ee-8406-cfabb89e.jpg",
