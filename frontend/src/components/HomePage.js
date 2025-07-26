@@ -2035,7 +2035,7 @@ const HomePage = () => {
                 
                 {/* Overlay text */}
                 <div className="absolute bottom-8 left-8 text-white">
-                  <h3 className="text-2xl font-bold mb-2">AutoExpress</h3>
+                  <h3 className="text-2xl font-bold mb-2">Icar Assistance</h3>
                   <p className="text-lg">Votre partenaire de confiance à Montpellier</p>
                 </div>
               </div>
