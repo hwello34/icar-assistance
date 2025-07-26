@@ -2141,8 +2141,8 @@ const HomePage = () => {
                   onClick={() => setCurrentTestimonial(groupIndex * 3)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     Math.floor(currentTestimonial / 3) === groupIndex
-                      ? 'bg-[#1693f1] scale-125'
-                      : 'bg-slate-300 hover:bg-slate-400'
+                      ? 'bg-[#2A5CAA] scale-125'
+                      : 'bg-[#E8E8E8] hover:bg-[#2C3E50]'
                   }`}
                 />
               ))}
