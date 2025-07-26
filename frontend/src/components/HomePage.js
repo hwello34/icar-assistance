@@ -1535,7 +1535,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-[#87a2b8]/20">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-[#87a2b8]/95 backdrop-blur-md border-b border-[#1693f1]/20 shadow-lg">
+      <nav className="fixed top-0 w-full z-50 bg-[#0F2D52]/95 backdrop-blur-md border-b border-[#2A5CAA]/20 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-2">
             <motion.div 
