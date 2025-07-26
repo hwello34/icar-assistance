@@ -2473,7 +2473,7 @@ const HomePage = () => {
                         value={quoteForm.licensePlate}
                         onChange={handleQuoteFormChange}
                         placeholder="Ex: AB-123-CD"
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-[#1693f1] focus:outline-none transition-colors"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-[#2A5CAA] focus:outline-none transition-colors"
                       />
                     </div>
                     
