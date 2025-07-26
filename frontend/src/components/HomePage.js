@@ -2952,9 +2952,9 @@ const HomePage = () => {
           <Navigation className="w-7 h-7 text-white" />
           
           {/* Tooltip */}
-          <div className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+          <div className="absolute right-full mr-3 bg-[#2C3E50] text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
             📍 Envoyer ma position
-            <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
+            <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-[#2C3E50]"></div>
           </div>
         </motion.button>
 
