@@ -2962,7 +2962,7 @@ const HomePage = () => {
         {/* Contact Email */}
         <motion.a
           href="mailto:autoexpres34@gmail.com?subject=Demande de dépannage&body=Bonjour Icar Assistance,%0A%0AJe souhaite vous contacter pour..."
-          className="group relative w-16 h-16 bg-[#1693f1] hover:bg-[#1478c7] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          className="group relative w-16 h-16 bg-[#2A5CAA] hover:bg-[#3498DB] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.1, x: -5 }}
           whileTap={{ scale: 0.95 }}
           title="Contact par email"
