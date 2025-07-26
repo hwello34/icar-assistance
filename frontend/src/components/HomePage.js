@@ -1120,7 +1120,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/Qv3w8BrS/BB3.jpg",
-      alt: "AutoExpress - Service de qualité"
+      alt: "Icar Assistance - Service de qualité"
     },
     {
       url: "https://i.ibb.co/QF5pghjr/BB18.jpg",
