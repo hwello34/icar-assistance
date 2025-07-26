@@ -276,7 +276,7 @@ const HomePage = () => {
 
       // Experience Section  
       shareYourExperience: "Vous Aussi, Partagez Votre Expérience",
-      reviewHelpsImprove: "Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec AutoExpress.",
+      reviewHelpsImprove: "Votre avis compte ! Aidez d'autres clients en partageant votre expérience avec Icar Assistance.",
       
       // Footer
       quickLinks: "Liens Rapides",
