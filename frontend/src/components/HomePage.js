@@ -1116,7 +1116,7 @@ const HomePage = () => {
   const slideshowImages = [
     {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
-      alt: "AutoExpress - Dépannage professionnel"
+      alt: "Icar Assistance - Dépannage professionnel"
     },
     {
       url: "https://i.ibb.co/Qv3w8BrS/BB3.jpg",
