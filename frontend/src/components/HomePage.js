@@ -874,7 +874,7 @@ const HomePage = () => {
       
       // Hero Section
       heroTitle: "Icar Assistance",
-      heroSubtitle: "Für stressfreie Pannenhilfe rufen Sie AutoExpress an!",
+      heroSubtitle: "Für stressfreie Pannenhilfe rufen Sie Icar Assistance an!",
       heroDescription: "Seit <strong>mehr als 15 Jahren</strong> ist <strong>Auto Express</strong> der Spezialist für Autopannen und Abschleppdienste in <strong>Montpellier und seiner Metropolregion</strong>. Verfügbar 7 Tage die Woche, 24 Stunden am Tag, und ausgerüstet mit einer Flotte von Hochleistungsfahrzeugen und -ausrüstung, greift unser Team <strong>schnell, effizient und sicher</strong> ein, unabhängig von der Situation. Wir bieten <strong>einen kompletten Service</strong>, von der Pannenhilfe bis zur Bergung und dem Fernabschleppen in Frankreich oder im Ausland (Spanien, Italien, Deutschland...). Unser Fachwissen, unsere Reaktionsfähigkeit und unser Servicegedanke machen <strong>Auto Express zu einem vertrauenswürdigen Partner</strong> für Privatpersonen und Unternehmen gleichermaßen. Bei uns gibt es keine bösen Überraschungen: Sie sind <strong>in guten Händen</strong>, vom ersten Anruf bis zur Wiederin betriebnahme Ihres Fahrzeugs.",
       intervention30min: "Eingriff innerhalb 30min",
       gpsLocation: "GPS-Standort",
