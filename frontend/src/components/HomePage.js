@@ -2851,7 +2851,7 @@ const HomePage = () => {
                     href="https://www.instagram.com/autoexpres34/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-all duration-300 group"
+                    className="w-10 h-10 bg-gradient-to-r from-[#F39C12] to-[#3498DB] rounded-full flex items-center justify-center hover:from-[#3498DB] hover:to-[#F39C12] transition-all duration-300 group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     title={t('instagramTooltip')}
