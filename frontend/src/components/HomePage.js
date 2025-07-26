@@ -2318,7 +2318,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Une Panne ? Appelez-Nous !
+              Une Panne ? <span className="text-[#F39C12]">Appelez-Nous !</span>
             </h2>
             <p className="text-xl text-white mb-8">
               Service d'urgence disponible 24h/24 - Intervention rapide sur Montpellier Métropole
