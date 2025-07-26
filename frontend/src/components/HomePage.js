@@ -948,7 +948,7 @@ const HomePage = () => {
       montpellierCoverageDesc: "Service verfügbar in Montpellier und allen Großraumgemeinden.",
 
       // Testimonials
-      testimonialsTitle: "Sie Vertrauen Uns",
+      testimonialsTitle: "Sie sprechen über Uns",
       testimonialsSubtitle: "Jeden Tag, mehr zufriedene Kunden",
       
       // FAQ
