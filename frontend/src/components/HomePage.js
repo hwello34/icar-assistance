@@ -1665,7 +1665,7 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-[#c9473e]/20 text-[#c9473e] px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center space-x-2 bg-[#F39C12]/20 text-[#F39C12] px-4 py-2 rounded-full mb-6">
                 <Clock className="w-4 h-4" />
                 <span className="text-sm font-medium">{t('emergency')}</span>
               </div>
