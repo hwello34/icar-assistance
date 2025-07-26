@@ -2911,7 +2911,7 @@ const HomePage = () => {
         {/* Appel d'Urgence */}
         <motion.a
           href="tel:+33781505555"
-          className="group relative w-16 h-16 bg-[#c9473e] hover:bg-[#a73d35] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          className="group relative w-16 h-16 bg-[#F39C12] hover:bg-[#3498DB] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.1, x: -5 }}
           whileTap={{ scale: 0.95 }}
           title="Appel d'urgence"
