@@ -226,7 +226,7 @@ const HomePage = () => {
       
       sendMyLocation: "Envoyer ma position",
       whatsappWithoutGps: "WhatsApp sans GPS",
-      locationSharedExclusively: "Votre position est partagée uniquement avec AutoExpress pour le dépannage",
+      locationSharedExclusively: "Votre position est partagée uniquement avec Icar Assistance pour le dépannage",
       
       // Footer
       quickLinks: "Liens Rapides",
