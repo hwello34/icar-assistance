@@ -2154,7 +2154,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-gradient-to-r from-blue-600/20 to-blue-800/20 rounded-2xl p-12 border border-blue-400/30 text-center"
+            className="bg-gradient-to-r from-[#0F2D52]/20 to-[#2A5CAA]/20 rounded-2xl p-12 border border-[#2A5CAA]/30 text-center"
           >
             <div className="max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold text-white mb-6">
