@@ -826,7 +826,7 @@ const HomePage = () => {
 
       // Why Choose Us
       whyChooseTitle: "لماذا تختار",
-      whyChooseSubtitle: "أوتو إكسبريس",
+      whyChooseSubtitle: "آيكار أسيستانس",
       rapidIntervention: "تدخل سريع",
       rapidInterventionDesc: "فرقنا تتدخل خلال 30 دقيقة من مكالمتك في مونبلييه.",
       technicalExpertise: "خبرة تقنية",
