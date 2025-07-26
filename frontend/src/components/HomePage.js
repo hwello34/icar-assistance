@@ -1136,7 +1136,7 @@ const HomePage = () => {
     },
     {
       url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
-      alt: "AutoExpress - Zone d'intervention Montpellier"
+      alt: "Icar Assistance - Zone d'intervention Montpellier"
     },
     {
       url: "https://i.ibb.co/gMTJYVRt/Slide-Show-4.jpg",
