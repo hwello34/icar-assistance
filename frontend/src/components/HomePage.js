@@ -2358,7 +2358,7 @@ const HomePage = () => {
               
               <div className="flex flex-col space-y-3">
                 <motion.div
-                  className="inline-flex items-center justify-center space-x-3 bg-[#1693f1] hover:bg-[#1478c7] text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 border-2 border-[#1693f1] hover:border-[#1478c7]"
+                  className="inline-flex items-center justify-center space-x-3 bg-[#2A5CAA] hover:bg-[#3498DB] text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 border-2 border-[#2A5CAA] hover:border-[#3498DB]"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
