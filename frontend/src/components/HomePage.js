@@ -1004,7 +1004,7 @@ const HomePage = () => {
   // Fonction pour changer de langue
   const changeLanguage = (langCode) => {
     setCurrentLanguage(langCode);
-    localStorage.setItem('autoexpressLanguage', langCode);
+    localStorage.setItem('icarassistanceLanguage', langCode);
     setIsLanguageDropdownOpen(false);
   };
 
