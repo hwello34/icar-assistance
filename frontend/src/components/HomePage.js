@@ -2685,7 +2685,7 @@ const HomePage = () => {
       </section>
 
       {/* Géolocalisation Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-800">
+      <section className="py-20 bg-gradient-to-r from-[#27AE60] to-[#27AE60]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
