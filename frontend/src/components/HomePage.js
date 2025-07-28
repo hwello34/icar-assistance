@@ -1850,7 +1850,7 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#E8E8E8]/20 hover:border-[#2A5CAA]/40 hover:shadow-lg transition-all duration-300"
+                className="bg-gradient-to-br from-white to-[#E8E8E8]/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#E8E8E8]/20 hover:border-[#2A5CAA]/40 hover:shadow-lg transition-all duration-300"
               >
                 <div className="h-48 overflow-hidden">
                   <img
