@@ -131,7 +131,7 @@ const HomePage = () => {
       longDistanceTransportDesc: "Icar Assistance propose le transport longue distance de véhicules sur l'ensemble de la France et vers les pays frontaliers. Un service sûr et soigné pour particuliers ou professionnels, que ce soit pour un convoyage, un achat ou un besoin exceptionnel.",
 
       // Why Choose Us
-      whyChooseTitle: "Pourquoi Choisir",
+      whyChooseTitle: "Pourquoi Choisir ",
       whyChooseSubtitle: "Icar Assistance",
       rapidIntervention: "Rapidité d'intervention",
       rapidInterventionDesc: "Nos équipes interviennent dans les 30 minutes suivant votre appel sur Montpellier.",
