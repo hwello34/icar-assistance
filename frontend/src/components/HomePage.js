@@ -2227,7 +2227,7 @@ const HomePage = () => {
                     
                     <motion.a
                       href="tel:+33781505555"
-                      className="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                      className="inline-flex items-center space-x-3 bg-[#625B48] hover:bg-[#4A453A] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
