@@ -1704,7 +1704,7 @@ const HomePage = () => {
                 
                 <motion.button
                   onClick={getLocation}
-                  className="inline-flex items-center justify-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center justify-center space-x-3 bg-[#625B48] hover:bg-[#4A453A] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   disabled={locationStatus === 'loading'}
