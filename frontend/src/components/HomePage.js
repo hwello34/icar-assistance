@@ -2199,7 +2199,7 @@ const HomePage = () => {
                 <div className="flex-1 text-left">
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 bg-[#1693f1] rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-[#625B48] rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white font-bold">1</span>
                       </div>
                       <div>
