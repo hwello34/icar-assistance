@@ -1887,8 +1887,25 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
               >
-                <h3 className="text-3xl font-bold text-slate-800 mb-8 text-center">
-                  <span className="text-[#1693f1]">{category.category}</span>
+                <h3 className="text-3xl font-bold mb-8 text-center">
+                  {category.category === "Dépannage Spécialisé" && (
+                    <>
+                      <span className="text-[#0F2D52]">Dépannage </span>
+                      <span className="text-[#F39C12]">Spécialisé</span>
+                    </>
+                  )}
+                  {category.category === "Services Techniques" && (
+                    <>
+                      <span className="text-[#0F2D52]">Services </span>
+                      <span className="text-[#F39C12]">Techniques</span>
+                    </>
+                  )}
+                  {category.category === "Transport & Enlèvement" && (
+                    <>
+                      <span className="text-[#0F2D52]">Transport </span>
+                      <span className="text-[#F39C12]">& Enlèvement</span>
+                    </>
+                  )}
                 </h3>
                 
                 <div className="grid md:grid-cols-3 gap-8">
