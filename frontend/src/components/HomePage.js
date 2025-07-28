@@ -2702,7 +2702,7 @@ const HomePage = () => {
               Envoyez Votre Position via <span className="text-[#C1BFB1]">WhatsApp</span>
             </h2>
             
-            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-[#C1BFB1] mb-8 max-w-3xl mx-auto">
               Partagez instantanément votre localisation GPS précise via WhatsApp. 
               Nos équipes vous localisent en quelques secondes partout sur Montpellier !
             </p>
