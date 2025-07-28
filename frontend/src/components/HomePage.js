@@ -2766,7 +2766,7 @@ const HomePage = () => {
               </motion.button>
             </div>
 
-            <div className="mt-8 flex items-center justify-center space-x-2 text-green-100">
+            <div className="mt-8 flex items-center justify-center space-x-2 text-[#C1BFB1]">
               <AlertCircle className="w-5 h-5" />
               <span className="text-sm">
                 Votre position est partagée uniquement avec Icar Assistance pour le dépannage
