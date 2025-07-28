@@ -2743,7 +2743,7 @@ const HomePage = () => {
               >
                 {locationStatus === 'loading' ? (
                   <>
-                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-green-700"></div>
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#625B48]"></div>
                     <span>Localisation en cours...</span>
                   </>
                 ) : (
