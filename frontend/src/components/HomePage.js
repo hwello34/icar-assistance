@@ -2713,7 +2713,7 @@ const HomePage = () => {
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">Cliquez sur le bouton</h3>
-                <p className="text-green-100 text-sm">Autorisez la géolocalisation sur votre téléphone</p>
+                <p className="text-[#C1BFB1] text-sm">Autorisez la géolocalisation sur votre téléphone</p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
