@@ -1949,7 +1949,7 @@ const HomePage = () => {
               </motion.a>
               <motion.button
                 onClick={getLocation}
-                className="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
+                className="inline-flex items-center space-x-3 bg-[#625B48] hover:bg-[#4A453A] text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
