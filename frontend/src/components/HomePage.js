@@ -2736,7 +2736,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <motion.button
                 onClick={getLocation}
-                className="inline-flex items-center space-x-3 bg-white hover:bg-gray-100 text-green-700 px-8 py-4 rounded-full text-xl font-bold transition-all duration-300 shadow-lg"
+                className="inline-flex items-center space-x-3 bg-white hover:bg-gray-100 text-[#625B48] px-8 py-4 rounded-full text-xl font-bold transition-all duration-300 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 disabled={locationStatus === 'loading'}
