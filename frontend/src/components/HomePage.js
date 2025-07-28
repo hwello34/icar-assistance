@@ -2721,7 +2721,7 @@ const HomePage = () => {
                   <span className="text-white font-bold text-xl">2</span>
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">Position automatique</h3>
-                <p className="text-green-100 text-sm">Votre position GPS est ajoutée automatiquement</p>
+                <p className="text-[#C1BFB1] text-sm">Votre position GPS est ajoutée automatiquement</p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
