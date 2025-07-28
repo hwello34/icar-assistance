@@ -2260,7 +2260,7 @@ const HomePage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-[#E8E8E8]/10">
+      <section className="py-20 bg-[#C1BFB1]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
