@@ -2782,7 +2782,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="flex items-center">
               <img 
-                src="https://i.ibb.co/qL22D0Nc/Capture-d-cran-2025-06-30-152525-1.webp"
+                src="https://customer-assets.emergentagent.com/job_roadside-aid/artifacts/l1p7fz24_PS%20Logo%20Icar%20Service.jpg"
                 alt="Icar Assistance Logo"
                 className="h-24 w-auto mr-4"
                 onError={(e) => {
