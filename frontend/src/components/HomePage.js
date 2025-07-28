@@ -2729,7 +2729,7 @@ const HomePage = () => {
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">Envoi instantané</h3>
-                <p className="text-green-100 text-sm">Votre demande arrive directement chez nous</p>
+                <p className="text-[#C1BFB1] text-sm">Votre demande arrive directement chez nous</p>
               </div>
             </div>
 
