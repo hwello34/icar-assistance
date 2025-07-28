@@ -2049,7 +2049,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-white/90 backdrop-blur-sm">
+      <section id="testimonials" className="py-20 bg-[#606060]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
