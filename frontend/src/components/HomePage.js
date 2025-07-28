@@ -1730,7 +1730,7 @@ const HomePage = () => {
                   <span>Intervention sous 30min</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-800">
-                  <Navigation className="w-5 h-5 text-green-500" />
+                  <Navigation className="w-5 h-5 text-[#625B48]" />
                   <span>Localisation GPS</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-800">
