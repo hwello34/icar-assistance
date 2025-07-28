@@ -1533,7 +1533,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-[#E8E8E8]/20">
+    <div className="min-h-screen bg-[#C1BFB1]">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#0F2D52]/95 backdrop-blur-md border-b border-[#2A5CAA]/20 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
