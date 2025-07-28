@@ -2699,7 +2699,7 @@ const HomePage = () => {
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Envoyez Votre Position via <span className="text-green-200">WhatsApp</span>
+              Envoyez Votre Position via <span className="text-[#C1BFB1]">WhatsApp</span>
             </h2>
             
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
