@@ -105,7 +105,7 @@
 user_problem_statement: "le titre 'icar assistance' de la page d'accueil n'est pas visible , il est caché par la banniere"
 
 frontend:
-  - task: "Augmenter l'espacement entre les trois boutons d'action centrés"
+  - task: "Corriger la visibilité du titre 'Icar Assistance' caché par la navigation"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
@@ -115,7 +115,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Espacement entre les boutons 'Appel d'urgence', 'Devis Gratuit' et 'WhatsApp + GPS' augmenté avec succès. Modification effectuée à la ligne 1781 dans la section des boutons centrés en changeant la classe Tailwind CSS de 'sm:space-x-4' à 'sm:space-x-8', ce qui double l'espace horizontal entre les boutons sur les écrans moyens et grands (de 1rem/16px à 2rem/32px). L'espacement vertical 'space-y-4' pour mobile reste inchangé."
+        comment: "Problème de visibilité du titre résolu avec succès. Le titre 'Icar Assistance' était caché par la navigation fixe car le padding-top de la section hero (pt-20 = 80px) était insuffisant par rapport à la hauteur de la navigation (logo h-28 + py-2 ≈ 128px). Correction effectuée en augmentant le padding-top de 'pt-20' à 'pt-36' (144px) pour assurer une marge suffisante entre la navigation fixe et le titre centré."
 
 backend:
   - task: "Backend functionality check"
