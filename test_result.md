@@ -148,6 +148,6 @@ test_plan:
 
 agent_communication:
   - agent: "main"
-    message: "Tâche terminée avec succès ! Restructuration complète de la section hero pour repositionner les éléments selon les demandes : titre centré en haut, contenu principal avec texte et slideshow en grille, boutons d'action centrés en dessous, et textes descriptifs centrés tout en bas. L'alignement justifié du texte d'introduction a été préservé et les animations Framer Motion optimisées avec des delays échelonnés pour une meilleure expérience utilisateur."
+    message: "Badge orange 'Service d'urgence 24h/24' supprimé avec succès de la hero section de la page d'accueil. Le badge était situé dans la colonne de texte d'introduction, au-dessus du sous-titre, et contenait une icône Clock avec le texte d'urgence. Suppression effectuée sans impact sur la mise en page générale - le sous-titre suit maintenant directement la motion.div container."
   - agent: "testing"
     message: "✅ Backend testing completed successfully. All backend functionality verified working correctly after frontend hero section repositioning changes. FastAPI server, MongoDB database, API endpoints, and error handling all functioning properly. No backend issues detected. Frontend layout modifications had no impact on backend services as expected."
