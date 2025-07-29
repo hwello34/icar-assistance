@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "dans la page d'accueil supprime le bouton 'Service d'urgence 24h/24' en orange"
+user_problem_statement: "augmente l'espace entre les boutons 'Appel d'urgence', 'Devis Gratuit', 'WhatsApp + GPS'"
 
 frontend:
   - task: "Supprimer le badge orange 'Service d'urgence 24h/24' de la hero section"
