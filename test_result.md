@@ -144,7 +144,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Supprimer le badge orange 'Service d'urgence 24h/24' de la hero section"
+    - "Augmenter l'espacement entre les trois boutons d'action centrés"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
