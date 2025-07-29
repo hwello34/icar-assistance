@@ -105,7 +105,7 @@
 user_problem_statement: "dans la page d'accueil supprime le bouton 'Service d'urgence 24h/24' en orange"
 
 frontend:
-  - task: "Repositionner les boutons et textes au centre sous le contenu principal"
+  - task: "Supprimer le badge orange 'Service d'urgence 24h/24' de la hero section"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
@@ -115,7 +115,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Restructuration complète de la section hero : 1) Titre 'Icar Assistance' centré en haut, 2) Contenu principal (texte d'introduction + slideshow) organisé en grille 2 colonnes, 3) Les trois boutons ('Appel d'urgence', 'Devis Gratuit', 'WhatsApp + GPS') repositionnés au centre en dessous, 4) Textes descriptifs ('Intervention sous 30min', 'Localisation GPS', 'Professionnel et à l'écoute') centrés sous les boutons. Conservation de l'alignement justifié pour le texte d'introduction et animations Framer Motion avec delays échelonnés."
+        comment: "Badge orange 'Service d'urgence 24h/24' supprimé avec succès de la hero section. Le badge était situé au-dessus du sous-titre dans la section de texte d'introduction et contenait une icône Clock et le texte t('emergency'). Suppression complète des lignes 1682-1685 contenant le div avec les classes bg-[#F39C12]/20 text-[#F39C12] px-4 py-2 rounded-full. La mise en page reste intacte avec le sous-titre qui suit maintenant directement après la motion.div."
 
 backend:
   - task: "Backend functionality check"
