@@ -1659,21 +1659,30 @@ const HomePage = () => {
       <section className="relative pt-20 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#2A5CAA]/20 to-[#E8E8E8]/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Titre centré */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
+              <span className="text-[#0F2D52]">{t('heroTitle').split(' ')[0]}</span>
+              <span className="text-[#F39C12]"> {t('heroTitle').split(' ')[1]}</span>
+            </h1>
+          </motion.div>
+
+          {/* Contenu principal avec texte et slideshow */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="inline-flex items-center space-x-2 bg-[#F39C12]/20 text-[#F39C12] px-4 py-2 rounded-full mb-6">
                 <Clock className="w-4 h-4" />
                 <span className="text-sm font-medium">{t('emergency')}</span>
               </div>
-              
-              <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 mb-6 leading-tight">
-                <span className="text-[#0F2D52]">{t('heroTitle').split(' ')[0]}</span>
-                <span className="text-[#F39C12]"> {t('heroTitle').split(' ')[1]}</span>
-              </h1>
               
               <h2 className="text-2xl lg:text-3xl font-semibold text-[#2C3E50] mb-8 leading-relaxed">
                 {t('heroSubtitle')}
@@ -1681,69 +1690,12 @@ const HomePage = () => {
               
               <p className="text-xl text-slate-800 mb-8 leading-relaxed text-justify" dangerouslySetInnerHTML={{__html: t('heroDescription')}}>
               </p>
-
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <motion.a
-                  href="tel:+33781505555"
-                  className="inline-flex items-center justify-center space-x-3 bg-[#F39C12] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Phone className="w-6 h-6" />
-                  <span>Appel d'urgence</span>
-                </motion.a>
-                
-                <motion.button
-                  onClick={() => setShowQuoteForm(true)}
-                  className="inline-flex items-center justify-center space-x-3 bg-[#2A5CAA] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span>Devis Gratuit</span>
-                </motion.button>
-                
-                <motion.button
-                  onClick={getLocation}
-                  className="inline-flex items-center justify-center space-x-3 bg-[#625B48] hover:bg-[#4A453A] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  disabled={locationStatus === 'loading'}
-                >
-                  {locationStatus === 'loading' ? (
-                    <>
-                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
-                      <span>Localisation...</span>
-                    </>
-                  ) : (
-                    <>
-                      <MessageCircle className="w-6 h-6" />
-                      <Navigation className="w-5 h-5" />
-                      <span>WhatsApp + GPS</span>
-                    </>
-                  )}
-                </motion.button>
-              </div>
-
-              <div className="flex items-center space-x-8 mt-8">
-                <div className="flex items-center space-x-2 text-slate-800">
-                  <Clock className="w-5 h-5 text-[#1693f1]" />
-                  <span>Intervention sous 30min</span>
-                </div>
-                <div className="flex items-center space-x-2 text-slate-800">
-                  <Navigation className="w-5 h-5 text-[#625B48]" />
-                  <span>Localisation GPS</span>
-                </div>
-                <div className="flex items-center space-x-2 text-slate-800">
-                  <Shield className="w-5 h-5 text-[#1693f1]" />
-                  <span>Professionnel et à l'écoute</span>
-                </div>
-              </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="relative"
             >
               {/* Slideshow Container */}
@@ -1822,6 +1774,73 @@ const HomePage = () => {
               </motion.div>
             </motion.div>
           </div>
+
+          {/* Boutons et textes centrés en dessous */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center"
+          >
+            {/* Les trois boutons */}
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+              <motion.a
+                href="tel:+33781505555"
+                className="inline-flex items-center justify-center space-x-3 bg-[#F39C12] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Phone className="w-6 h-6" />
+                <span>Appel d'urgence</span>
+              </motion.a>
+              
+              <motion.button
+                onClick={() => setShowQuoteForm(true)}
+                className="inline-flex items-center justify-center space-x-3 bg-[#2A5CAA] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>Devis Gratuit</span>
+              </motion.button>
+              
+              <motion.button
+                onClick={getLocation}
+                className="inline-flex items-center justify-center space-x-3 bg-[#625B48] hover:bg-[#4A453A] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                disabled={locationStatus === 'loading'}
+              >
+                {locationStatus === 'loading' ? (
+                  <>
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                    <span>Localisation...</span>
+                  </>
+                ) : (
+                  <>
+                    <MessageCircle className="w-6 h-6" />
+                    <Navigation className="w-5 h-5" />
+                    <span>WhatsApp + GPS</span>
+                  </>
+                )}
+              </motion.button>
+            </div>
+
+            {/* Les textes descriptifs */}
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+              <div className="flex items-center space-x-2 text-slate-800">
+                <Clock className="w-5 h-5 text-[#1693f1]" />
+                <span>Intervention sous 30min</span>
+              </div>
+              <div className="flex items-center space-x-2 text-slate-800">
+                <Navigation className="w-5 h-5 text-[#625B48]" />
+                <span>Localisation GPS</span>
+              </div>
+              <div className="flex items-center space-x-2 text-slate-800">
+                <Shield className="w-5 h-5 text-[#1693f1]" />
+                <span>Professionnel et à l'écoute</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
