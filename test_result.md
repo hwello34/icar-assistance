@@ -138,7 +138,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Convert testimonial carousel to display 3 testimonials at once"
+    - "Repositionner les boutons et textes au centre sous le contenu principal"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
