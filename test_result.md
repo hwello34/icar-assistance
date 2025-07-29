@@ -105,7 +105,7 @@
 user_problem_statement: "placer les trois boutons 'Appel d'urgence', 'Devis Gratuit' et 'WhatsApp + GPS' ainsi que leurs textes 'Intervention sous 30min', 'Localisation GPS', 'Professionnel et à l'écoute' au milieu en dessous du texte d'introduction et slide show toute en gardant le mode justifié par rapport a la page d'accueil"
 
 frontend:
-  - task: "Convert testimonial carousel to display 3 testimonials at once"
+  - task: "Repositionner les boutons et textes au centre sous le contenu principal"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
@@ -115,7 +115,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Successfully converted testimonial carousel from single testimonial view to 3-testimonial grid layout. Key improvements: Modified grid to display 3 testimonials side-by-side using 'grid md:grid-cols-3 gap-6', Updated navigation logic to move by groups of 3 instead of individual testimonials, Adjusted pagination to show 8 dots (for 23 testimonials ÷ 3 = 8 groups), Changed auto-scroll timing to 8 seconds for better UX with multiple testimonials, Optimized card design with smaller text, compact layout and 4-line text truncation, Added hover effects and responsive design. The carousel now perfectly displays Marie Dubois, Jean Martinez, and Sophie Laurent in the first group, with smooth transitions between groups."
+        comment: "Restructuration complète de la section hero : 1) Titre 'Icar Assistance' centré en haut, 2) Contenu principal (texte d'introduction + slideshow) organisé en grille 2 colonnes, 3) Les trois boutons ('Appel d'urgence', 'Devis Gratuit', 'WhatsApp + GPS') repositionnés au centre en dessous, 4) Textes descriptifs ('Intervention sous 30min', 'Localisation GPS', 'Professionnel et à l'écoute') centrés sous les boutons. Conservation de l'alignement justifié pour le texte d'introduction et animations Framer Motion avec delays échelonnés."
 
 backend:
   - task: "Backend functionality check"
