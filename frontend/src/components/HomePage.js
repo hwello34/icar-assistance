@@ -1778,7 +1778,7 @@ const HomePage = () => {
             className="text-center"
           >
             {/* Les trois boutons */}
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8">
               <motion.a
                 href="tel:+33781505555"
                 className="inline-flex items-center justify-center space-x-3 bg-[#F39C12] hover:bg-[#3498DB] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
