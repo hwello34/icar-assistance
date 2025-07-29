@@ -147,7 +147,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Augmenter l'espacement entre les trois boutons d'action centrés"
+    - "Corriger la visibilité du titre 'Icar Assistance' caché par la navigation"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
