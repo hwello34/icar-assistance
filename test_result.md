@@ -141,7 +141,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Repositionner les boutons et textes au centre sous le contenu principal"
+    - "Supprimer le badge orange 'Service d'urgence 24h/24' de la hero section"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
