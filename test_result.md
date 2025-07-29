@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "placer les trois boutons 'Appel d'urgence', 'Devis Gratuit' et 'WhatsApp + GPS' ainsi que leurs textes 'Intervention sous 30min', 'Localisation GPS', 'Professionnel et à l'écoute' au milieu en dessous du texte d'introduction et slide show toute en gardant le mode justifié par rapport a la page d'accueil"
+user_problem_statement: "dans la page d'accueil supprime le bouton 'Service d'urgence 24h/24' en orange"
 
 frontend:
   - task: "Repositionner les boutons et textes au centre sous le contenu principal"
