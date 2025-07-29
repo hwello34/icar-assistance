@@ -1679,11 +1679,6 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-[#F39C12]/20 text-[#F39C12] px-4 py-2 rounded-full mb-6">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm font-medium">{t('emergency')}</span>
-              </div>
-              
               <h2 className="text-2xl lg:text-3xl font-semibold text-[#2C3E50] mb-8 leading-relaxed">
                 {t('heroSubtitle')}
               </h2>
