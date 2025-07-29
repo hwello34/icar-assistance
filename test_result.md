@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "augmente l'espace entre les boutons 'Appel d'urgence', 'Devis Gratuit', 'WhatsApp + GPS'"
+user_problem_statement: "le titre 'icar assistance' de la page d'accueil n'est pas visible , il est caché par la banniere"
 
 frontend:
   - task: "Augmenter l'espacement entre les trois boutons d'action centrés"
