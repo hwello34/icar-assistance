@@ -105,7 +105,7 @@
 user_problem_statement: "augmente l'espace entre les boutons 'Appel d'urgence', 'Devis Gratuit', 'WhatsApp + GPS'"
 
 frontend:
-  - task: "Supprimer le badge orange 'Service d'urgence 24h/24' de la hero section"
+  - task: "Augmenter l'espacement entre les trois boutons d'action centrés"
     implemented: true
     working: true
     file: "/app/frontend/src/components/HomePage.js"
@@ -115,7 +115,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Badge orange 'Service d'urgence 24h/24' supprimé avec succès de la hero section. Le badge était situé au-dessus du sous-titre dans la section de texte d'introduction et contenait une icône Clock et le texte t('emergency'). Suppression complète des lignes 1682-1685 contenant le div avec les classes bg-[#F39C12]/20 text-[#F39C12] px-4 py-2 rounded-full. La mise en page reste intacte avec le sous-titre qui suit maintenant directement après la motion.div."
+        comment: "Espacement entre les boutons 'Appel d'urgence', 'Devis Gratuit' et 'WhatsApp + GPS' augmenté avec succès. Modification effectuée à la ligne 1781 dans la section des boutons centrés en changeant la classe Tailwind CSS de 'sm:space-x-4' à 'sm:space-x-8', ce qui double l'espace horizontal entre les boutons sur les écrans moyens et grands (de 1rem/16px à 2rem/32px). L'espacement vertical 'space-y-4' pour mobile reste inchangé."
 
 backend:
   - task: "Backend functionality check"
