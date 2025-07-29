@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "diffuse les témoignages carrousels par 3"
+user_problem_statement: "placer les trois boutons 'Appel d'urgence', 'Devis Gratuit' et 'WhatsApp + GPS' ainsi que leurs textes 'Intervention sous 30min', 'Localisation GPS', 'Professionnel et à l'écoute' au milieu en dessous du texte d'introduction et slide show toute en gardant le mode justifié par rapport a la page d'accueil"
 
 frontend:
   - task: "Convert testimonial carousel to display 3 testimonials at once"
