@@ -136,16 +136,19 @@ frontend:
         comment: "✅ Trois boutons d'action parfaitement centrés et fonctionnels. Couleurs correctes : 'Appel d'urgence' en rgb(243, 156, 18) (#F39C12 orange), 'Devis Gratuit' en rgb(42, 92, 170) (#2A5CAA bleu), 'WhatsApp + GPS' en rgb(98, 91, 72) (#625B48 kaki). Espacement augmenté détecté avec container ayant space-x-8. Bouton urgence a lien tel:+33781505555 fonctionnel."
         
   - task: "Suppression du badge orange Service d'urgence"
-    implemented: true
-    working: "NA"
+    implemented: false
+    working: false
     file: "/app/frontend/src/components/HomePage.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
     needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Badge orange 'Service d'urgence 24h/24' supprimé de la hero section pour épurer l'interface."
+      - working: false
+        agent: "testing"
+        comment: "❌ Badge orange 'Service d'urgence 24h/24' TOUJOURS PRÉSENT. Détecté 9 éléments contenant 'Service d'urgence' dans le DOM, notamment dans une section avec classes 'py-20 bg-gradient-to-r from-[#0F2D52] to-[#2A5CAA]' et un paragraphe avec classe 'text-xl text-white mb-8' contenant 'Service d'urgence disponible 24h/24 - Intervention...'. Le badge n'a PAS été supprimé comme demandé."
         
   - task: "Correction visibilité titre sous navigation"
     implemented: true
