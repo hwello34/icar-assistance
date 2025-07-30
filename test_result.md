@@ -150,7 +150,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Corriger la visibilité du titre 'Icar Assistance' caché par la navigation"
+    - "Intégration complète des balises meta SEO pour Google Ads et référencement"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
