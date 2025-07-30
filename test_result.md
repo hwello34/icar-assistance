@@ -152,15 +152,18 @@ frontend:
         
   - task: "Correction visibilité titre sous navigation"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/components/HomePage.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Padding-top de la hero section augmenté de pt-20 à pt-36 pour assurer la visibilité du titre sous la navigation fixe."
+      - working: true
+        agent: "testing"
+        comment: "✅ Visibilité du titre parfaitement corrigée. Hero section a bien la classe 'pt-36' (144px de padding-top) qui assure une marge suffisante sous la navigation fixe. Le titre 'Icar Assistance' est parfaitement visible et ne chevauche plus avec la navigation. Classes détectées : 'relative pt-36 pb-20 overflow-hidden'."
         
   - task: "Intégration balises meta SEO et Google Ads"
     implemented: true
