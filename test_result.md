@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "le titre 'icar assistance' de la page d'accueil n'est pas visible , il est caché par la banniere"
+user_problem_statement: "creer des balises meta pour recherche google ads et integrent-les dans le site incluant les mots clefs spécifiques pour le référencement"
 
 frontend:
   - task: "Corriger la visibilité du titre 'Icar Assistance' caché par la navigation"
