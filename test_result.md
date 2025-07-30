@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "creer des balises meta pour recherche google ads et integrent-les dans le site incluant les mots clefs spécifiques pour le référencement"
+user_problem_statement: "Test complet du frontend après toutes les modifications : titre centré, boutons repositionnés, badge supprimé, espacement augmenté, visibilité corrigée, et intégration SEO"
 
 frontend:
   - task: "Intégration complète des balises meta SEO pour Google Ads et référencement"
