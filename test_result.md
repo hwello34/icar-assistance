@@ -105,17 +105,77 @@
 user_problem_statement: "Test complet du frontend après toutes les modifications : titre centré, boutons repositionnés, badge supprimé, espacement augmenté, visibilité corrigée, et intégration SEO"
 
 frontend:
-  - task: "Intégration complète des balises meta SEO pour Google Ads et référencement"
+  - task: "Repositionnement du titre Icar Assistance au centre"
     implemented: true
-    working: true
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Titre 'Icar Assistance' repositionné au centre en haut de la hero section avec couleurs de marque (Icar en #0F2D52, Assistance en #F39C12). Animations Framer Motion intégrées."
+        
+  - task: "Repositionnement des boutons d'action au centre"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Trois boutons 'Appel d'urgence' (orange), 'Devis Gratuit' (bleu), 'WhatsApp + GPS' (kaki) repositionnés au centre sous le contenu principal avec espacement augmenté (space-x-8)."
+        
+  - task: "Suppression du badge orange Service d'urgence"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Badge orange 'Service d'urgence 24h/24' supprimé de la hero section pour épurer l'interface."
+        
+  - task: "Correction visibilité titre sous navigation"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Padding-top de la hero section augmenté de pt-20 à pt-36 pour assurer la visibilité du titre sous la navigation fixe."
+        
+  - task: "Intégration balises meta SEO et Google Ads"
+    implemented: true
+    working: "NA"
     file: "/app/frontend/public/index.html"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
-      - working: true
+      - working: "NA"
         agent: "main"
-        comment: "Intégration SEO complète réussie avec toutes les balises meta demandées. Ajout de : 1) Meta keywords avec tous les mots-clés fournis (60+ termes), 2) Meta description optimisée, 3) Balises Open Graph pour Facebook/réseaux sociaux, 4) Twitter Cards, 5) Géolocalisation (Montpellier), 6) Schema.org JSON-LD pour le référencement local business, 7) Google Ads meta tags, 8) Titre SEO optimisé, 9) Balises robots/googlebot. Le site est maintenant optimisé pour le référencement naturel et payant avec tous les termes de recherche locaux et spécialisés."
+        comment: "Intégration complète : meta keywords (60+ mots-clés), description SEO, Open Graph, Twitter Cards, Schema.org JSON-LD, géolocalisation Montpellier, titre optimisé."
+        
+  - task: "Test fonctionnalités interactives"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Fonctionnalités à tester : slideshow, boutons d'appel, géolocalisation WhatsApp, formulaire devis, navigation, sélecteur langue, responsive design."
 
 backend:
   - task: "Backend functionality check"
