@@ -122,15 +122,18 @@ frontend:
         
   - task: "Repositionnement des boutons d'action au centre"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/components/HomePage.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Trois boutons 'Appel d'urgence' (orange), 'Devis Gratuit' (bleu), 'WhatsApp + GPS' (kaki) repositionnés au centre sous le contenu principal avec espacement augmenté (space-x-8)."
+      - working: true
+        agent: "testing"
+        comment: "✅ Trois boutons d'action parfaitement centrés et fonctionnels. Couleurs correctes : 'Appel d'urgence' en rgb(243, 156, 18) (#F39C12 orange), 'Devis Gratuit' en rgb(42, 92, 170) (#2A5CAA bleu), 'WhatsApp + GPS' en rgb(98, 91, 72) (#625B48 kaki). Espacement augmenté détecté avec container ayant space-x-8. Bouton urgence a lien tel:+33781505555 fonctionnel."
         
   - task: "Suppression du badge orange Service d'urgence"
     implemented: true
