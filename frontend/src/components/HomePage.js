@@ -2815,7 +2815,7 @@ const HomePage = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/0s0fuqdj_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.png"
                 alt="Icar Assistance Logo"
-                className="h-24 w-auto mr-4"
+                className="h-32 w-auto mr-4"
                 onError={(e) => {
                   console.log('Erreur footer logo:', e.target.src);
                   // Fallback vers le texte
