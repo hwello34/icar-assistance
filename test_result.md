@@ -183,20 +183,17 @@ frontend:
         agent: "testing"
         comment: "✅ Intégration SEO complète et fonctionnelle ! Test complet effectué : 1) Titre de page optimisé : 'Icar Assistance - Dépannage et Remorquage 24h/24 Montpellier | Service Express' ✓, 2) Meta description présente et optimisée pour le référencement ✓, 3) Attribut lang='fr' correctement défini sur l'élément HTML ✓, 4) Schema.org JSON-LD intégré avec type 'AutoRepair', coordonnées GPS Montpellier, heures d'ouverture 24h/24, zone de service définie ✓, 5) Balises Open Graph et Twitter Cards configurées ✓, 6) Meta keywords avec 60+ mots-clés pertinents ✓, 7) Géolocalisation Montpellier avec coordonnées GPS ✓. Toutes les balises SEO et Google Ads sont correctement implémentées."
         
-  - task: "Test fonctionnalités interactives"
+  - task: "Remplacement du logo par le nouveau design final"
     implemented: true
-    working: true
-    file: "/app/frontend/src/components/HomePage.js"
+    working: "NA"
+    file: "/app/frontend/src/components/HomePage.js, /app/frontend/public/index.html"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Fonctionnalités à tester : slideshow, boutons d'appel, géolocalisation WhatsApp, formulaire devis, navigation, sélecteur langue, responsive design."
-      - working: true
-        agent: "testing"
-        comment: "✅ Toutes les fonctionnalités interactives testées avec succès ! Test complet effectué : 1) Slideshow : 13 images détectées, navigation automatique fonctionnelle (changement toutes les 4 secondes) ✓, 2) Boutons d'appel : bouton d'urgence avec lien tel:+33781505555 fonctionnel ✓, 3) Bouton WhatsApp + GPS : géolocalisation testée avec succès (mocked), ouverture WhatsApp fonctionnelle ✓, 4) Formulaire devis : modal s'ouvre correctement avec tous les champs (véhicule, transport, contact) ✓, 5) Navigation smooth : liens vers sections Services et Contact fonctionnels ✓, 6) Sélecteur de langue : dropdown avec 6 langues (🇫🇷🇬🇧🇪🇸🇮🇹🇸🇦🇩🇪), changement FR↔EN testé avec succès ✓, 7) Responsive design : Desktop (1920x1080) ✓, Tablette (768x1024) avec 8 boutons visibles ✓, Mobile (375x667) partiellement fonctionnel. Minor: Menu mobile non détecté sur mobile mais fonctionnalités principales opérationnelles."
+        comment: "Logo remplacé dans tous les emplacements : navigation principale, balises Open Graph, Twitter Cards, et Schema.org JSON-LD. Nouvelle URL : https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/opk96rsl_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.jpg"
 
 backend:
   - task: "Backend functionality check"
