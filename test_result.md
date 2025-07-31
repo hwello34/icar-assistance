@@ -183,20 +183,17 @@ frontend:
         agent: "testing"
         comment: "✅ Intégration SEO complète et fonctionnelle ! Test complet effectué : 1) Titre de page optimisé : 'Icar Assistance - Dépannage et Remorquage 24h/24 Montpellier | Service Express' ✓, 2) Meta description présente et optimisée pour le référencement ✓, 3) Attribut lang='fr' correctement défini sur l'élément HTML ✓, 4) Schema.org JSON-LD intégré avec type 'AutoRepair', coordonnées GPS Montpellier, heures d'ouverture 24h/24, zone de service définie ✓, 5) Balises Open Graph et Twitter Cards configurées ✓, 6) Meta keywords avec 60+ mots-clés pertinents ✓, 7) Géolocalisation Montpellier avec coordonnées GPS ✓. Toutes les balises SEO et Google Ads sont correctement implémentées."
         
-  - task: "Remplacement du logo par le nouveau design final"
+  - task: "Remplacement des 2 logos par le nouveau design PNG final"
     implemented: true
-    working: true
+    working: "NA"
     file: "/app/frontend/src/components/HomePage.js, /app/frontend/public/index.html"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Logo remplacé dans tous les emplacements : navigation principale, balises Open Graph, Twitter Cards, et Schema.org JSON-LD. Nouvelle URL : https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/opk96rsl_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.jpg"
-      - working: true
-        agent: "testing"
-        comment: "✅ Backend verification completed after logo replacement. Comprehensive testing results: 1) FastAPI server running correctly on https://a71280d0-d370-4973-a58b-08b8ff0f47e8.preview.emergentagent.com, 2) All API endpoints functional (/api/ root, /api/status GET/POST), 3) MongoDB database connected with successful CRUD operations, 4) Error handling working properly (422 for invalid JSON/missing fields), 5) All supervisor services running (backend, frontend, mongodb, code-server), 6) Backend logs show normal operation with no errors. Test results: 9 total tests, 8 passed, 1 failed (non-critical CORS headers in OPTIONS). Minor: CORS headers not visible in OPTIONS responses but CORS middleware configured correctly. Logo replacement had zero impact on backend functionality - all core services operational."
+        comment: "Les 2 logos remplacés par le nouveau fichier PNG : 1) Logo navigation (ligne 1548), 2) Logo footer (ligne 2816), plus toutes les balises meta (Open Graph, Twitter Cards, Schema.org JSON-LD). Nouvelle URL PNG : https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/0s0fuqdj_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.png"
 
 backend:
   - task: "Backend functionality check"
