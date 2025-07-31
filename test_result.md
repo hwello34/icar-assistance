@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Test complet du frontend après toutes les modifications : titre centré, boutons repositionnés, badge supprimé, espacement augmenté, visibilité corrigée, et intégration SEO"
+user_problem_statement: "Remplacer le logo actuel par le nouveau document téléchargé"
 
 frontend:
   - task: "Repositionnement du titre Icar Assistance au centre"
