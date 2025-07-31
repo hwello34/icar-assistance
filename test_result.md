@@ -234,7 +234,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Remplacement des 2 logos par le nouveau design PNG final"
+    - "Agrandissement des logos navigation et footer"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
