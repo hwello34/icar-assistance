@@ -1545,7 +1545,7 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/opk96rsl_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.jpg"
+                src="https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/0s0fuqdj_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.png"
                 alt="Icar Assistance - Dépannage 24h/24"
                 className="h-28 w-auto mr-2"
                 onError={(e) => {
