@@ -230,7 +230,8 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus: []
+  current_focus:
+    - "Remplacement des 2 logos par le nouveau design PNG final"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
