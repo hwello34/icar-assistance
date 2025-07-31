@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Remplacer les 2 logos par le nouveau logo PNG téléchargé"
+user_problem_statement: "Agrandir le logo"
 
 frontend:
   - task: "Repositionnement du titre Icar Assistance au centre"
