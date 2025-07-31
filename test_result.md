@@ -183,17 +183,17 @@ frontend:
         agent: "testing"
         comment: "✅ Intégration SEO complète et fonctionnelle ! Test complet effectué : 1) Titre de page optimisé : 'Icar Assistance - Dépannage et Remorquage 24h/24 Montpellier | Service Express' ✓, 2) Meta description présente et optimisée pour le référencement ✓, 3) Attribut lang='fr' correctement défini sur l'élément HTML ✓, 4) Schema.org JSON-LD intégré avec type 'AutoRepair', coordonnées GPS Montpellier, heures d'ouverture 24h/24, zone de service définie ✓, 5) Balises Open Graph et Twitter Cards configurées ✓, 6) Meta keywords avec 60+ mots-clés pertinents ✓, 7) Géolocalisation Montpellier avec coordonnées GPS ✓. Toutes les balises SEO et Google Ads sont correctement implémentées."
         
-  - task: "Remplacement des 2 logos par le nouveau design PNG final"
+  - task: "Agrandissement des logos navigation et footer"
     implemented: true
     working: "NA"
-    file: "/app/frontend/src/components/HomePage.js, /app/frontend/public/index.html"
+    file: "/app/frontend/src/components/HomePage.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Les 2 logos remplacés par le nouveau fichier PNG : 1) Logo navigation (ligne 1548), 2) Logo footer (ligne 2816), plus toutes les balises meta (Open Graph, Twitter Cards, Schema.org JSON-LD). Nouvelle URL PNG : https://customer-assets.emergentagent.com/job_car-help-redesign/artifacts/0s0fuqdj_psd%20Logo%20Icar%20Assitance%207%20%28%20Final%20%29.png"
+        comment: "Logos agrandis avec succès : 1) Logo navigation agrandi de h-28 (112px) à h-36 (144px), 2) Logo footer agrandi de h-24 (96px) à h-32 (128px), 3) Padding-top de la hero section ajusté de pt-36 à pt-40 (160px) pour compenser l'agrandissement du logo navigation et maintenir la visibilité du titre."
 
 backend:
   - task: "Backend functionality check"
