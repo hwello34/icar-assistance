@@ -11,9 +11,9 @@ import io
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
-router = APIRouter()
+router = APIRouter(prefix="/api", tags=["devis"])
 
-@router.post("/api/generate-devis")
+@router.post("/generate-devis")
 async def generate_devis(
     devis_request: DevisRequest,
     background_tasks: BackgroundTasks
