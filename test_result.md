@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Changer l'image de la section 'Pourquoi Choisir Icar Assistance ?' par la nouvelle image fournie"
+user_problem_statement: "Remplacer à nouveau l'image de la section 'Pourquoi Choisir Icar Assistance ?' par la nouvelle image fournie"
 
 frontend:
   - task: "Repositionnement du titre Icar Assistance au centre"
