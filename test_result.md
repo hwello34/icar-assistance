@@ -315,12 +315,7 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus:
-    - "Intégration système de devis dans FastAPI"
-    - "Service de tarification automatique 3€/km"
-    - "Service de génération PDF"
-    - "Service de communication WhatsApp/Email"
-    - "Repository MongoDB pour devis"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
