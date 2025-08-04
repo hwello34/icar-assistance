@@ -333,22 +333,3 @@ async def update_devis_status(devis_id: str, new_status: str):
             status_code=500,
             detail="Erreur lors de la mise à jour du statut"
         )
-
-@router.get("/devis/health")
-async def health_check():
-    """Vérification de l'état du service devis"""
-    try:
-        # Test de la base de données
-        from database.devis_db import get_devis_database
-        db = get_devis_database()
-        await db.command('ping')
-        
-        return {
-            "status": "healthy",
-            "timestamp": datetime.now().isoformat(),
-            "service": "Système de génération de devis automatique",
-            "version": "1.0.0"
-        }
-    except Exception as e:
-        logger.error(f"Health check failed: {e}")
-        raise HTTPException(status_code=503, detail="Service temporarily unavailable")
