@@ -315,7 +315,7 @@ async def update_devis_status(devis_id: str, new_status: str):
             detail="Erreur lors de la mise à jour du statut"
         )
 
-@router.get("/api/devis/health")
+@router.get("/devis/health")
 async def health_check():
     """Vérification de l'état du service devis"""
     try:
