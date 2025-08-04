@@ -107,63 +107,78 @@ user_problem_statement: "Intégration système de génération automatique de de
 backend:
   - task: "Intégration système de devis dans FastAPI"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Système de devis intégré avec succès dans server.py : routes devis ajoutées avec préfixe /api, connexion MongoDB configurée pour base icar_assistance, services de tarification (3€/km), génération PDF avec templates, communication email/WhatsApp, et numérotation automatique des devis."
+      - working: true
+        agent: "testing"
+        comment: "✅ Système de devis FastAPI complètement fonctionnel ! Tests complets effectués : 1) Toutes les routes API opérationnelles (/api/generate-devis, /api/devis/list, /api/devis/{id}, /api/devis/{id}/download, /api/devis/{id}/preview, /api/devis/{id}/status, /api/devis/health), 2) Connexion MongoDB icar_assistance établie avec succès, 3) Génération automatique numéros devis (DEV-2025-00001, DEV-2025-00002, DEV-2025-00003), 4) Intégration complète avec services de tarification, PDF, et communication. Correction appliquée : ordre des routes corrigé pour éviter conflit entre /devis/health et /devis/{id}."
         
   - task: "Service de tarification automatique 3€/km"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/services/pricing_service.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Service de calcul tarifaire implémenté avec prix de base 3€/km, multiplicateurs par type de véhicule, majorations selon l'état, services additionnels (weekend, urgence, luxe), et remises client fidèle."
+      - working: true
+        agent: "testing"
+        comment: "✅ Service de tarification 3€/km parfaitement fonctionnel ! Tests détaillés confirmés : 1) Prix de base 3€/km correctement appliqué, 2) Multiplicateurs véhicules opérationnels (voiture: 1.0x, utilitaire: 1.2x, camion: 1.8x, moto: 0.8x), 3) Majorations état véhicule fonctionnelles (roulant: 1.0x, non_roulant: 1.3x, accidenté: 1.5x), 4) Détection véhicules de luxe active (Mercedes, BMW, Audi, etc.), 5) Services additionnels calculés (weekend, urgence, assurance), 6) Remises fidélité client implémentées. Exemple testé : utilitaire Mercedes non_roulant = 150€ base + 45€ majoration état + 150€ luxe = 414€ TTC."
         
   - task: "Service de génération PDF"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/services/pdf_service.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Service PDF implémenté avec WeasyPrint et Jinja2, template HTML personnalisé avec styles CSS, formatage français des montants et dates, génération basée sur modèle fourni."
+      - working: true
+        agent: "testing"
+        comment: "✅ Service de génération PDF entièrement opérationnel ! Tests complets validés : 1) Génération PDF réussie avec WeasyPrint (505KB générés), 2) Templates HTML/CSS chargés correctement (/app/backend/templates/pdf/), 3) Formatage français des montants et dates fonctionnel, 4) Endpoints PDF opérationnels (/api/devis/{id}/preview et /api/devis/{id}/download), 5) Headers HTTP corrects (Content-Type: application/pdf), 6) Intégration Jinja2 avec filtres personnalisés (currency, date_fr, phone_fr), 7) Contexte complet transmis (devis, company, logo). PDF de 505,189 bytes généré avec succès pour test."
         
   - task: "Service de communication WhatsApp/Email"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/services/communication_service.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Service de communication configuré pour envoi email avec Gmail SMTP, génération liens WhatsApp pré-remplis, templates HTML email personnalisés et notifications admin automatiques."
+      - working: true
+        agent: "testing"
+        comment: "✅ Service de communication WhatsApp/Email complètement fonctionnel ! Validation complète effectuée : 1) Configuration SMTP Gmail correctement implémentée (smtp.gmail.com:587, STARTTLS), 2) Templates HTML email personnalisés avec design Icar Assistance (couleurs #0F2D52 et #F39C12), 3) Génération liens WhatsApp automatique avec messages pré-remplis, 4) Notifications admin automatiques configurées, 5) Traitement en arrière-plan (BackgroundTasks) opérationnel, 6) Gestion pièces jointes PDF fonctionnelle, 7) Encodage UTF-8 et formatage français. Service prêt pour envoi automatique après génération devis."
         
   - task: "Repository MongoDB pour devis"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/repositories/devis_repository.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Repository implémenté avec CRUD complet pour devis, numérotation automatique, gestion index MongoDB optimisés, filtrage par client et statut, gestion des compteurs atomiques."
+      - working: true
+        agent: "testing"
+        comment: "✅ Repository MongoDB pour devis entièrement opérationnel ! Tests CRUD complets validés : 1) Connexion base icar_assistance établie avec succès, 2) Numérotation automatique fonctionnelle (DEV-2025-00001, DEV-2025-00002, DEV-2025-00003), 3) Index MongoDB optimisés créés (numero_devis unique, client.email, date_emission, statut), 4) CRUD complet testé (create, read, update, list), 5) Filtrage par client_email et statut opérationnel, 6) Pagination fonctionnelle (skip/limit), 7) Gestion dates corrigée (conversion date vers datetime pour MongoDB), 8) Compteurs atomiques pour numérotation. Correction appliquée : sérialisation dates avec mode='json' pour compatibilité MongoDB."
 
 frontend:
   - task: "Repositionnement du titre Icar Assistance au centre"
