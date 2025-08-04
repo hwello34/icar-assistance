@@ -137,7 +137,7 @@ async def process_devis_communication(devis: Devis):
             }
         )
 
-@router.get("/api/devis/{devis_id}/download")
+@router.get("/devis/{devis_id}/download")
 async def download_devis_pdf(devis_id: str):
     """Téléchargement du PDF d'un devis existant"""
     try:
