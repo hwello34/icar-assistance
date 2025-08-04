@@ -274,7 +274,7 @@ async def get_devis_details(devis_id: str):
             detail="Erreur lors de la récupération des détails du devis"
         )
 
-@router.put("/api/devis/{devis_id}/status")
+@router.put("/devis/{devis_id}/status")
 async def update_devis_status(devis_id: str, new_status: str):
     """Mise à jour du statut d'un devis"""
     valid_statuses = ["brouillon", "genere", "envoye", "accepte", "refuse", "expire", "pret"]
