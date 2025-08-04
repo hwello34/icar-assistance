@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devis {{ devis.numero_devis }}</title>
+</head>
+<body>
+    <!-- En-tête avec logo et informations société -->
+    <div class="header">
+        <div class="company-info">
+            <div class="company-logo">
+                <img src="{{ logo_url }}" alt="Logo Icar Assistance" class="logo">
+            </div>
+            <div class="company-details">
+                <h1>{{ company.nom.upper() }}</h1>
+                <p class="slogan">{{ company.slogan }}</p>
+                <div class="company-address">
+                    <p>{{ company.adresse_ligne1 }} {{ company.code_postal }} {{ company.ville }}</p>
+                    <p>Téléphone {{ company.telephone }}</p>
+                    <p>Mail: {{ company.email }}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="devis-info">
+            <h2>DEVIS</h2>
+            <div class="devis-details">
+                <p>Date d'émission : {{ devis.date_emission.strftime('%d/%m/%Y') }}</p>
+                <p><strong>Devis N° {{ devis.numero_devis }}</strong></p>
+                <p>Durée de validité : 1 mois</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Informations client -->
+    <div class="client-section">
+        <h3>Client:</h3>
+        <div class="client-info">
+            <p><strong>{{ devis.client.nom.upper() }}</strong></p>
+            <p>{{ devis.client.adresse_ligne1 }}</p>
+            {% if devis.client.adresse_ligne2 %}
+            <p>{{ devis.client.adresse_ligne2 }}</p>
+            {% endif %}
+            <p>{{ devis.client.code_postal }} {{ devis.client.ville }}</p>
+            <p>Tel: {{ devis.client.telephone | phone_fr }}</p>
+            <p>Mail: {{ devis.client.email }}</p>
+        </div>
+    </div>
+
+    <!-- Informations prestation -->
+    <div class="prestation-section">
+        <h3>Prestation:</h3>
+        <p>{{ devis.lignes_devis[0].designation if devis.lignes_devis else 'Transport véhicule' }}</p>
+        <p>Lieux d'intervention: {{ devis.transport.adresse_enlevement }} -> {{ devis.transport.adresse_destination }}</p>
+    </div>
+
+    <!-- Tableau des prestations -->
+    <div class="services-section">
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Nbre</th>
+                    <th>Désignation</th>
+                    <th>PRIX</th>
+                    <th>TVA</th>
+                    <th>MONTANT</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ligne in devis.lignes_devis %}
+                <tr>
+                    <td class="center">{{ ligne.quantite }}</td>
+                    <td>{{ ligne.designation }}</td>
+                    <td class="right">{{ ligne.prix_unitaire_ht | currency }}</td>
+                    <td class="center">{{ ligne.taux_tva }}%</td>
+                    <td class="right">{{ ligne.montant_ttc | currency }}</td>
+                </tr>
+                {% endfor %}
+                <tr class="total-row">
+                    <td colspan="4" class="right"><strong>TOTAL</strong></td>
+                    <td class="right"><strong>{{ devis.montant_total_ttc | currency }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Conditions de paiement -->
+    <div class="payment-section">
+        <p><strong>PAIEMENT:</strong> {{ devis.mode_paiement.title() }}</p>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="footer">
+        <p>Document généré automatiquement le {{ generation_date.strftime('%d/%m/%Y') }}</p>
+    </div>
+</body>
+</html>
