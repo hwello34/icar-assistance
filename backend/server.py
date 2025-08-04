@@ -77,6 +77,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+@app.on_event("startup")
+async def startup_db_client():
+    """Initialisation des connexions à la base de données"""
+    await connect_devis_db()
+
 @app.on_event("shutdown")
 async def shutdown_db_client():
+    """Fermeture des connexions à la base de données"""
     client.close()
+    await close_devis_db()
