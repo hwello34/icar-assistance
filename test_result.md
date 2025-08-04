@@ -234,7 +234,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Agrandissement des logos navigation et footer"
+    - "Remplacement de l'image dans la section 'Pourquoi Choisir Icar Assistance ?'"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
