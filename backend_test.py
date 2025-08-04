@@ -234,7 +234,7 @@ class BackendTester:
     
     def run_all_tests(self):
         """Run complete backend test suite"""
-        print(f"🚀 Starting Backend Tests for AutoExpress")
+        print(f"🚀 Starting Backend Tests for Icar Assistance Devis System")
         print(f"Backend URL: {BACKEND_URL}")
         print(f"API Base: {API_BASE}")
         print("=" * 60)
@@ -246,6 +246,9 @@ class BackendTester:
             return False
         
         api_ok = self.test_api_endpoints()
+        
+        # Devis system tests
+        devis_ok = self.test_devis_system()
         
         # Additional tests
         self.test_error_handling()
@@ -275,6 +278,231 @@ class BackendTester:
         else:
             print(f"\n⚠️  {failed_tests} non-critical tests failed, but core functionality works")
             return True
+
+    def test_devis_system(self):
+        """Test complete devis generation system"""
+        print("\n--- Testing Devis System ---")
+        
+        # Test health check first
+        health_ok = self.test_devis_health_check()
+        if not health_ok:
+            return False
+        
+        # Test devis generation
+        devis_id = self.test_generate_devis()
+        if not devis_id:
+            return False
+        
+        # Test devis retrieval
+        self.test_get_devis_details(devis_id)
+        
+        # Test devis list
+        self.test_list_devis()
+        
+        # Test status update
+        self.test_update_devis_status(devis_id)
+        
+        # Test PDF generation (preview)
+        self.test_devis_pdf_preview(devis_id)
+        
+        return True
+    
+    def test_devis_health_check(self):
+        """Test devis service health check"""
+        try:
+            response = requests.get(f"{API_BASE}/devis/health", timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                if data.get('status') == 'healthy':
+                    self.log_test("Devis Health Check", True, f"Service healthy: {data.get('service', 'Unknown')}")
+                    return True
+                else:
+                    self.log_test("Devis Health Check", False, f"Service not healthy: {data}", True)
+                    return False
+            else:
+                self.log_test("Devis Health Check", False, f"HTTP {response.status_code}: {response.text}", True)
+                return False
+        except Exception as e:
+            self.log_test("Devis Health Check", False, f"Health check failed: {str(e)}", True)
+            return False
+    
+    def test_generate_devis(self):
+        """Test devis generation with 3€/km pricing"""
+        try:
+            # Test data matching the review request
+            test_data = {
+                "client": {
+                    "nom": "Dupont Jean",
+                    "telephone": "0612345678",
+                    "email": "test@example.com",
+                    "adresse_ligne1": "123 Rue Test",
+                    "code_postal": "34000",
+                    "ville": "Montpellier"
+                },
+                "vehicule": {
+                    "type": "voiture",
+                    "marque": "Peugeot",
+                    "modele": "308",
+                    "plaque": "AB-123-CD",
+                    "transmission": "manuelle",
+                    "etat": "roulant"
+                },
+                "transport": {
+                    "adresse_enlevement": "Montpellier, 34000",
+                    "adresse_destination": "Nîmes, 30000",
+                    "date_enlevement": "2025-08-10"
+                }
+            }
+            
+            response = requests.post(
+                f"{API_BASE}/generate-devis",
+                json=test_data,
+                headers={'Content-Type': 'application/json'},
+                timeout=30  # Longer timeout for devis generation
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                required_fields = ['success', 'devis_id', 'numero_devis', 'montant_total_ttc']
+                
+                if all(field in data for field in required_fields):
+                    if data['success'] and data['montant_total_ttc'] > 0:
+                        # Verify 3€/km pricing logic
+                        montant = data['montant_total_ttc']
+                        numero = data['numero_devis']
+                        
+                        # Check devis number format (DEV-YYYY-NNNNN)
+                        if numero.startswith('DEV-2025-'):
+                            self.log_test("Generate Devis", True, 
+                                f"Devis generated successfully: {numero}, Amount: {montant}€ TTC, Lines: {len(data.get('lignes_devis', []))}")
+                            return data['devis_id']
+                        else:
+                            self.log_test("Generate Devis", False, f"Invalid devis number format: {numero}", True)
+                            return None
+                    else:
+                        self.log_test("Generate Devis", False, "Devis generation failed or zero amount", True)
+                        return None
+                else:
+                    missing = [f for f in required_fields if f not in data]
+                    self.log_test("Generate Devis", False, f"Missing fields in response: {missing}", True)
+                    return None
+            else:
+                self.log_test("Generate Devis", False, f"HTTP {response.status_code}: {response.text}", True)
+                return None
+                
+        except Exception as e:
+            self.log_test("Generate Devis", False, f"Request failed: {str(e)}", True)
+            return None
+    
+    def test_get_devis_details(self, devis_id: str):
+        """Test devis details retrieval"""
+        try:
+            response = requests.get(f"{API_BASE}/devis/{devis_id}", timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if 'devis' in data and 'resume' in data:
+                    devis_data = data['devis']
+                    resume = data['resume']
+                    
+                    # Verify essential fields
+                    if all(field in devis_data for field in ['numero_devis', 'client', 'vehicule', 'transport']):
+                        self.log_test("Get Devis Details", True, 
+                            f"Devis details retrieved: {resume.get('numero_devis')}, Status: {resume.get('statut')}")
+                        return True
+                    else:
+                        self.log_test("Get Devis Details", False, "Missing essential devis fields")
+                        return False
+                else:
+                    self.log_test("Get Devis Details", False, "Invalid response structure")
+                    return False
+            else:
+                self.log_test("Get Devis Details", False, f"HTTP {response.status_code}: {response.text}")
+                return False
+                
+        except Exception as e:
+            self.log_test("Get Devis Details", False, f"Request failed: {str(e)}")
+            return False
+    
+    def test_list_devis(self):
+        """Test devis listing with pagination"""
+        try:
+            response = requests.get(f"{API_BASE}/devis/list?limit=5", timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if 'devis' in data and 'pagination' in data:
+                    devis_list = data['devis']
+                    pagination = data['pagination']
+                    
+                    self.log_test("List Devis", True, 
+                        f"Retrieved {len(devis_list)} devis, pagination: skip={pagination.get('skip')}, limit={pagination.get('limit')}")
+                    return True
+                else:
+                    self.log_test("List Devis", False, "Invalid response structure")
+                    return False
+            else:
+                self.log_test("List Devis", False, f"HTTP {response.status_code}: {response.text}")
+                return False
+                
+        except Exception as e:
+            self.log_test("List Devis", False, f"Request failed: {str(e)}")
+            return False
+    
+    def test_update_devis_status(self, devis_id: str):
+        """Test devis status update"""
+        try:
+            new_status = "accepte"
+            response = requests.put(
+                f"{API_BASE}/devis/{devis_id}/status?new_status={new_status}",
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if data.get('success') and data.get('new_status') == new_status:
+                    self.log_test("Update Devis Status", True, 
+                        f"Status updated to '{new_status}' for devis {devis_id}")
+                    return True
+                else:
+                    self.log_test("Update Devis Status", False, "Status update failed")
+                    return False
+            else:
+                self.log_test("Update Devis Status", False, f"HTTP {response.status_code}: {response.text}")
+                return False
+                
+        except Exception as e:
+            self.log_test("Update Devis Status", False, f"Request failed: {str(e)}")
+            return False
+    
+    def test_devis_pdf_preview(self, devis_id: str):
+        """Test PDF preview generation"""
+        try:
+            response = requests.get(f"{API_BASE}/devis/{devis_id}/preview", timeout=15)
+            
+            if response.status_code == 200:
+                content_type = response.headers.get('content-type', '')
+                content_length = len(response.content)
+                
+                if 'application/pdf' in content_type and content_length > 1000:
+                    self.log_test("PDF Preview", True, 
+                        f"PDF generated successfully: {content_length} bytes, Content-Type: {content_type}")
+                    return True
+                else:
+                    self.log_test("PDF Preview", False, 
+                        f"Invalid PDF response: {content_type}, {content_length} bytes")
+                    return False
+            else:
+                self.log_test("PDF Preview", False, f"HTTP {response.status_code}: {response.text}")
+                return False
+                
+        except Exception as e:
+            self.log_test("PDF Preview", False, f"Request failed: {str(e)}")
+            return False
 
 if __name__ == "__main__":
     tester = BackendTester()
