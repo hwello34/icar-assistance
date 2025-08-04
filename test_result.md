@@ -296,18 +296,23 @@ backend:
 metadata:
   created_by: "main_agent"
   version: "1.0"
-  test_sequence: 4
+  test_sequence: 5
   run_ui: false
 
 test_plan:
-  current_focus: []
+  current_focus:
+    - "Intégration système de devis dans FastAPI"
+    - "Service de tarification automatique 3€/km"
+    - "Service de génération PDF"
+    - "Service de communication WhatsApp/Email"
+    - "Repository MongoDB pour devis"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "Préparation pour test complet du frontend Icar Assistance. Toutes les modifications récentes organisées en tâches spécifiques à tester : titre centré avec couleurs de marque, boutons repositionnés au centre avec espacement augmenté, suppression du badge orange, correction de visibilité, intégration SEO complète, et test des fonctionnalités interactives (slideshow, navigation, responsive, etc.). Test complet requis pour validation finale."
+    message: "Système de génération automatique de devis complètement intégré dans le backend FastAPI. Fonctionnalités implémentées : 1) Calcul automatique 3€/km avec majorations selon type/état véhicule, 2) Génération PDF avec template personnalisé, 3) Envoi automatique par email Gmail SMTP et WhatsApp, 4) Numérotation automatique DEV-YYYY-NNNNN, 5) Base MongoDB icar_assistance avec index optimisés. Routes disponibles : /api/generate-devis, /api/devis/list, /api/devis/{id}, etc. Prêt pour test backend complet."
   - agent: "testing"
     message: "✅ Backend testing completed successfully. All backend functionality verified working correctly after frontend hero section repositioning changes. FastAPI server, MongoDB database, API endpoints, and error handling all functioning properly. No backend issues detected. Frontend layout modifications had no impact on backend services as expected."
   - agent: "testing"
