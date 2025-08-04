@@ -242,7 +242,7 @@ async def list_devis(
             detail="Erreur lors de la récupération de la liste des devis"
         )
 
-@router.get("/api/devis/{devis_id}")
+@router.get("/devis/{devis_id}")
 async def get_devis_details(devis_id: str):
     """Récupération des détails complets d'un devis"""
     try:
