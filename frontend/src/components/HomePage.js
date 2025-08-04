@@ -1115,6 +1115,10 @@ const HomePage = () => {
   // Images du slideshow - 10 images au total (BB9 supprimée)
   const slideshowImages = [
     {
+      url: "https://i.ibb.co/V08GHrn8/Design-sans-titre.jpg",
+      alt: "Icar Assistance - Services de dépannage professionnel"
+    },
+    {
       url: "https://i.ibb.co/bg2CsymH/BB1.jpg",
       alt: "Icar Assistance - Dépannage professionnel"
     },
@@ -1137,10 +1141,6 @@ const HomePage = () => {
     {
       url: "https://i.ibb.co/xtR5bn08/zone-intervention-au-lieu-de-l-a.png",
       alt: "Icar Assistance - Zone d'intervention Montpellier"
-    },
-    {
-      url: "https://i.ibb.co/gMTJYVRt/Slide-Show-4.jpg",
-      alt: "Icar Assistance - Service premium"
     },
     {
       url: "https://i.ibb.co/v6C4fs0s/F-transport-moto.jpg",
