@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Backend Testing Suite for AutoExpress Website
-Tests all backend functionality after frontend image replacement
+Backend Testing Suite for Icar Assistance Devis System
+Tests complete devis generation system with 3€/km pricing, PDF generation, and communication
 """
 
 import requests
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, date
 import uuid
 
 # Load backend URL from frontend .env
