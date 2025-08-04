@@ -234,7 +234,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Second remplacement de l'image dans la section 'Pourquoi Choisir Icar Assistance ?'"
+    - "Remplacement et repositionnement d'une image du slideshow"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
