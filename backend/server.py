@@ -10,6 +10,10 @@ from typing import List
 import uuid
 from datetime import datetime
 
+# Import pour le système de devis
+from database.devis_db import connect_devis_db, close_devis_db
+from routes.devis_routes import router as devis_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
