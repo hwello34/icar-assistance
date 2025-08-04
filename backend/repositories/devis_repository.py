@@ -34,6 +34,15 @@ class DevisRepository:
             # Conversion en dictionnaire pour MongoDB
             devis_dict = devis.model_dump(exclude={"id"})
             
+            # Convert date objects to datetime for MongoDB compatibility
+            if isinstance(devis_dict['transport']['date_enlevement'], str):
+                from datetime import datetime as dt
+                devis_dict['transport']['date_enlevement'] = dt.fromisoformat(devis_dict['transport']['date_enlevement'])
+            
+            if devis_dict['transport'].get('date_livraison_souhaitee'):
+                if isinstance(devis_dict['transport']['date_livraison_souhaitee'], str):
+                    devis_dict['transport']['date_livraison_souhaitee'] = dt.fromisoformat(devis_dict['transport']['date_livraison_souhaitee'])
+            
             # Insertion en base
             result = await db.devis.insert_one(devis_dict)
             devis.id = str(result.inserted_id)
