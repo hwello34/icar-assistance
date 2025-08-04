@@ -198,7 +198,7 @@ async def preview_devis_pdf(devis_id: str):
             detail="Erreur lors de la prévisualisation du PDF"
         )
 
-@router.get("/api/devis/list")
+@router.get("/devis/list")
 async def list_devis(
     skip: int = 0,
     limit: int = 10,
