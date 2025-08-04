@@ -2059,7 +2059,7 @@ const HomePage = () => {
             >
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://i.ibb.co/n8LjSGf2/Design-sans-titre.jpg"
+                  src="https://i.ibb.co/V08GHrn8/Design-sans-titre.jpg"
                   alt="Icar Assistance - Services de dépannage professionnel à Montpellier"
                   className="w-full h-full object-cover"
                 />
