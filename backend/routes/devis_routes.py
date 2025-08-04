@@ -171,7 +171,7 @@ async def download_devis_pdf(devis_id: str):
             detail="Erreur lors du téléchargement du PDF"
         )
 
-@router.get("/api/devis/{devis_id}/preview")
+@router.get("/devis/{devis_id}/preview")
 async def preview_devis_pdf(devis_id: str):
     """Prévisualisation du PDF d'un devis dans le navigateur"""
     try:
