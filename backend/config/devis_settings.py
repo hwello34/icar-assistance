@@ -49,6 +49,7 @@ class DevisSettings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
+        extra = "ignore"  # Ignorer les variables supplémentaires
 
 @lru_cache()
 def get_devis_settings():
