@@ -44,8 +44,7 @@ async def create_devis_indexes():
         await devis_db.database.devis.create_index("date_emission")
         await devis_db.database.devis.create_index("statut")
         
-        # Index sur les compteurs
-        await devis_db.database.counters.create_index("_id", unique=True)
+        # Les compteurs utilisent déjà _id comme clé primaire unique, pas besoin d'index supplémentaire
         
         logger.info("Index MongoDB devis créés avec succès")
     except Exception as e:
