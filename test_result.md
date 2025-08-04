@@ -102,7 +102,68 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Remplacer l'image 'Slide-Show-4.jpg' par la nouvelle image et la placer en position 1 du slideshow"
+user_problem_statement: "Intégration système de génération automatique de devis avec calcul 3€/km et envoi par WhatsApp et email"
+
+backend:
+  - task: "Intégration système de devis dans FastAPI"
+    implemented: true
+    working: false
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Système de devis intégré avec succès dans server.py : routes devis ajoutées avec préfixe /api, connexion MongoDB configurée pour base icar_assistance, services de tarification (3€/km), génération PDF avec templates, communication email/WhatsApp, et numérotation automatique des devis."
+        
+  - task: "Service de tarification automatique 3€/km"
+    implemented: true
+    working: false
+    file: "/app/backend/services/pricing_service.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Service de calcul tarifaire implémenté avec prix de base 3€/km, multiplicateurs par type de véhicule, majorations selon l'état, services additionnels (weekend, urgence, luxe), et remises client fidèle."
+        
+  - task: "Service de génération PDF"
+    implemented: true
+    working: false
+    file: "/app/backend/services/pdf_service.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Service PDF implémenté avec WeasyPrint et Jinja2, template HTML personnalisé avec styles CSS, formatage français des montants et dates, génération basée sur modèle fourni."
+        
+  - task: "Service de communication WhatsApp/Email"
+    implemented: true
+    working: false
+    file: "/app/backend/services/communication_service.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Service de communication configuré pour envoi email avec Gmail SMTP, génération liens WhatsApp pré-remplis, templates HTML email personnalisés et notifications admin automatiques."
+        
+  - task: "Repository MongoDB pour devis"
+    implemented: true
+    working: false
+    file: "/app/backend/repositories/devis_repository.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Repository implémenté avec CRUD complet pour devis, numérotation automatique, gestion index MongoDB optimisés, filtrage par client et statut, gestion des compteurs atomiques."
 
 frontend:
   - task: "Repositionnement du titre Icar Assistance au centre"
