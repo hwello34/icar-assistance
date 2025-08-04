@@ -31,12 +31,12 @@ class DevisRepository:
                 updated_at=datetime.now()
             )
             
-            # Conversion en dictionnaire pour MongoDB
-            devis_dict = devis.model_dump(exclude={"id"})
+            # Conversion en dictionnaire pour MongoDB avec gestion des dates
+            devis_dict = devis.model_dump(exclude={"id"}, mode='json')
             
-            # Convert date objects to datetime for MongoDB compatibility
+            # Convert string dates back to datetime objects for MongoDB
+            from datetime import datetime as dt
             if isinstance(devis_dict['transport']['date_enlevement'], str):
-                from datetime import datetime as dt
                 devis_dict['transport']['date_enlevement'] = dt.fromisoformat(devis_dict['transport']['date_enlevement'])
             
             if devis_dict['transport'].get('date_livraison_souhaitee'):
