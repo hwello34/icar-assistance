@@ -242,6 +242,25 @@ async def list_devis(
             detail="Erreur lors de la récupération de la liste des devis"
         )
 
+@router.get("/devis/health")
+async def health_check():
+    """Vérification de l'état du service devis"""
+    try:
+        # Test de la base de données
+        from database.devis_db import get_devis_database
+        db = get_devis_database()
+        await db.command('ping')
+        
+        return {
+            "status": "healthy",
+            "timestamp": datetime.now().isoformat(),
+            "service": "Système de génération de devis automatique",
+            "version": "1.0.0"
+        }
+    except Exception as e:
+        logger.error(f"Health check failed: {e}")
+        raise HTTPException(status_code=503, detail="Service temporarily unavailable")
+
 @router.get("/devis/{devis_id}")
 async def get_devis_details(devis_id: str):
     """Récupération des détails complets d'un devis"""
