@@ -236,8 +236,7 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus:
-    - "Remplacement de l'image dans la section 'Pourquoi Choisir Icar Assistance ?'"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
