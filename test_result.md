@@ -183,20 +183,17 @@ frontend:
         agent: "testing"
         comment: "✅ Intégration SEO complète et fonctionnelle ! Test complet effectué : 1) Titre de page optimisé : 'Icar Assistance - Dépannage et Remorquage 24h/24 Montpellier | Service Express' ✓, 2) Meta description présente et optimisée pour le référencement ✓, 3) Attribut lang='fr' correctement défini sur l'élément HTML ✓, 4) Schema.org JSON-LD intégré avec type 'AutoRepair', coordonnées GPS Montpellier, heures d'ouverture 24h/24, zone de service définie ✓, 5) Balises Open Graph et Twitter Cards configurées ✓, 6) Meta keywords avec 60+ mots-clés pertinents ✓, 7) Géolocalisation Montpellier avec coordonnées GPS ✓. Toutes les balises SEO et Google Ads sont correctement implémentées."
         
-  - task: "Remplacement de l'image dans la section 'Pourquoi Choisir Icar Assistance ?'"
+  - task: "Second remplacement de l'image dans la section 'Pourquoi Choisir Icar Assistance ?'"
     implemented: true
-    working: true
+    working: "NA"
     file: "/app/frontend/src/components/HomePage.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Image de la section 'Pourquoi Choisir Icar Assistance ?' remplacée avec succès. Ancienne image : https://i.ibb.co/5X0q05Hy/nuage-de-mot-F.jpg remplacée par nouvelle image : https://i.ibb.co/n8LjSGf2/Design-sans-titre.jpg à la ligne 2062. L'image conserve les mêmes dimensions (500px de hauteur) et classes CSS (object-cover) pour maintenir la mise en page."
-      - working: true
-        agent: "testing"
-        comment: "✅ Backend verification completed after image replacement in 'Pourquoi Choisir Icar Assistance ?' section. Comprehensive testing results: 1) FastAPI server running correctly on https://a71280d0-d370-4973-a58b-08b8ff0f47e8.preview.emergentagent.com, 2) All API endpoints functional (/api/ root, /api/status GET/POST), 3) MongoDB database connected with successful CRUD operations, 4) Error handling working properly (422 for invalid JSON/missing fields), 5) All supervisor services running (backend, frontend, mongodb, code-server), 6) Backend logs show normal operation with no errors. Test results: 9 total tests, 8 passed, 1 failed (non-critical CORS headers in OPTIONS). Minor: CORS headers not visible in OPTIONS responses but CORS middleware configured correctly. Image URL change from 'nuage-de-mot-F.jpg' to 'Design-sans-titre.jpg' had zero impact on backend functionality - all core services operational."
+        comment: "Image de la section 'Pourquoi Choisir Icar Assistance ?' remplacée à nouveau avec succès. Ancienne image : https://i.ibb.co/n8LjSGf2/Design-sans-titre.jpg remplacée par nouvelle image : https://i.ibb.co/V08GHrn8/Design-sans-titre.jpg à la ligne 2062. L'image conserve les mêmes dimensions (500px de hauteur) et classes CSS (object-cover) pour maintenir la mise en page."
 
 backend:
   - task: "Backend functionality check"
